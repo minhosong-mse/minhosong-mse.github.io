@@ -4,6 +4,11 @@
 * **University:** Soongsil University
 * **Major:** 신소재공학
 * **Double Major:** 차세대반도체공학
+
+## Qualifications
+### Certifications
+- **[데이터분석준전문가(ADsP)]** | [한국데이터산업진흥원장] | [26.03.06]
+- **[포토샵(ACA)]** | [Adobe] | [2022.06.14]
   
 ## Projects
 
