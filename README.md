@@ -8,7 +8,7 @@
 ## Qualifications
 ### Certifications
 - **[데이터분석준전문가(ADsP)]** | [한국데이터산업진흥원장] | [26.03.06]
-- **[포토샵(ACA)]** | [Adobe] | [22.06.14]
+- **[ACP(Adobe Certified Professional)]** | [Adobe] | [22.06.14]
   
 ## Projects
 
