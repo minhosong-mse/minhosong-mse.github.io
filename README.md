@@ -29,7 +29,7 @@
 | **Digital Logic Circuits** | 26-1 | Designed a traffic signal controller using Vivado and Verilog. | [🔗](https://github.com/minho031207/Digital_Logic) |
 
 ## Academic Presentation: KIEEME Summer Conference
-2026년 반도체공학회 하계종합학술대회 특별세션에서 'SE-X-ray Hybrid Metrology'를 주제로 발표를 진행하였습니다.
+2026년 반도체공학회 하계종합학술대회 특별세션에서 **SE-X-ray Hybrid Metrology**를 주제로 발표를 진행하였습니다.
 
 * **Conference:** 2026년 반도체공학회 하계종합학술대회 (KIEEME Summer Conference)
 * **Topic:** SE-X-ray Hybrid Metrology를 활용한 ALD 기반 High-k 박막의 미세 밀도 및 계면 거칠기 정량화
