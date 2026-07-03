@@ -28,8 +28,17 @@
 | **Semiconductor Integrated Process** | 26-1 | Optimized NMOS characteristics for automotive semiconductor applications. (Team Project) | [🔗](https://github.com/minho031207/Semiconductor_Process) |
 | **Digital Logic Circuits** | 26-1 | Designed a traffic signal controller using Vivado and Verilog. | [🔗](https://github.com/minho031207/Digital_Logic) |
 
+## Academic Presentation: KIEEME Summer Conference
+2026년 반도체공학회 하계종합학술대회 특별세션에서 'SE-X-ray Hybrid Metrology'를 주제로 발표를 진행하였습니다.
 
-학회가서 발표한거 사진하고 자료 추가하기
+* **Conference:** 2026년 반도체공학회 하계종합학술대회 (KIEEME Summer Conference)
+* **Topic:** SE-X-ray Hybrid Metrology를 활용한 ALD 기반 High-k 박막의 미세 밀도 및 계면 거칠기 정량화
+* **Key Achievements:**
+    * 초미세 공정 계측의 고질적 난제인 '상관관계 오류(Correlation Error)'를 해결하기 위한 하이브리드 계측 알고리즘 제안.
+    * 추가 수정 필요 
+* **Presentation Material:** [🔗 발표 자료(PDF)](./반도체공정과화학분석_발표자료PDF.pdf)
+
+> **Insight:** 다녀와서 한줄정리 또는 피드백 내용 담아서 작성하면 좋을 듯 추가로 밑에 사진 첨부 필요
 
 ---
 > **참고:** [🔗] 아이콘을 클릭하면 각 프로젝트의 상세 저장소로 이동합니다.
