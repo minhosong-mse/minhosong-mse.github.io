@@ -27,6 +27,8 @@
 | **Semiconductor Integrated Process** | 26-1 | 1st Place in NMOS Contest & PMOS Process Optimization (Individual Project) | [🔗](https://github.com/minho031207/Semiconductor_Process_mid) |
 | **Semiconductor Integrated Process** | 26-1 | Optimized NMOS characteristics for automotive semiconductor applications. (Team Project) | [🔗](https://github.com/minho031207/Semiconductor_Process) |
 | **Digital Logic Circuits** | 26-1 | Designed a traffic signal controller using Vivado and Verilog. | [🔗](https://github.com/minho031207/Digital_Logic) |
+---
+> **참고:** [🔗] 아이콘을 클릭하면 각 프로젝트의 상세 저장소로 이동합니다.
 
 ## Academic Presentation: KIEEME Summer Conference
 2026년 반도체공학회 하계종합학술대회 특별세션에서 **SE-X-ray Hybrid Metrology**를 주제로 발표를 진행하였습니다.
@@ -38,7 +40,16 @@
     * 추가 수정 필요 
 * **Presentation Material:** [🔗 발표 자료(PDF)](./반도체공정과화학분석_발표자료PDF.pdf)
 
-> **Insight:** 다녀와서 한줄정리 또는 피드백 내용 담아서 작성하면 좋을 듯 추가로 밑에 사진 첨부 필요
+> **Insight:** 일정 종료 후 다시 수정 예정
 
----
-> **참고:** [🔗] 아이콘을 클릭하면 각 프로젝트의 상세 저장소로 이동합니다.
+## Extracurricular Activities: 'Hwang-To' Band Club
+4년간의 밴드 동아리 활동을 통해 팀워크와 현장 리더십을 체득했습니다.
+
+* **Affiliation:** 숭실대학교 공과대학 밴드 소모임 '황토' (2022.03 ~ 현재)
+* **Role:** 임원 및 공연 팀장 (1년간 재임)
+* **Key Achievements:**
+    * **공연 총괄 및 기획:** 정기공연(5회), 대학 축제(1회), 새내기 배움터(1회) 등 총 7회의 무대 기획 및 운영 총괄.
+    * **현장 리더십:** 무대 세팅(음향/악기 배치), 스케줄 관리, 돌발 상황 해결을 등 프로젝트 운영 및 위기 관리 능력 함양.
+    * **협업의 가치:** 다양한 전공생과 조율하며 목표를 달성하는 과정을 통해, 엔지니어링 프로젝트에 필수적인 커뮤니케이션 및 팀워크 역량 강화.
+
+> **Insight:** 밴드 팀장으로서 공연을 준비했던 경험은 기술적 난제 앞에서 팀원들과 협업하여 최선의 결과물을 도출하는 저만의 강력한 자산이 되었습니다.
