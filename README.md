@@ -55,7 +55,7 @@
 자세한 활동 기록은 아래 링크에서 확인하실 수 있습니다.
 
 **Instagram:** 
-  <a href="인스타링크">
+  <a href="https://www.instagram.com/hwang_to?igsh=aXdieGViYmh3N3lk">
     <img src="https://img.shields.io/badge/hwang_to-E4405F?style=flat&logo=instagram&logoColor=white">
   </a>
 
