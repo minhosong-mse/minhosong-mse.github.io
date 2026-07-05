@@ -15,7 +15,7 @@
 | Portfolio | Period | Description | Link |
 | :--- | :--- | :--- | :---: |
 | **Chips Master Program(CMP)** | 2026.04 ~ 2027.01 | Optimized 20nm DRAM process to minimize GIDL leakage. | [🔗](https://github.com/minho031207/CMP) |
-| **SSU Datathon 2025** | 2025.12 - 2026.01 | A Data-Driven Trend Analysis of 60,000+ Research Papers. | [🔗](https://github.com/minho031207/Datathon) |
+| **SSU Datathon 2025** | 2025.12 ~ 2026.01 | A Data-Driven Trend Analysis of 60,000+ Research Papers. | [🔗](https://github.com/minho031207/Datathon) |
 | **AX(Ai eXperience) 인터랙티브 콘텐츠 공모전** | 2026.07 ~ 2027.08 | Developing an AI-driven interactive tutor that visualizes the complex transition from abstract logic tables to physical semiconductor layouts. | [🔗](https://github.com/minho031207/AX) |
 
   캡스톤융합팀 설계과정 / 차세대반도체경진대회 내용 추가 예정
