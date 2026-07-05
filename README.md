@@ -18,7 +18,7 @@
 | **SSU Datathon 2025** | 2025.12 - 2026.01 | A Data-Driven Trend Analysis of 60,000+ Research Papers. | [🔗](https://github.com/minho031207/Datathon) |
 | **AX(Ai eXperience) 인터랙티브 콘텐츠 공모전** | 2026.07 ~ 2027.08 | Developing an AI-driven interactive tutor that visualizes the complex transition from abstract logic tables to physical semiconductor layouts. | [🔗](https://github.com/minho031207/AX) |
 
-  캡스톤융합팀 설계과정 / 차세대반도체경진대회 내용 추가하기
+  캡스톤융합팀 설계과정 / 차세대반도체경진대회 내용 추가 예정
 
 ## Academic Coursework
 
@@ -30,14 +30,14 @@
 ---
 > **참고:** [🔗] 아이콘을 클릭하면 각 프로젝트의 상세 저장소로 이동합니다.
 
-## Academic Presentation: KIEEME Summer Conference
+## Academic Presentation: 2026 Summer Annual Conference of ISE
 2026년 반도체공학회 하계종합학술대회 특별세션에서 **SE-X-ray Hybrid Metrology**를 주제로 발표를 진행하였습니다.
 
-* **Conference:** 2026년 반도체공학회 하계종합학술대회 (KIEEME Summer Conference)
+* **Conference:** 2026년 반도체공학회 하계종합학술대회 
 * **Topic:** SE-X-ray Hybrid Metrology를 활용한 ALD 기반 High-k 박막의 미세 밀도 및 계면 거칠기 정량화
 * **Key Achievements:**
     * 초미세 공정 계측의 고질적 난제인 '상관관계 오류(Correlation Error)'를 해결하기 위한 하이브리드 계측 알고리즘 제안.
-    * 추가 수정 필요 
+    * XRD와 SE 데이터를 결합한 피드포워드(Feed-forward) 하이브리드 계측 기술 제안
 * **Presentation Material:** [🔗 발표 자료(PDF)](./반도체공정과화학분석_발표자료PDF.pdf)
 
 > **Insight:** 일정 종료 후 다시 수정 예정
