@@ -30,6 +30,19 @@
 ---
 > **참고:** [🔗] 아이콘을 클릭하면 각 프로젝트의 상세 저장소로 이동합니다.
 
+## Technical Training: TCAD Short Course
+차세대반도체학과 주관 Synopsys Sentaurus TCAD 단기강좌를 통해 공정 및 소자 시뮬레이션 실무 역량을 강화하고 있습니다.
+
+### 단기강좌 교육 과정 (2026.07)
+
+| 강좌명 | 일정 | 주요 학습 및 실습 내용 |
+| :--- | :--- | :--- |
+| **반도체 공정 with TCAD** | 7.20 ~ 7.22 | 식각, 산화, 확산, 이온 주입, 증착 등 공정 프로세스 시뮬레이션 및 데이터 해석[cite: 1] |
+| **반도체 소자 with TCAD** | 7.24 ~ 7.29 | NMOS/CMOS Physics, SCE 개선 방안, DRAM 및 Flash 소자 시뮬레이션[cite: 2] |
+
+> **Training Goal:** Synopsys Sentaurus TCAD를 활용한 공정 및 소자 제작 시뮬레이션을 통해 실무적 이해도를 높이고 있습니다.
+> *상세 과제 결과물 및 실습 코드는 별도 [TCAD-Projects 레포지토리](링크_입력)에서 확인하실 수 있습니다.*
+
 ## Academic Presentation: 2026 Summer Annual Conference of ISE
 2026년 반도체공학회 하계종합학술대회 특별세션에서 **SE-X-ray Hybrid Metrology**를 주제로 발표를 진행하였습니다.
 
