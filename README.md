@@ -51,7 +51,7 @@
 * **Key Achievements:**
     * 초미세 공정 계측의 고질적 난제인 '상관관계 오류(Correlation Error)'를 해결하기 위한 하이브리드 계측 알고리즘 제안.
     * XRD와 SE 데이터를 결합한 피드포워드(Feed-forward) 하이브리드 계측 기술 제안
-* **Presentation Material:** [🔗 발표 자료(PDF)](./반도체공학회_송민호,주수빈,남다연_발표자료.pdf)
+* **Presentation Material:** [🔗 발표 자료(PDF)](./반도체공학회_발표자료.pdf)
 
 > **Insight:** 일정 종료 후 다시 수정 예정
 
