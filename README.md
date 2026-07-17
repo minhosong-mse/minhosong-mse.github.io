@@ -44,16 +44,47 @@
 > *상세 과제 결과물 및 실습 코드는 별도 [TCAD-Projects 레포지토리](링크_입력)에서 확인하실 수 있습니다.*
 
 ## Academic Presentation: 2026 Summer Annual Conference of ISE
-2026년 반도체공학회 하계종합학술대회 특별세션에서 **SE-X-ray Hybrid Metrology**를 주제로 발표를 진행하였습니다.
 
-* **Conference:** 2026년 반도체공학회 하계종합학술대회 
+2026년 반도체공학회 하계종합학술대회 특별세션에서  
+ALD 기반 High-k 초박막의 밀도와 계면 거칠기를 정량화하기 위한  
+**SE-X-ray Hybrid Metrology** 접근을 발표하였습니다.
+
+<p align="center">
+  <img src="./발표사진.png"
+       width="46%"
+       alt="2026 반도체공학회 특별세션 발표 모습"/>
+</p>
+
+<p align="center">
+  <sub>2026 반도체공학회 하계종합학술대회 특별세션 발표</sub>
+</p>
+
+* **Conference:** 2026년 반도체공학회 하계종합학술대회
+* **Session:** 특별세션 — 숭실대학교 차세대반도체학과 1
+* **Date:** 2026.07.15
 * **Topic:** SE-X-ray Hybrid Metrology를 활용한 ALD 기반 High-k 박막의 미세 밀도 및 계면 거칠기 정량화
-* **Key Achievements:**
-    * 초미세 공정 계측의 고질적 난제인 '상관관계 오류(Correlation Error)'를 해결하기 위한 하이브리드 계측 알고리즘 제안.
-    * XRD와 SE 데이터를 결합한 피드포워드(Feed-forward) 하이브리드 계측 기술 제안
+* **Role:** 발표 진행 및 SE 단독 계측의 한계와 하이브리드 계측 적용 논리 분석
+
+### Key Technical Insights
+
+* **SE 단독 분석의 한계:** 역모델링 과정에서 박막 두께, 광학상수 n·k, 계면 거칠기 사이에 강한 파라미터 상관성이 발생하여 서로 다른 물리적 구조가 유사한 광학 신호를 생성할 수 있음을 분석하였습니다.
+* **Feed-forward Hybrid Metrology:** X-ray 계측(XRD/XRR)으로 확보한 구조적·물리적 정보를 SE 모델의 고정값 또는 제약조건으로 반영하여 파라미터 모호성을 줄이는 방법을 제안하였습니다.
+* **물리적 타당성 검토:** 단순히 MSE가 가장 낮은 모델이 실제 구조와 가장 가까운 해를 의미하지 않을 수 있음을 문헌 사례를 통해 비교하였습니다.
+* **High-k 박막 적용 가능성:** 서로 다른 계측법의 독립적인 정보를 결합하여 초박막의 밀도와 계면 거칠기를 비파괴 방식으로 정량화할 수 있는 가능성을 검토하였습니다.
+
+<p align="center">
+  <img src="./발표순서.png"
+       width="88%"
+       alt="공식 프로그램 발표 순서 7번"/>
+</p>
+
+<p align="center">
+  <sub>Official program entry — Presentation No. 7</sub>
+</p>
+
 * **Presentation Material:** [🔗 발표 자료(PDF)](./반도체공학회_발표자료.pdf)
 
-> **Insight:** 일정 종료 후 다시 수정 예정
+> **Insight:** 단일 계측 데이터의 낮은 fitting error만으로는 도출된 해의 물리적 타당성을 보장할 수 없으며, 서로 다른 계측법이 제공하는 독립적인 정보를 결합해야 초박막 분석에서 발생하는 파라미터 모호성을 효과적으로 줄일 수 있음을 배웠습니다.
 
 ## Extracurricular Activities: '황토' Band Club
 4년간의 밴드 동아리 활동을 통해 팀워크와 현장 리더십을 체득했습니다.
