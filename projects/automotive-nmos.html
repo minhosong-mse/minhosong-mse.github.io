@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Automotive NMOS | Minho Song</title>
+  <meta name="description" content="423 K 고온 환경을 위한 NMOS Halo, LDD, P-well 공정 최적화 프로젝트">
+  <meta name="theme-color" content="#07182f">
+  <link rel="icon" href="../assets/images/profile/profile.png">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+  <header class="site-header" id="top">
+    <nav class="nav-shell" aria-label="프로젝트 탐색">
+      <a class="detail-back" href="../index.html#projects"><span aria-hidden="true">←</span> BACK TO PORTFOLIO</a>
+      <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false"><span class="menu-label">MENU</span><span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span></button>
+      <ul class="nav-links" id="primary-nav"><li><a href="#overview">OVERVIEW</a></li><li><a href="#method">METHOD</a></li><li><a href="#results">RESULTS</a></li><li><a href="#resources">FILES</a></li></ul>
+    </nav>
+  </header>
+
+  <main class="detail-main" id="main-content">
+    <section class="detail-hero" aria-labelledby="project-title">
+      <div class="page-width">
+        <p class="detail-breadcrumb">DEVICE OPTIMIZATION · HIGH-TEMPERATURE NMOS</p>
+        <h1 id="project-title">Automotive NMOS</h1>
+        <p class="detail-subtitle">423 K High-Temperature Process Optimization</p>
+        <div class="detail-intro-grid">
+          <p class="detail-lead">423 K, gate length 0.12 µm 조건에서 단채널·고온 열화를 분석하고 Halo, LDD, P-well 공정을 순차적으로 조정한 4인 팀 프로젝트입니다.</p>
+          <dl class="detail-meta">
+            <div><dt>PERIOD</dt><dd>2026-1</dd></div>
+            <div><dt>STATUS</dt><dd>Completed · Team Project</dd></div>
+            <div><dt>ROLE</dt><dd>Team Leader · Halo optimization</dd></div>
+            <div><dt>TOOLS</dt><dd>Sentaurus TCAD, parameter sweep, device analysis</dd></div>
+          </dl>
+        </div>
+        <div class="detail-visual contain"><img src="../assets/images/projects/automotive-nmos/halo-final-comparison.png" alt="Halo 최적화 전후 NMOS 특성 비교 그래프"></div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="overview" aria-labelledby="overview-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">01 / OVERVIEW</p><h2 id="overview-title">Leakage under heat and scaling.</h2></div>
+        <div class="detail-copy">
+          <p>고온 동작과 0.12 µm gate length 조건에서 기준 소자의 SS와 누설전류가 악화되었습니다. 팀은 전류 구동력을 유지하면서 Ioff와 단채널 효과를 줄이는 방향으로 공정 변수를 분담해 분석했습니다.</p>
+          <div class="detail-callout"><strong>Optimization order:</strong> Halo → LDD → P-well. 각 단계의 최종 조건을 다음 단계의 기준 구조로 전달했습니다.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="method" aria-labelledby="method-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">02 / METHOD</p><h2 id="method-title">Sequential process optimization.</h2></div>
+        <div class="detail-copy">
+          <ol class="workflow">
+            <li><h3>Temperature check</h3><p>기준 소자를 423 K에서 평가해 열화된 I–V 특성을 확인했습니다.</p></li>
+            <li><h3>Doping sweeps</h3><p>Halo, LDD, P-well 변수의 구조·전기적 영향을 순차적으로 비교했습니다.</p></li>
+            <li><h3>Integrated result</h3><p>단계별 최적 조건을 통합하고 최종 구조와 지표를 재검증했습니다.</p></li>
+          </ol>
+          <h3>My contribution</h3>
+          <ul class="contribution-list">
+            <li>팀장으로 4인 역할 분담, 분석 순서, 결과 통합을 조정했습니다.</li>
+            <li>Halo 공정 최적화를 주도하고 전체 코드 구현의 약 절반을 담당했습니다.</li>
+            <li>단계별 결과를 하나의 최종 구조로 통합해 보고서와 발표 자료를 정리했습니다.</li>
+          </ul>
+          <div class="image-gallery">
+            <article class="image-card contain"><img src="../assets/images/projects/automotive-nmos/temperature-degradation.png" alt="423 K 조건에서의 NMOS 열화 결과"><h3>Temperature degradation</h3><p>고온 조건에서 확인한 기준 소자의 특성 변화입니다.</p></article>
+            <article class="image-card contain"><img src="../assets/images/projects/automotive-nmos/final-cross-section.png" alt="최종 Automotive NMOS 단면 구조"><h3>Final cross-section</h3><p>순차 최적화를 통합한 최종 소자 구조입니다.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="results" aria-labelledby="results-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">03 / RESULTS</p><h2 id="results-title">Verified final comparison.</h2></div>
+        <div class="detail-copy">
+          <div class="metric-grid">
+            <article class="metric-card"><h3>198.6 mV/dec</h3><p>Final SS · baseline 1015.2 mV/dec, 80.4% decrease</p></article>
+            <article class="metric-card"><h3>1.58 × 10⁻¹²</h3><p>Final Ioff · baseline 2.81 × 10⁻⁵, about 7 orders lower</p></article>
+            <article class="metric-card"><h3>1.39 × 10⁸</h3><p>Final Ion/Ioff · baseline 23, about 6 × 10⁶ improvement</p></article>
+          </div>
+          <div class="image-gallery">
+            <article class="image-card contain"><img src="../assets/images/projects/automotive-nmos/final-result-1.png" alt="Automotive NMOS 최종 전기적 결과 첫 번째 그래프"><h3>Final electrical result I</h3><p>기준 구조와 최종 구조의 전기적 특성 비교입니다.</p></article>
+            <article class="image-card contain"><img src="../assets/images/projects/automotive-nmos/final-result-2.png" alt="Automotive NMOS 최종 전기적 결과 두 번째 그래프"><h3>Final electrical result II</h3><p>고온 조건에서의 최종 성능 지표를 검증했습니다.</p></article>
+          </div>
+          <h3>Technical interpretation &amp; lessons</h3>
+          <ul class="limitations">
+            <li>도핑 조건은 누설 억제와 구동전류에 동시에 영향을 주므로 단계별 최적점이 전체 최적점과 같은지 재검증해야 했습니다.</li>
+            <li>423 K 시뮬레이션 결과는 선택한 물리 모델과 구조 가정 안에서의 비교이며 실차 신뢰성 검증을 대체하지 않습니다.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="resources" aria-labelledby="resources-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">04 / FILES</p><h2 id="resources-title">Reports and presentation.</h2></div>
+        <div class="detail-copy">
+          <div class="resource-grid">
+            <article class="resource-card"><h3>GitHub repository</h3><p>README와 프로젝트 기술 자료</p><a class="text-link" href="https://github.com/minhosong-mse/Semiconductor_Process" target="_blank" rel="noopener noreferrer">VIEW GITHUB REPOSITORY ↗</a></article>
+            <article class="resource-card"><h3>Final report</h3><p>공정 최적화 방법과 최종 결과 보고서</p><a class="text-link" href="https://github.com/minhosong-mse/Semiconductor_Process/blob/main/automotive-nmos-final-report.pdf" target="_blank" rel="noopener noreferrer">VIEW FINAL REPORT ↗</a></article>
+            <article class="resource-card"><h3>Presentation</h3><p>팀 프로젝트 최종 발표 자료</p><a class="text-link" href="https://github.com/minhosong-mse/Semiconductor_Process/blob/main/automotive-nmos-presentation.pdf" target="_blank" rel="noopener noreferrer">VIEW PRESENTATION PDF ↗</a></article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="project-next"><div class="page-width"><p>Next project · 20 nm-Class DRAM BCAT</p><a href="dram-bcat.html">VIEW NEXT PROJECT →</a></div></aside>
+  <footer class="site-footer"><div class="page-width"><p>© <span id="current-year">2026</span> MINHO SONG</p><a href="../index.html#projects">BACK TO PORTFOLIO ↑</a></div></footer>
+</body>
+</html>
