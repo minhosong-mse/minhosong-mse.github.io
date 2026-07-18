@@ -195,7 +195,7 @@ button {
 
 .intro {
   position: relative;
-  min-height: 520px;
+  min-height: 500px;
   overflow: hidden;
   background:
     linear-gradient(90deg, rgba(8, 169, 189, 0.045) 1px, transparent 1px),
@@ -205,58 +205,30 @@ button {
   border-bottom: 1px solid var(--line);
 }
 
-.intro-accent {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: max(20px, calc((100vw - var(--page)) / 2 - 40px));
-  min-width: 10px;
-  background: var(--navy);
-}
-
 .intro-grid {
   display: grid;
-  grid-template-columns: minmax(230px, 0.7fr) minmax(0, 1.6fr);
-  gap: clamp(48px, 8vw, 110px);
+  grid-template-columns: minmax(260px, 280px) minmax(0, 1fr);
+  gap: clamp(48px, 7vw, 96px);
   align-items: center;
-  min-height: 520px;
-  padding-block: 72px;
+  min-height: 500px;
+  padding-block: 64px;
 }
 
-.profile-frame {
-  position: relative;
-  max-width: 315px;
-  padding: 14px;
-  background: var(--white);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
+.profile-photo {
+  width: 100%;
+  max-width: 280px;
+  justify-self: start;
 }
 
-.profile-frame::before {
-  position: absolute;
-  top: -8px;
-  left: -8px;
-  width: 72px;
-  height: 72px;
-  border-top: 3px solid var(--cyan);
-  border-left: 3px solid var(--cyan);
-  content: "";
-}
-
-.profile-frame img {
+.profile-photo img {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
+  object-position: center;
   background: var(--soft);
-}
-
-.profile-frame p {
-  margin: 13px 0 0;
-  color: var(--muted);
-  font-size: 0.64rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
+  border: 1px solid rgba(7, 24, 47, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(7, 24, 47, 0.08);
 }
 
 .eyebrow,
@@ -273,7 +245,7 @@ button {
 .intro-copy h1 {
   margin: 0;
   color: var(--navy);
-  font-size: clamp(2.8rem, 6.2vw, 5.2rem);
+  font-size: clamp(2.7rem, 5.6vw, 5rem);
   line-height: 0.96;
   letter-spacing: -0.055em;
 }
@@ -303,6 +275,8 @@ button {
   margin: 24px 0 0;
   color: var(--muted);
   font-size: 1.04rem;
+  text-wrap: pretty;
+  word-break: keep-all;
 }
 
 .intro-actions,
@@ -1250,8 +1224,12 @@ button {
   }
 
   .intro-grid {
-    grid-template-columns: 230px minmax(0, 1fr);
-    gap: 45px;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 48px;
+  }
+
+  .profile-photo {
+    max-width: 220px;
   }
 
   .section-heading,
@@ -1366,13 +1344,16 @@ button {
   }
 
   .intro-grid {
-    grid-template-columns: 180px minmax(0, 1fr);
-    gap: 34px;
-    min-height: 480px;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    min-height: auto;
+    padding-block: 56px;
   }
 
-  .intro-copy h1 {
-    font-size: clamp(2.7rem, 9vw, 4.8rem);
+  .profile-photo {
+    width: min(220px, 50vw);
+    max-width: none;
+    justify-self: center;
   }
 
   .about-grid {
@@ -1421,28 +1402,28 @@ button {
     font-size: 15px;
   }
 
-  .intro-accent {
-    width: 7px;
-    min-width: 7px;
-  }
-
   .intro-grid {
-    grid-template-columns: 1fr;
-    gap: 36px;
-    padding-block: 54px 64px;
+    gap: 32px;
+    padding-block: 48px 56px;
   }
 
-  .profile-frame {
-    width: min(64vw, 250px);
-    margin-inline: auto;
+  .profile-photo {
+    width: min(170px, 48vw);
   }
 
   .intro-copy {
-    text-align: left;
+    text-align: center;
   }
 
-  .intro-copy h1 {
-    font-size: clamp(2.75rem, 15vw, 4.3rem);
+  .academic-lines {
+    padding: 18px 0 0;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .intro-description {
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .intro-actions,
