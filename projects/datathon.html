@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SSU Datathon 2025 | Minho Song</title>
-  <meta name="description" content="62,199건의 공학 논문을 활용한 반도체 기술 트렌드 분석 프로젝트">
+  <meta name="description" content="62,199편 공학 논문에서 반도체·공정 연구를 분류하고 첨단 패키징 트렌드를 분석한 SSU Datathon 사례 연구">
   <meta name="theme-color" content="#07182f">
   <link rel="icon" href="../assets/images/profile/profile.png">
   <link rel="stylesheet" href="../assets/css/style.css">
@@ -15,62 +15,95 @@
   <header class="site-header">
     <nav class="nav-shell" aria-label="프로젝트 탐색">
       <a class="brand" href="/#top" aria-label="메인 포트폴리오로 이동"><span class="brand-text">MINHO SONG</span></a>
-      <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false"><span class="menu-label">MENU</span><span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span></button>
-      <ul class="nav-links" id="primary-nav"><li><a href="#overview">OVERVIEW</a></li><li><a href="#method">METHOD</a></li><li><a href="#results">RESULTS</a></li><li><a href="#resources">FILES</a></li></ul>
+      <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+        <span class="menu-label">MENU</span><span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
+      <ul class="nav-links" id="primary-nav">
+        <li><a href="#overview">OVERVIEW</a></li>
+        <li><a href="#workflow">WORKFLOW</a></li>
+        <li><a href="#results">RESULTS</a></li>
+        <li><a href="#contribution">CONTRIBUTION</a></li>
+        <li><a href="#resources">FILES</a></li>
+      </ul>
     </nav>
   </header>
 
   <main class="detail-main" id="main-content">
     <section class="detail-hero" aria-labelledby="project-title">
       <div class="page-width">
-        <p class="detail-breadcrumb">DATA ANALYSIS · SEMICONDUCTOR TECHNOLOGY</p>
+        <p class="detail-breadcrumb">DATA ANALYSIS · SEMICONDUCTOR TECHNOLOGY TRENDS</p>
         <h1 id="project-title">SSU Datathon 2025</h1>
-        <p class="detail-subtitle">Semiconductor Technology Trend Analysis</p>
+        <p class="detail-subtitle">From broad paper classification to focused process-domain analysis</p>
         <div class="detail-intro-grid">
-          <p class="detail-lead">62,199건의 공학 논문에서 반도체 관련 문헌을 분류하고, false positive를 직접 검증한 뒤 Photolithography와 Advanced Packaging 중심으로 분석 전략을 전환한 팀 프로젝트입니다.</p>
+          <p class="detail-lead">공학 논문 메타데이터를 반도체와 공정 영역으로 단계적으로 분류하고, 초기 분류의 false positive를 확인한 뒤 포토리소그래피와 첨단 패키징으로 분석 범위를 재설계한 4인 팀 프로젝트입니다. 저는 팀 리더이자 공정팀으로 첨단 패키징 분석을 맡았습니다.</p>
           <dl class="detail-meta">
-            <div><dt>PERIOD</dt><dd>2025.12 — 2026.01</dd></div>
-            <div><dt>STATUS</dt><dd>Completed · Team Project</dd></div>
-            <div><dt>ROLE</dt><dd>Team Leader · Process Team · Advanced Packaging</dd></div>
-            <div><dt>TOOLS</dt><dd>Python, pandas, Jupyter, regular expressions</dd></div>
+            <div><dt>PERIOD</dt><dd>2025.12–2026.01</dd></div>
+            <div><dt>TEAM</dt><dd>4 members</dd></div>
+            <div><dt>ROLE</dt><dd>Team Leader · Process Team</dd></div>
+            <div><dt>FOCUS</dt><dd>Advanced Packaging · Classification QA</dd></div>
           </dl>
         </div>
-        <div class="detail-visual contain"><img src="../assets/images/projects/datathon/final-trend.png" alt="SSU Datathon 반도체 기술 트렌드 분석 최종 도표"></div>
       </div>
     </section>
 
     <section class="detail-section" id="overview" aria-labelledby="overview-title">
       <div class="page-width">
-        <div class="detail-section-heading"><p class="section-index">01 / OVERVIEW</p><h2 id="overview-title">From a large corpus to defensible categories.</h2></div>
+        <div class="detail-section-heading"><p class="section-index">01 / OVERVIEW</p><h2 id="overview-title">A funnel, not a single filter.</h2></div>
         <div class="detail-copy">
-          <p>전체 62,199건의 공학 논문 중 17,413건을 반도체 관련 문헌으로 분류했고, 공정 관련 키워드로 4,000건 이상을 추렸습니다. 단순 키워드 집계가 기술 트렌드를 왜곡할 수 있다는 점을 검증하면서 분류 체계를 재설계했습니다.</p>
+          <p>신소재공학 전공 2명과 전기공학 전공 2명이 공정팀·회로팀으로 나뉘어 반도체 연구 트렌드를 분석했습니다. 논문 제목, 영문 제목, 키워드, 영문 초록을 결합한 텍스트에서 반도체 관련 문헌을 먼저 찾고, 다시 공정 관련 문헌을 좁힌 뒤 세부 분야를 분석했습니다.</p>
           <div class="metric-grid">
-            <article class="metric-card"><h3>62,199</h3><p>Engineering papers</p></article>
+            <article class="metric-card"><h3>62,199</h3><p>Total engineering papers</p></article>
             <article class="metric-card"><h3>17,413</h3><p>Semiconductor-related papers</p></article>
-            <article class="metric-card"><h3>4,000+</h3><p>Process-related papers</p></article>
+            <article class="metric-card"><h3>4,000+</h3><p>Process-related candidates</p></article>
+          </div>
+          <p class="source-note">위 수치는 저장소 README와 최종 발표자료에 동일하게 기록된 분류 단계별 규모입니다. 최종 세부 데이터 파일은 packaging 102행, photolithography 112행으로 저장소에 공개되어 있습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="problem" aria-labelledby="problem-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">02 / PROBLEM</p><h2 id="problem-title">Keywords created false confidence.</h2></div>
+        <div class="detail-copy">
+          <p>초기에는 8개 반도체 공정 범주에 폭넓은 키워드를 적용했습니다. 그러나 <em>test</em>, <em>inspect</em>, <em>check</em>처럼 여러 공학 분야에서 흔히 쓰이는 단어가 포함되면서 실제 반도체 공정 문헌이 아닌 논문까지 분류되는 false positive가 발생했습니다.</p>
+          <div class="detail-grid">
+            <article class="analysis-card"><span>INITIAL APPROACH</span><h3>Eight broad process categories</h3><p>범용 키워드로 넓게 수집했지만 분류 수치가 실제 도메인 문헌을 과대평가했습니다.</p></article>
+            <article class="analysis-card"><span>STRATEGY PIVOT</span><h3>Two domain-specific tracks</h3><p>결과 검수 후 Photolithography와 Advanced Packaging으로 범위를 줄이고 전문 키워드 중심으로 재분류했습니다.</p></article>
+          </div>
+          <div class="detail-callout"><strong>핵심 결과:</strong> false positive를 발견한 뒤 분류 전략을 변경했다는 과정 자체가 저장소와 발표자료에서 명시된 검증 결과입니다.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="workflow" aria-labelledby="workflow-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">03 / WORKFLOW</p><h2 id="workflow-title">Classification and validation workflow.</h2></div>
+        <div class="detail-copy">
+          <ol class="workflow workflow-four">
+            <li><h3>Unify text fields</h3><p><code>NODE_TTLE</code>, <code>NODE_TTLE_EN</code>, <code>KYWD</code>, <code>ABST_EN</code>을 결합해 검색 텍스트를 구성했습니다.</p></li>
+            <li><h3>Semiconductor filter</h3><p>전체 62,199편에서 반도체 관련 17,413편을 1차로 분류했습니다.</p></li>
+            <li><h3>Process filter &amp; QA</h3><p>4,000편 이상 후보를 얻은 뒤 샘플과 키워드 빈도를 확인해 false positive를 진단했습니다.</p></li>
+            <li><h3>Focused analysis</h3><p>포토리소그래피와 첨단 패키징 데이터로 좁혀 연도별 추세와 핵심 기술어를 해석했습니다.</p></li>
+          </ol>
+          <div class="image-gallery">
+            <article class="image-card contain"><img src="../assets/images/projects/datathon/dataset-filtering-funnel.png" alt="62,199편에서 반도체와 공정 논문으로 좁히는 데이터 필터링 단계"><h3>Filtering funnel</h3><p>전체 공학 논문에서 반도체·공정 후보로 좁힌 단계입니다.</p></article>
+            <article class="image-card contain"><img src="../assets/images/projects/datathon/filtering-strategy-pivot.png" alt="범용 키워드 false positive 발견 후 분류 전략을 변경한 도식"><h3>Strategy pivot</h3><p>오분류 검수 후 전문 키워드 중심으로 범위를 재설계했습니다.</p></article>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="detail-section" id="method" aria-labelledby="method-title">
+    <section class="detail-section" id="analysis" aria-labelledby="analysis-title">
       <div class="page-width">
-        <div class="detail-section-heading"><p class="section-index">02 / METHOD</p><h2 id="method-title">Validation before interpretation.</h2></div>
+        <div class="detail-section-heading"><p class="section-index">04 / ANALYSIS</p><h2 id="analysis-title">Advanced packaging lens.</h2></div>
         <div class="detail-copy">
-          <ol class="workflow">
-            <li><h3>Filter</h3><p>Python, pandas, 정규표현식으로 공학 → 반도체 → 공정 관련 문헌을 단계적으로 분류했습니다.</p></li>
-            <li><h3>Validate</h3><p>‘test’ 같은 일반 단어가 포함된 false positive를 확인해 단순 빈도 해석의 한계를 검증했습니다.</p></li>
-            <li><h3>Pivot</h3><p>분석 범위를 Photolithography와 Advanced Packaging으로 좁혀 기술 흐름을 재분석했습니다.</p></li>
-          </ol>
-          <h3>My contribution</h3>
-          <ul class="contribution-list">
-            <li>팀장으로 공정·회로 팀의 역할, 주차별 목표, 최종 결론 통합을 조정했습니다.</li>
-            <li>Process Team에서 Advanced Packaging 분류와 트렌드 분석을 담당했습니다.</li>
-            <li>false-positive 검증 결과를 근거로 분류 전략 전환을 제안하고 최종 발표에 반영했습니다.</li>
-          </ul>
+          <p>첨단 패키징 분석에서는 TSV, TGV, interposer, bump, chiplet, hybrid bonding, HBM, 3D stacking, warpage, reliability, fan-out을 주요 키워드로 사용했습니다. 연도별 변화와 논문 문맥을 함께 검토해 수직 집적, chiplet architecture, hybrid bonding·HBM, 열·기계 신뢰성, 검사 자동화를 핵심 흐름으로 정리했습니다.</p>
           <div class="image-gallery">
-            <article class="image-card contain"><img src="../assets/images/projects/datathon/dataset-filtering-funnel.png" alt="62,199건에서 반도체와 공정 논문을 추린 데이터 필터링 도표"><h3>Dataset filtering funnel</h3><p>전체 공학 논문에서 분석 대상이 되는 문헌을 단계적으로 추렸습니다.</p></article>
-            <article class="image-card contain"><img src="../assets/images/projects/datathon/filtering-strategy-pivot.png" alt="false positive 확인 후 분류 전략을 전환한 과정"><h3>Strategy pivot</h3><p>false positive를 확인한 뒤 분석 범위를 구체 기술로 좁혔습니다.</p></article>
+            <article class="image-card contain"><img src="../assets/images/projects/datathon/packaging-trend.png" alt="2021년부터 2025년까지 첨단 패키징 연구 추세 그래프"><h3>Packaging trend, 2021–2025</h3><p>공개된 filtered data를 바탕으로 정리한 연도별 경향입니다.</p></article>
+            <article class="image-card contain"><img src="../assets/images/projects/datathon/final-trend.png" alt="공정팀과 회로팀의 반도체 기술 트렌드 종합 결과"><h3>Integrated trend</h3><p>공정과 회로·시스템 관점의 결과를 최종 발표에서 연결했습니다.</p></article>
+          </div>
+          <div class="tag-list" aria-label="분석 키워드">
+            <span>TSV / TGV</span><span>Interposer</span><span>Chiplet</span><span>Hybrid Bonding</span><span>HBM</span><span>Warpage</span><span>Reliability</span><span>Fan-out</span>
           </div>
         </div>
       </div>
@@ -78,17 +111,45 @@
 
     <section class="detail-section" id="results" aria-labelledby="results-title">
       <div class="page-width">
-        <div class="detail-section-heading"><p class="section-index">03 / RESULTS</p><h2 id="results-title">A more reliable trend narrative.</h2></div>
+        <div class="detail-section-heading"><p class="section-index">05 / RESULTS</p><h2 id="results-title">The result was a better analysis frame.</h2></div>
         <div class="detail-copy">
-          <p>검증되지 않은 키워드 빈도를 그대로 결론으로 사용하지 않고, Photolithography와 Advanced Packaging으로 범위를 좁힌 분석을 최종 발표에 반영했습니다. 이 과정 자체가 프로젝트의 핵심 의사결정이었습니다.</p>
-          <div class="image-gallery">
-            <article class="image-card contain"><img src="../assets/images/projects/datathon/packaging-trend.png" alt="Advanced Packaging 연구 트렌드 분석 그래프"><h3>Advanced Packaging trend</h3><p>담당 기술 영역의 연도별 연구 흐름을 정리했습니다.</p></article>
-            <article class="image-card contain"><img src="../assets/images/projects/datathon/final-trend.png" alt="Photolithography와 Advanced Packaging 최종 트렌드 결론"><h3>Final interpretation</h3><p>검증된 범위에서 공정 기술 흐름을 통합했습니다.</p></article>
+          <div class="result-summary">
+            <h3>Verified outcomes</h3>
+            <dl>
+              <div><dt>Classification</dt><dd>Broad process filter → two focused domains</dd></div>
+              <div><dt>Process tracks</dt><dd>Photolithography · Advanced Packaging</dd></div>
+              <div><dt>Packaging data</dt><dd>102 filtered records</dd></div>
+              <div><dt>Photo data</dt><dd>112 filtered records</dd></div>
+            </dl>
           </div>
-          <h3>Technical interpretation &amp; lessons</h3>
+          <p>분석의 중요한 성과는 처음부터 완벽한 분류율을 주장한 것이 아니라, false positive를 데이터 검수로 발견하고 질문·키워드·범위를 다시 설계한 점입니다. 최종 발표는 advanced packaging을 반도체 scaling 이후의 수직 집적·시스템 통합 흐름과 연결했습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="contribution" aria-labelledby="contribution-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">06 / CONTRIBUTION</p><h2 id="contribution-title">My contribution.</h2></div>
+        <div class="detail-copy">
+          <ul class="contribution-list">
+            <li>팀 리더로 공정팀·회로팀의 역할, 분석 일정, 주간 산출물과 최종 발표 통합을 조율했습니다.</li>
+            <li>공정팀에서 Advanced Packaging 분야를 맡아 전문 키워드 정의, filtered data 검토, 연도별 추세 해석을 수행했습니다.</li>
+            <li>false positive 사례를 확인하고 광범위한 8개 공정 분류에서 Photolithography·Advanced Packaging 중심 전략으로 변경하는 데 참여했습니다.</li>
+            <li>공정팀 결과를 회로팀의 Post-Moore 분석과 연결해 최종 반도체 기술 트렌드 발표 흐름을 구성했습니다.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="lessons" aria-labelledby="lessons-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">07 / LIMITS</p><h2 id="lessons-title">Limitations &amp; lessons.</h2></div>
+        <div class="detail-copy">
           <ul class="limitations">
-            <li>키워드 일치 여부만으로 논문의 실제 기술 주제를 완전히 판별할 수 없습니다.</li>
-            <li>빈도 증가를 산업 성과나 기술 우위로 직접 해석하지 않고, 분류 규칙과 false positive를 함께 검토해야 합니다.</li>
+            <li>키워드 기반 분류는 문맥을 완전히 이해하지 못하므로 false positive와 false negative가 모두 발생할 수 있습니다.</li>
+            <li>연도별 논문 수는 연구 관심의 proxy이며 산업 생산량, 시장 규모, 기술 성숙도를 직접 의미하지 않습니다.</li>
+            <li>저장소 노트북에는 Google Drive 경로 등 원 실행 환경 의존성이 남아 있어 README의 execution note를 확인해야 합니다.</li>
+            <li>이 페이지는 노트북 코드를 재게시하지 않고, 상세 재현 정보는 저장소의 notebook·CSV·weekly log로 연결합니다.</li>
           </ul>
         </div>
       </div>
@@ -96,14 +157,16 @@
 
     <section class="detail-section" id="resources" aria-labelledby="resources-title">
       <div class="page-width">
-        <div class="detail-section-heading"><p class="section-index">04 / FILES</p><h2 id="resources-title">Presentation, notebooks, and data.</h2></div>
+        <div class="detail-section-heading"><p class="section-index">08 / FILES</p><h2 id="resources-title">Files &amp; resources.</h2></div>
         <div class="detail-copy">
           <div class="resource-grid">
-            <article class="resource-card"><h3>GitHub repository</h3><p>README, notebooks, filtered data, weekly reports</p><a class="text-link" href="https://github.com/minhosong-mse/Datathon" target="_blank" rel="noopener noreferrer">VIEW GITHUB REPOSITORY ↗</a></article>
-            <article class="resource-card"><h3>Final presentation</h3><p>분류 과정과 반도체 기술 트렌드 결론</p><a class="text-link" href="https://github.com/minhosong-mse/Datathon/blob/main/docs/final-presentation.pdf" target="_blank" rel="noopener noreferrer">VIEW PRESENTATION PDF ↗</a></article>
-            <article class="resource-card"><h3>Process-team notebook</h3><p>공정 분류 및 트렌드 분석 코드</p><a class="text-link" href="https://github.com/minhosong-mse/Datathon/blob/main/notebooks/process-team-analysis.ipynb" target="_blank" rel="noopener noreferrer">VIEW NOTEBOOK ↗</a></article>
-            <article class="resource-card"><h3>Weekly work record</h3><p>주차별 분석 과정과 의사결정은 저장소에서 확인할 수 있습니다.</p><a class="text-link" href="https://github.com/minhosong-mse/Datathon/tree/main" target="_blank" rel="noopener noreferrer">VIEW PROJECT FILES ↗</a></article>
+            <article class="resource-card"><h3>GitHub repository</h3><p>전체 분석 문서, notebook, filtered CSV, 주간 기록</p><a class="text-link" href="https://github.com/minhosong-mse/Datathon" target="_blank" rel="noopener noreferrer">VIEW REPOSITORY ↗</a></article>
+            <article class="resource-card"><h3>Final presentation</h3><p>26쪽 문제 정의, 팀 구성, 공정·회로 분석, 종합 결론</p><a class="text-link" href="https://github.com/minhosong-mse/Datathon/blob/main/docs/final-presentation.pdf" target="_blank" rel="noopener noreferrer">VIEW PRESENTATION ↗</a></article>
+            <article class="resource-card"><h3>Process notebook</h3><p>반도체·공정 필터와 세부 분야 분석이 남은 Jupyter notebook</p><a class="text-link" href="https://github.com/minhosong-mse/Datathon/blob/main/notebooks/process-team-analysis.ipynb" target="_blank" rel="noopener noreferrer">VIEW NOTEBOOK ↗</a></article>
+            <article class="resource-card"><h3>Filtered datasets</h3><p>Advanced Packaging 102행 · Photolithography 112행 CSV</p><a class="text-link" href="https://github.com/minhosong-mse/Datathon/tree/main/data" target="_blank" rel="noopener noreferrer">VIEW DATA ↗</a></article>
+            <article class="resource-card"><h3>Weekly logs</h3><p>주제 정의부터 최종 insight까지 week 01–05 PDF</p><a class="text-link" href="https://github.com/minhosong-mse/Datathon/tree/main/docs/weekly" target="_blank" rel="noopener noreferrer">VIEW WEEKLY LOGS ↗</a></article>
           </div>
+          <p class="source-status"><strong>Code display:</strong> 데이터톤은 저장소 notebook이 상세 기술 문서 역할을 하므로 이 페이지에 별도 코드 뷰어를 두지 않았습니다.</p>
         </div>
       </div>
     </section>
