@@ -511,10 +511,20 @@ button {
 .detail-visual.contain img,
 .image-card.contain img {
   object-fit: contain;
+  object-position: center;
+}
+
+.project-image-contain {
+  padding: clamp(14px, 2vw, 24px);
+  background: var(--white);
 }
 
 .project-card:hover .project-image img {
   transform: scale(1.015);
+}
+
+.project-card:hover .project-image-contain img {
+  transform: none;
 }
 
 .project-content {
@@ -1007,6 +1017,10 @@ button {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
   margin-top: 30px;
+}
+
+.workflow-four {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .workflow li {
