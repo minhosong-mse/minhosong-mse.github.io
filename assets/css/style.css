@@ -105,23 +105,17 @@ button {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
   min-width: max-content;
+  min-height: 38px;
+  color: var(--white);
   font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 0.14em;
+  transition: color 160ms ease;
 }
 
-.brand-mark {
-  display: grid;
-  width: 38px;
-  height: 38px;
-  place-items: center;
-  color: var(--navy);
-  background: var(--cyan);
-  border-radius: 3px;
-  font-size: 0.75rem;
-  letter-spacing: 0.04em;
+.brand:hover {
+  color: #7be1eb;
 }
 
 .nav-links {
@@ -1312,10 +1306,6 @@ button {
   .page-width,
   .nav-shell {
     width: min(calc(100% - 34px), var(--page));
-  }
-
-  .brand-text {
-    display: none;
   }
 
   .js .menu-toggle {
