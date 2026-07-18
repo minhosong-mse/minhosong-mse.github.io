@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digital Logic | Minho Song</title>
+  <meta name="description" content="Vivado와 Verilog로 구현한 보행자 요청·대기 LED 교통신호 제어기">
+  <meta name="theme-color" content="#07182f">
+  <link rel="icon" href="../assets/images/profile/profile.png">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+  <header class="site-header" id="top">
+    <nav class="nav-shell" aria-label="프로젝트 탐색">
+      <a class="detail-back" href="../index.html#projects"><span aria-hidden="true">←</span> BACK TO PORTFOLIO</a>
+      <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false"><span class="menu-label">MENU</span><span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span></button>
+      <ul class="nav-links" id="primary-nav"><li><a href="#overview">OVERVIEW</a></li><li><a href="#method">METHOD</a></li><li><a href="#results">RESULTS</a></li><li><a href="#resources">FILES</a></li></ul>
+    </nav>
+  </header>
+
+  <main class="detail-main" id="main-content">
+    <section class="detail-hero" aria-labelledby="project-title">
+      <div class="page-width">
+        <p class="detail-breadcrumb">DIGITAL DESIGN · VERILOG FSM</p>
+        <h1 id="project-title">Digital Logic</h1>
+        <p class="detail-subtitle">Traffic Signal Controller Enhancement</p>
+        <div class="detail-intro-grid">
+          <p class="detail-lead">기존 교통신호 제어 FSM에 보행자 요청 입력과 대기 LED 피드백을 추가하고, 상태를 늘리지 않은 채 기존 전환 시퀀스를 재사용한 설계 프로젝트입니다.</p>
+          <dl class="detail-meta">
+            <div><dt>PERIOD</dt><dd>2026-1</dd></div>
+            <div><dt>STATUS</dt><dd>Completed</dd></div>
+            <div><dt>ROLE</dt><dd>Logic design &amp; simulation</dd></div>
+            <div><dt>TOOLS</dt><dd>Vivado, Verilog, FSM simulation</dd></div>
+          </dl>
+        </div>
+        <div class="detail-visual contain"><img src="../assets/images/projects/digital-logic/state-machine.png" alt="교통신호 제어기의 FSM 상태천이도"></div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="overview" aria-labelledby="overview-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">01 / OVERVIEW</p><h2 id="overview-title">Pedestrian input without extra states.</h2></div>
+        <div class="detail-copy">
+          <p>기존 차량 감지 기반 FSM에 보행자 요청 기능을 추가하면서 상태 수와 기본 신호 순서는 유지하는 것이 설계 방향이었습니다. 보행자 버튼 요청은 차량 입력과 OR 조건으로 결합해 같은 신호 전환 시퀀스를 사용하도록 구성했습니다.</p>
+          <div class="detail-callout"><strong>Feedback behavior:</strong> 요청이 접수된 뒤 실제 보행 신호 전환을 기다리는 동안 대기 LED가 상태를 표시합니다.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="method" aria-labelledby="method-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">02 / METHOD</p><h2 id="method-title">Reuse the verified transition path.</h2></div>
+        <div class="detail-copy">
+          <ol class="workflow">
+            <li><h3>FSM review</h3><p>기존 상태와 차량 입력에 따른 전환 순서를 분석했습니다.</p></li>
+            <li><h3>Input integration</h3><p>보행자 요청을 기존 차량 입력과 OR 조건으로 결합했습니다.</p></li>
+            <li><h3>Simulation check</h3><p>상태 추가 없이 동일 시퀀스가 실행되고 대기 LED가 동작하는지 검증했습니다.</p></li>
+          </ol>
+          <h3>My contribution</h3>
+          <ul class="contribution-list">
+            <li>보행자 요청 입력과 대기 LED 출력 논리를 Verilog에 통합했습니다.</li>
+            <li>기존 FSM 상태를 유지하는 조건에서 입력·출력 동작을 설계했습니다.</li>
+            <li>Vivado simulation으로 차량 입력과 보행자 요청의 전환 순서를 비교했습니다.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="results" aria-labelledby="results-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">03 / RESULTS</p><h2 id="results-title">Simulation-verified behavior.</h2></div>
+        <div class="detail-copy">
+          <p>차량 입력과 보행자 요청이 동일한 신호 전환 시퀀스를 실행하며, 보행자 요청 후 대기 상태가 LED로 표시되는 동작을 시뮬레이션으로 확인했습니다.</p>
+          <div class="image-gallery">
+            <article class="image-card contain"><img src="../assets/images/projects/digital-logic/pedestrian-button.png" alt="보행자 요청 입력의 Vivado 시뮬레이션 결과"><h3>Pedestrian request</h3><p>버튼 요청이 기존 전환 조건에 통합된 동작입니다.</p></article>
+            <article class="image-card contain"><img src="../assets/images/projects/digital-logic/waiting-led.png" alt="보행자 대기 LED 피드백의 시뮬레이션 결과"><h3>Waiting LED feedback</h3><p>요청 접수 후 신호 전환 전까지의 대기 표시를 검증했습니다.</p></article>
+          </div>
+          <h3>Technical interpretation &amp; lessons</h3>
+          <ul class="limitations">
+            <li>기존 상태 전환 경로를 재사용해 상태 수 증가를 피하고 검증 범위를 명확하게 유지했습니다.</li>
+            <li>결과는 Vivado 시뮬레이션 검증이며 실제 보드의 입력 bounce나 물리 신호 timing 검증까지 포함하지 않습니다.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="resources" aria-labelledby="resources-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">04 / FILES</p><h2 id="resources-title">Design documentation.</h2></div>
+        <div class="detail-copy">
+          <div class="resource-grid">
+            <article class="resource-card"><h3>GitHub repository</h3><p>README, 설계 자료, 시뮬레이션 이미지</p><a class="text-link" href="https://github.com/minhosong-mse/Digital_Logic" target="_blank" rel="noopener noreferrer">VIEW GITHUB REPOSITORY ↗</a></article>
+            <article class="resource-card"><h3>Final report</h3><p>FSM 확장 설계와 시뮬레이션 결과 보고서</p><a class="text-link" href="https://github.com/minhosong-mse/Digital_Logic/blob/main/%EB%94%94%EC%A7%80%ED%84%B8%EB%85%BC%EB%A6%AC%ED%9A%8C%EB%A1%9C_%EA%B8%B0%EB%A7%90%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B2%B0%EA%B3%BC%EB%B3%B4%EA%B3%A0%EC%84%9C_%EC%86%A1%EB%AF%BC%ED%98%B8.pdf" target="_blank" rel="noopener noreferrer">VIEW FINAL REPORT ↗</a></article>
+            <article class="resource-card"><h3>Presentation</h3><p>프로젝트 설계와 검증 발표 자료</p><a class="text-link" href="https://github.com/minhosong-mse/Digital_Logic/blob/main/%EB%94%94%EC%A7%80%ED%84%B8%EB%85%BC%EB%A6%AC%ED%9A%8C%EB%A1%9C_%EA%B8%B0%EB%A7%90%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8.pdf" target="_blank" rel="noopener noreferrer">VIEW PRESENTATION PDF ↗</a></article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="project-next"><div class="page-width"><p>Return to selected engineering projects</p><a href="../index.html#projects">BACK TO PROJECTS →</a></div></aside>
+  <footer class="site-footer"><div class="page-width"><p>© <span id="current-year">2026</span> MINHO SONG</p><a href="../index.html#projects">BACK TO PORTFOLIO ↑</a></div></footer>
+</body>
+</html>

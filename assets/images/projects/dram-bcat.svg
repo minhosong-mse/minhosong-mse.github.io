@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="title desc">
+  <title id="title">20 nanometer class DRAM BCAT leakage optimization</title>
+  <desc id="desc">Buried channel array transistor trench with electric field and leakage path.</desc>
+  <rect width="800" height="420" fill="#07182f"/>
+  <g opacity=".15" stroke="#12b8bd"><path d="M0 60h800M0 120h800M0 180h800M0 240h800M0 300h800M0 360h800"/><path d="M100 0v420M200 0v420M300 0v420M400 0v420M500 0v420M600 0v420M700 0v420"/></g>
+  <path d="M80 92h640v272H80z" fill="#153653" stroke="#7890a5"/>
+  <path d="M270 92v175c0 56 26 82 65 82s65-26 65-82V92" fill="#07182f" stroke="#edf3f5" stroke-width="4"/>
+  <path d="M400 92v175c0 56 26 82 65 82s65-26 65-82V92" fill="#07182f" stroke="#12b8bd" stroke-width="5"/>
+  <path d="M199 105h71v62h-71zm331 0h71v62h-71z" fill="#12b8bd" opacity=".52"/>
+  <path d="M461 258c54 10 83 38 110 86" fill="none" stroke="#12b8bd" stroke-width="5" stroke-dasharray="10 8"/>
+  <path d="M561 332l13 18 1-23" fill="#12b8bd"/>
+  <text x="590" y="300" fill="#12b8bd" font-family="monospace" font-size="14">GIDL</text>
+  <text x="46" y="52" fill="#12b8bd" font-family="monospace" font-size="13">20 nm DRAM / BCAT</text>
+  <text x="616" y="388" fill="#9eb0bf" font-family="monospace" font-size="11">E-FIELD · BTBT</text>
+</svg>

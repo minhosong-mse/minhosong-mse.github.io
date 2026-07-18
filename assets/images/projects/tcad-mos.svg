@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="title desc">
+  <title id="title">NMOS and PMOS process optimization</title>
+  <desc id="desc">Semiconductor device cross section with source, gate, drain and current curves.</desc>
+  <rect width="800" height="420" fill="#07182f"/>
+  <g opacity=".16" stroke="#12b8bd"><path d="M0 70h800M0 140h800M0 210h800M0 280h800M0 350h800"/><path d="M80 0v420M160 0v420M240 0v420M320 0v420M400 0v420M480 0v420M560 0v420M640 0v420M720 0v420"/></g>
+  <path d="M80 315h640v52H80z" fill="#153653" stroke="#6b8599"/>
+  <path d="M130 246h170v69H130zm370 0h170v69H500z" fill="#12b8bd" opacity=".55"/>
+  <path d="M314 213h172v33H314z" fill="#edf3f5"/>
+  <path d="M330 136h140v77H330z" fill="#153653" stroke="#12b8bd" stroke-width="3"/>
+  <text x="400" y="180" fill="#12b8bd" font-family="monospace" font-size="18" text-anchor="middle">GATE</text>
+  <text x="215" y="287" fill="#fff" font-family="monospace" font-size="16" text-anchor="middle">SOURCE</text>
+  <text x="585" y="287" fill="#fff" font-family="monospace" font-size="16" text-anchor="middle">DRAIN</text>
+  <path d="M92 112c110-9 154 3 221 48 58 40 105 55 189 47 73-7 120-40 205-116" fill="none" stroke="#12b8bd" stroke-width="4"/>
+  <path d="M92 134c111-4 174 16 235 57 58 38 106 48 177 40 84-10 127-49 203-118" fill="none" stroke="#fff" stroke-width="2" opacity=".65"/>
+  <circle cx="313" cy="160" r="6" fill="#12b8bd"/><circle cx="502" cy="207" r="6" fill="#12b8bd"/>
+  <text x="46" y="52" fill="#12b8bd" font-family="monospace" font-size="13">TCAD / PROCESS → DEVICE</text>
+</svg>

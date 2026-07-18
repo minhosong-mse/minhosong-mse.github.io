@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semiconductor Process Integration | Minho Song</title>
+  <meta name="description" content="Sentaurus TCAD 기반 NMOS 최적화와 PMOS 공정 변환 프로젝트">
+  <meta name="theme-color" content="#07182f">
+  <link rel="icon" href="../assets/images/profile/profile.png">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+  <header class="site-header" id="top">
+    <nav class="nav-shell" aria-label="프로젝트 탐색">
+      <a class="detail-back" href="../index.html#projects"><span aria-hidden="true">←</span> BACK TO PORTFOLIO</a>
+      <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+        <span class="menu-label">MENU</span><span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
+      <ul class="nav-links" id="primary-nav">
+        <li><a href="#overview">OVERVIEW</a></li>
+        <li><a href="#method">METHOD</a></li>
+        <li><a href="#results">RESULTS</a></li>
+        <li><a href="#resources">FILES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="detail-main" id="main-content">
+    <section class="detail-hero" aria-labelledby="project-title">
+      <div class="page-width">
+        <p class="detail-breadcrumb">SEMICONDUCTOR PROCESS · SENTARUS TCAD</p>
+        <h1 id="project-title">Semiconductor Process Integration</h1>
+        <p class="detail-subtitle">NMOS Optimization &amp; PMOS Process Conversion</p>
+        <div class="detail-intro-grid">
+          <p class="detail-lead">기준 NMOS 공정의 성능을 최적화하고 동일 공정 흐름을 PMOS로 변환한 뒤, 5개 공정 변수와 전기적 특성의 관계를 비교한 개인 프로젝트입니다.</p>
+          <dl class="detail-meta">
+            <div><dt>PERIOD</dt><dd>2026-1</dd></div>
+            <div><dt>STATUS</dt><dd>Completed · Individual Project</dd></div>
+            <div><dt>ROLE</dt><dd>Process design, simulation, analysis</dd></div>
+            <div><dt>TOOLS</dt><dd>Sentaurus Workbench, Sprocess, Sdevice, Svisual</dd></div>
+          </dl>
+        </div>
+        <div class="detail-visual contain">
+          <img src="../assets/images/projects/semiconductor-process/nmos-optimization.png" alt="NMOS 공정 변수 최적화 결과 그래프">
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="overview" aria-labelledby="overview-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">01 / OVERVIEW</p><h2 id="overview-title">Problem definition.</h2></div>
+        <div class="detail-copy">
+          <p>공정 조건 변화가 Ion, Ioff, subthreshold swing과 같은 소자 지표에 미치는 영향을 Sentaurus TCAD로 추적했습니다. NMOS에서는 주어진 공정 구조 안에서 성능을 높이는 것이 목표였고, PMOS에서는 극성과 도핑 조건을 변환한 뒤 공정 변수 최적화를 다시 수행했습니다.</p>
+          <div class="detail-callout"><strong>검증된 성과:</strong> NMOS 최적화 결과로 교과목 내 콘테스트 공동 1위를 기록했습니다.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="method" aria-labelledby="method-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">02 / METHOD</p><h2 id="method-title">Process-to-device workflow.</h2></div>
+        <div class="detail-copy">
+          <ol class="workflow">
+            <li><h3>Baseline review</h3><p>기준 NMOS 공정 구조와 전기적 특성을 확인하고 비교 지표를 정의했습니다.</p></li>
+            <li><h3>Parameter analysis</h3><p>공정 변수를 단계적으로 변경하며 구조와 I–V 특성의 변화를 비교했습니다.</p></li>
+            <li><h3>PMOS conversion</h3><p>기준 공정을 PMOS로 변환하고 5개 공정 변수를 최적화했습니다.</p></li>
+          </ol>
+          <h3>My contribution</h3>
+          <ul class="contribution-list">
+            <li>Sentaurus Workbench에서 공정·소자 시뮬레이션 흐름을 구성했습니다.</li>
+            <li>Sprocess 구조와 Sdevice 결과를 연결해 변수별 영향과 trade-off를 분석했습니다.</li>
+            <li>NMOS와 PMOS 결과를 동일한 전기적 지표로 정리하고 기술 보고서를 작성했습니다.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="results" aria-labelledby="results-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">03 / RESULTS</p><h2 id="results-title">Verified electrical results.</h2></div>
+        <div class="detail-copy">
+          <div class="metric-grid">
+            <article class="metric-card"><h3>6.186 × 10¹¹</h3><p>Optimized NMOS Ion/Ioff</p></article>
+            <article class="metric-card"><h3>82.953 mV/dec</h3><p>Optimized NMOS SS</p></article>
+            <article class="metric-card"><h3>6.561 × 10¹¹</h3><p>Final PMOS Ion/Ioff</p></article>
+          </div>
+          <p>최종 PMOS 결과는 |Ion| 1.120 × 10⁻⁴ A/µm, |Ioff| 1.707 × 10⁻¹⁶ A/µm, SS 83.677 mV/dec, Vtgm −1.173 V였으며 설정한 3개 목표를 충족했습니다.</p>
+          <div class="image-gallery">
+            <article class="image-card contain"><img src="../assets/images/projects/semiconductor-process/nmos-contest-result.png" alt="NMOS 최적화 콘테스트 결과 화면"><h3>NMOS contest result</h3><p>교과목 내 공동 1위로 확인된 결과입니다.</p></article>
+            <article class="image-card contain"><img src="../assets/images/projects/semiconductor-process/pmos-process-structure.png" alt="Sentaurus로 생성한 PMOS 공정 구조"><h3>PMOS process structure</h3><p>극성과 도핑 조건을 변환한 공정 구조입니다.</p></article>
+            <article class="image-card contain"><img src="../assets/images/projects/semiconductor-process/pmos-optimization.png" alt="PMOS 공정 변수 최적화 결과 그래프"><h3>PMOS optimization</h3><p>5개 변수 분석 후의 전기적 특성입니다.</p></article>
+          </div>
+          <h3>Technical interpretation &amp; lessons</h3>
+          <ul class="limitations">
+            <li>단일 성능 지표를 최대화하기보다 Ion, Ioff, SS, Vtgm 사이의 trade-off를 함께 판단해야 했습니다.</li>
+            <li>시뮬레이션 결과는 사용한 모델과 경계조건에 의존하므로 실측 소자와의 절대적 일치를 의미하지 않습니다.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="resources" aria-labelledby="resources-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">04 / FILES</p><h2 id="resources-title">Technical documentation.</h2></div>
+        <div class="detail-copy">
+          <div class="resource-grid">
+            <article class="resource-card"><h3>GitHub repository</h3><p>프로젝트 README, 이미지, 원본 기술 자료</p><a class="text-link" href="https://github.com/minhosong-mse/Semiconductor_Process_mid" target="_blank" rel="noopener noreferrer">VIEW GITHUB REPOSITORY ↗</a></article>
+            <article class="resource-card"><h3>Project report</h3><p>공정 설계, 변수 분석, 전기적 결과를 정리한 보고서</p><a class="text-link" href="https://github.com/minhosong-mse/Semiconductor_Process_mid/blob/main/Project_Report.pdf" target="_blank" rel="noopener noreferrer">VIEW FINAL REPORT ↗</a></article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="project-next"><div class="page-width"><p>Next project · Automotive NMOS</p><a href="automotive-nmos.html">VIEW NEXT PROJECT →</a></div></aside>
+  <footer class="site-footer"><div class="page-width"><p>© <span id="current-year">2026</span> MINHO SONG</p><a href="../index.html#projects">BACK TO PORTFOLIO ↑</a></div></footer>
+</body>
+</html>
