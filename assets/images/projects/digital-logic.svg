@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="title desc">
+  <title id="title">Traffic signal finite state machine</title>
+  <desc id="desc">Five finite state machine nodes with vehicle and pedestrian inputs.</desc>
+  <rect width="800" height="420" fill="#07182f"/>
+  <g opacity=".14" stroke="#12b8bd"><path d="M0 70h800M0 140h800M0 210h800M0 280h800M0 350h800"/><path d="M100 0v420M200 0v420M300 0v420M400 0v420M500 0v420M600 0v420M700 0v420"/></g>
+  <g fill="#153653" stroke="#12b8bd" stroke-width="3">
+    <circle cx="130" cy="225" r="48"/><circle cx="265" cy="150" r="48"/><circle cx="400" cy="225" r="48"/><circle cx="535" cy="150" r="48"/><circle cx="670" cy="225" r="48"/>
+  </g>
+  <g fill="none" stroke="#edf3f5" stroke-width="3">
+    <path d="M169 197l53-29"/><path d="M307 168l51 29"/><path d="M442 197l51-29"/><path d="M577 168l51 29"/><path d="M666 275c-18 75-503 76-531 0"/>
+  </g>
+  <g fill="#12b8bd"><path d="M219 159l14 3-10 10z"/><path d="M354 190l13 9-16 2z"/><path d="M489 159l14 3-10 10z"/><path d="M624 190l13 9-16 2z"/></g>
+  <g fill="#fff" font-family="monospace" font-size="16" text-anchor="middle"><text x="130" y="231">S0</text><text x="265" y="156">S1</text><text x="400" y="231">S2</text><text x="535" y="156">S3</text><text x="670" y="231">S4</text></g>
+  <text x="46" y="52" fill="#12b8bd" font-family="monospace" font-size="13">VIVADO / VERILOG / FSM</text>
+  <text x="400" y="367" fill="#9eb0bf" font-family="monospace" font-size="12" text-anchor="middle">CAR_INPUT OR PEDESTRIAN_REQUEST</text>
+</svg>

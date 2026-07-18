@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="title desc">
+  <title id="title">Semiconductor paper data analysis</title>
+  <desc id="desc">Dataset filtering funnel from engineering papers to semiconductor process papers.</desc>
+  <rect width="800" height="420" fill="#07182f"/>
+  <g opacity=".14" stroke="#12b8bd"><path d="M0 70h800M0 140h800M0 210h800M0 280h800M0 350h800"/><path d="M100 0v420M200 0v420M300 0v420M400 0v420M500 0v420M600 0v420M700 0v420"/></g>
+  <path d="M124 102h552l-98 78H222z" fill="#153653" stroke="#7890a5"/>
+  <path d="M222 180h356l-78 75H300z" fill="#0d2b49" stroke="#12b8bd"/>
+  <path d="M300 255h200l-50 72H350z" fill="#12b8bd" opacity=".72"/>
+  <path d="M377 327h46v45h-46z" fill="#edf3f5"/>
+  <text x="400" y="81" fill="#12b8bd" font-family="monospace" font-size="13" text-anchor="middle">ENGINEERING PAPERS</text>
+  <text x="400" y="145" fill="#fff" font-family="monospace" font-size="22" text-anchor="middle">62,199</text>
+  <text x="400" y="221" fill="#fff" font-family="monospace" font-size="20" text-anchor="middle">17,413</text>
+  <text x="400" y="300" fill="#07182f" font-family="monospace" font-size="18" font-weight="bold" text-anchor="middle">4,000+</text>
+  <text x="46" y="52" fill="#12b8bd" font-family="monospace" font-size="13">PYTHON / PANDAS / CLASSIFICATION</text>
+</svg>

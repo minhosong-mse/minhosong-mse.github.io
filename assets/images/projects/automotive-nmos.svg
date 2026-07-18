@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="title desc">
+  <title id="title">Automotive NMOS high temperature optimization</title>
+  <desc id="desc">NMOS cross section with high temperature indicator and improved leakage curve.</desc>
+  <rect width="800" height="420" fill="#07182f"/>
+  <g opacity=".14" stroke="#12b8bd"><path d="M0 70h800M0 140h800M0 210h800M0 280h800M0 350h800"/><path d="M100 0v420M200 0v420M300 0v420M400 0v420M500 0v420M600 0v420M700 0v420"/></g>
+  <path d="M85 305h420v62H85z" fill="#153653" stroke="#7890a5"/>
+  <path d="M120 244h115v61H120zm235 0h115v61H355z" fill="#12b8bd" opacity=".6"/>
+  <path d="M248 217h95v27h-95z" fill="#edf3f5"/>
+  <path d="M260 158h70v59h-70z" fill="#153653" stroke="#12b8bd" stroke-width="3"/>
+  <path d="M581 315V150" stroke="#edf3f5" stroke-width="6"/>
+  <circle cx="581" cy="330" r="38" fill="#153653" stroke="#edf3f5" stroke-width="5"/>
+  <path d="M581 294V205" stroke="#12b8bd" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="581" cy="330" r="23" fill="#12b8bd"/>
+  <text x="640" y="244" fill="#12b8bd" font-family="monospace" font-size="28">423 K</text>
+  <text x="46" y="52" fill="#12b8bd" font-family="monospace" font-size="13">AUTOMOTIVE NMOS / HIGH-TEMP</text>
+</svg>

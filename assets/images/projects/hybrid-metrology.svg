@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="title desc">
+  <title id="title">SE and XRR hybrid thin film metrology</title>
+  <desc id="desc">Optical and X-ray beams converge on a layered high-k thin film sample.</desc>
+  <rect width="800" height="420" fill="#07182f"/>
+  <g opacity=".14" stroke="#12b8bd"><path d="M0 70h800M0 140h800M0 210h800M0 280h800M0 350h800"/><path d="M100 0v420M200 0v420M300 0v420M400 0v420M500 0v420M600 0v420M700 0v420"/></g>
+  <path d="M110 334h580v38H110z" fill="#153653" stroke="#7890a5"/>
+  <path d="M170 299h460v35H170z" fill="#12b8bd" opacity=".7"/>
+  <path d="M215 274h370v25H215z" fill="#edf3f5"/>
+  <path d="M98 90l302 184" stroke="#12b8bd" stroke-width="5"/>
+  <path d="M702 78L400 274" stroke="#fff" stroke-width="3" opacity=".8"/>
+  <path d="M98 90l78 10-39 66z" fill="none" stroke="#12b8bd" stroke-width="2"/>
+  <circle cx="702" cy="78" r="34" fill="none" stroke="#edf3f5" stroke-width="2"/>
+  <path d="M400 274l-134-82m134 82l150-96" stroke="#12b8bd" stroke-width="2" stroke-dasharray="7 7" opacity=".65"/>
+  <text x="88" y="67" fill="#12b8bd" font-family="monospace" font-size="16">SE</text>
+  <text x="674" y="135" fill="#fff" font-family="monospace" font-size="16">XRR</text>
+  <text x="400" y="322" fill="#07182f" font-family="monospace" font-size="14" font-weight="bold" text-anchor="middle">ALD HIGH-k</text>
+  <text x="46" y="52" fill="#12b8bd" font-family="monospace" font-size="13">HYBRID METROLOGY</text>
+</svg>
