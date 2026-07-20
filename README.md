@@ -30,18 +30,34 @@
 ---
 > **참고:** [🔗] 아이콘을 클릭하면 각 프로젝트의 상세 저장소로 이동합니다.
 
-## Technical Training: TCAD Short Course
-차세대반도체학과 주관 Synopsys Sentaurus TCAD 단기강좌를 통해 공정 및 소자 시뮬레이션 실무 역량을 강화하고 있습니다.
+## Technical Training: 2026 Short Courses
 
-### 단기강좌 교육 과정 (2026.07)
+숭실대학교 차세대반도체학과 주관 단기강좌에 참여하여  
+반도체 공정·소자 시뮬레이션, 가상 공정 실습 및 AI 가속기 기반  
+LLM 애플리케이션 구현 역량을 확장하고 있습니다.
 
-| 강좌명 | 일정 | 주요 학습 및 실습 내용 |
-| :--- | :--- | :--- |
-| **반도체 공정 with TCAD** | 7.20 ~ 7.22 | 식각, 산화, 확산, 이온 주입, 증착 등 공정 프로세스 시뮬레이션 및 데이터 해석[cite: 1] |
-| **반도체 소자 with TCAD** | 7.24 ~ 7.29 | NMOS/CMOS Physics, SCE 개선 방안, DRAM 및 Flash 소자 시뮬레이션[cite: 2] |
+각 강좌별 저장소에는 일차별 학습 내용, 실습 코드, 결과 이미지,
+오류 해결 과정 및 최종 과제를 기록합니다.
 
-> **Training Goal:** Synopsys Sentaurus TCAD를 활용한 공정 및 소자 제작 시뮬레이션을 통해 실무적 이해도를 높이고 있습니다.
-> *상세 과제 결과물 및 실습 코드는 별도 [TCAD-Projects 레포지토리](링크_입력)에서 확인하실 수 있습니다.*
+| Course | Period | Status | Main Topics | Repository |
+| :--- | :---: | :---: | :--- | :---: |
+| **반도체 공정 with TCAD** | 2026.07.20–07.22 | 🟡 In Progress | S-Process, Patterning, Etch, Oxidation, Ion Implantation, Annealing, Deposition | [🔗](https://github.com/minhosong-mse/2026-TCAD-Process-Short-Course) |
+| **반도체 소자 with TCAD** | 2026.07.24–07.29 | ⚪ Scheduled | NMOS, CMOS, MOSFET Physics, SCE, DRAM, Flash, S-Device | [🔗](https://github.com/minhosong-mse/2026-TCAD-Device-Short-Course) |
+| **GPU·NPU 기반 LLM Agent 및 RAG 실습** | 2026.07.30–08.07 | ⚪ Scheduled | GPU/NPU Architecture, Prompt Engineering, Tool Calling, Agentic AI, RAG, Furiosa RNGD | [🔗](https://github.com/minhosong-mse/2026-LLM-Agent-RAG-Short-Course) |
+| **VR을 활용한 반도체 공정 실습** | 2026.08.13–08.14 | ⚪ Scheduled | Etch, PECVD, PVD, Track, Exposure, Process Recipe, Failure Analysis | [🔗](https://github.com/minhosong-mse/2026-VR-Semiconductor-Process-Practice) |
+
+### Documentation Structure
+
+각 저장소는 다음 항목을 중심으로 기록합니다.
+
+- **Theory Notes:** 당일 학습한 핵심 이론 및 주요 개념
+- **Practice Workflow:** 실습 순서, 사용 도구 및 설정 조건
+- **Source Files:** TCAD 코드, Python 코드, Verilog 또는 설정 파일
+- **Results:** 구조 이미지, 그래프, 파형 및 실행 결과
+- **Troubleshooting:** 오류 원인과 해결 과정
+- **Reflection:** 배운 점, 한계 및 다음 학습 목표
+
+> 강좌 진행 상황과 실습 결과는 각 저장소에 순차적으로 업데이트합니다.
 
 ## Academic Presentation: 2026 Summer Annual Conference of ISE
 
