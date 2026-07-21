@@ -987,6 +987,111 @@ button {
   color: var(--navy);
 }
 
+.detail-scope {
+  margin-top: 34px;
+}
+
+.technical-figure {
+  margin: 34px 0 0;
+}
+
+.technical-figure img {
+  aspect-ratio: 16 / 9;
+}
+
+.conference-callout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 30px;
+  padding: 25px;
+  background: var(--navy);
+  border-top: 4px solid var(--cyan);
+}
+
+.conference-callout p {
+  margin: 0;
+  color: #d6e3ee;
+}
+
+.conference-callout .text-link {
+  flex: 0 0 auto;
+  color: var(--white);
+}
+
+.conference-main-photo,
+.conference-program {
+  margin: 0;
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+
+.conference-main-photo img,
+.conference-program img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.conference-main-photo figcaption,
+.conference-program figcaption {
+  padding: 16px 20px;
+  color: var(--muted);
+  background: var(--white);
+  border-top: 1px solid var(--line);
+  font-size: 0.82rem;
+}
+
+.conference-program img {
+  max-height: 760px;
+  padding: clamp(16px, 3vw, 30px);
+  background: var(--soft);
+}
+
+.feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.feedback-card {
+  min-width: 0;
+  padding: clamp(24px, 3vw, 32px);
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--cyan);
+}
+
+.feedback-card > span {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--cyan-dark);
+  font-size: 0.67rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+}
+
+.feedback-card h3 {
+  margin: 0 0 10px;
+  color: var(--navy);
+  font-size: 1.2rem;
+}
+
+.feedback-card p {
+  margin: 0;
+}
+
+.conference-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 34px;
+}
+
 .workflow,
 .contribution-list,
 .limitations {
@@ -1729,6 +1834,16 @@ button {
   .workflow,
   .metric-grid {
     grid-template-columns: 1fr;
+  }
+
+  .feedback-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .conference-callout,
+  .conference-actions {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
 
