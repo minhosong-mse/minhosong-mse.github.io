@@ -94,7 +94,11 @@ LLM 애플리케이션 구현 역량을 확장하고 있습니다.
 - **Conference:** 2026년 반도체공학회 하계종합학술대회
 - **Session:** 특별세션 — 숭실대학교 차세대반도체학과 1
 - **Date:** 2026.07.15
+- **Time:** 16:00–17:30
+- **Venue:** G층 크루즈 그랜드 볼룸 A
+- **Presentation No.:** 7
 - **Topic:** SE–X-ray Hybrid Metrology를 활용한 ALD 기반 High-k 박막의 미세 밀도 및 계면 거칠기 정량화
+- **Presenters:** 송민호, 주수빈, 남다연
 - **Role:** 공동 발표 및 SE 계측 원리·한계, 하이브리드 계측 적용 논리 설명
 
 ### Conference Feedback
@@ -120,11 +124,21 @@ LLM 애플리케이션 구현 역량을 확장하고 있습니다.
 </p>
 
 <p align="center">
-  <sub>Official Program Entry — Presentation No. 7</sub>
+  <sub>
+    Official Program Entry — Presentation No. 7 ·
+    <a href="./assets/documents/2026_ISE_Summer_Conference_Program.pdf">
+      View Full Conference Program
+    </a>
+  </sub>
 </p>
+
+### Presentation Records
 
 - **Related Project:** [🔗 SE–X-ray Hybrid Metrology Repository](https://github.com/minhosong-mse/2026-SE-Xray-Hybrid-Metrology)
 - **Presentation Material:** [🔗 발표 자료 PDF](./반도체공학회_발표자료.pdf)
+- **Official Conference Program:** [🔗 2026 반도체공학회 하계종합학술대회 안내책자](./assets/documents/2026_ISE_Summer_Conference_Program.pdf)
+
+> 공식 안내책자에는 2026년 7월 15일 숭실대학교 차세대반도체학과 특별세션의 발표 순서 7번으로 본 프로젝트의 제목과 발표자 명단이 수록되어 있습니다.
 
 > **Reflection:** 학회 질의응답을 통해 계측 결과를 계면 자체에 한정하지 않고, 박막·계면층·기판 사이의 상호작용까지 포함하는 모델로 확장해야 한다는 후속 연구 방향을 구체화했습니다.
 
