@@ -1,35 +1,46 @@
-# <span style="color:blue">송민호 / Minho Song</span>
+# 송민호 / Minho Song
 
 ## About Me
-* **University:** Soongsil University
-* **Major:** 신소재공학
-* **Double Major:** 차세대반도체공학
+
+- **University:** Soongsil University
+- **Major:** 신소재공학
+- **Double Major:** 차세대반도체공학
+
+반도체 공정·소자·계측 분야를 중심으로 TCAD 시뮬레이션, 데이터 분석 및 공정 프로젝트 경험을 쌓고 있습니다.
+
+---
 
 ## Qualifications
+
 ### Certifications
-- **[데이터분석준전문가(ADsP)]** | [한국데이터산업진흥원장] | [26.03.06]
-- **[ACP(Adobe Certified Professional)]** | [Adobe] | [22.06.14]
-  
+
+- **데이터분석준전문가(ADsP)** | 한국데이터산업진흥원 | 2026.03.06
+- **Adobe Certified Professional (ACP)** | Adobe | 2022.06.14
+
+---
+
 ## Projects
 
-| Portfolio | Period | Description | Link |
-| :--- | :--- | :--- | :---: |
-| **Chips Master Program(CMP)** | 2026.04 ~ 2027.01 | Optimized 20nm DRAM process to minimize GIDL leakage. | [🔗](https://github.com/minhosong-mse/CMP) |
-| **SSU Datathon 2025** | 2025.12 ~ 2026.01 | A Data-Driven Trend Analysis of 60,000+ Research Papers. | [🔗](https://github.com/minhosong-mse/Datathon) |
-| **AX(Ai eXperience) 인터랙티브 콘텐츠 공모전** | 2026.07 ~ 2027.08 | Developing an AI-driven interactive tutor that visualizes the complex transition from abstract logic tables to physical semiconductor layouts. | [🔗](https://github.com/minho031207/AX) |
+| Program / Competition | Period | Project Title | Main Focus | Link |
+| :--- | :---: | :--- | :--- | :---: |
+| **Chips Master Program (CMP)** | 2026.04–2027.01 | **GIDL Leakage Reduction in 20 nm BCAT DRAM** | TCAD 기반 BCAT 구조 변수 분석 및 누설전류 저감 설계 | [🔗](https://github.com/minhosong-mse/CMP) |
+| **SSU Datathon 2025** | 2025.12–2026.01 | **A Data-Driven Trend Analysis of 60,000+ Research Papers** | 대규모 논문 데이터 전처리 및 연구 동향 분석 | [🔗](https://github.com/minhosong-mse/Datathon) |
+| **AX (AI eXperience) 인터랙티브 콘텐츠 공모전** | 2026.07–2027.08 | **AI Interactive Tutor for Logic-to-Layout Learning** | 논리표에서 반도체 Layout으로 이어지는 설계 과정을 시각화하는 AI 학습 콘텐츠 개발 | [🔗](https://github.com/minho031207/AX) |
 
-  캡스톤융합팀 설계과정 / 차세대반도체경진대회 내용 추가 예정
+---
 
 ## Academic Coursework
 
-| Course Name | Term | Description | Link |
-| :--- | :---: | :--- | :---: |
-| **반도체집적공정** | 26-1 | 1st Place in NMOS Contest & PMOS Process Optimization (Individual Project) | [🔗](https://github.com/minhosong-mse/Semiconductor_Process_mid) |
-| **반도체집적공정** | 26-1 | Optimized NMOS characteristics for automotive semiconductor applications. (Team Project) | [🔗](https://github.com/minhosong-mse/Semiconductor_Process) |
-| **반도체공정과화학분석** | 26-1 | Coursework project on SE–X-ray hybrid metrology for ALD High-k thin films, developed through CPC feedback and a conference presentation. | [🔗](https://github.com/minhosong-mse/2026-SE-Xray-Hybrid-Metrology) |
-| **디지털논리회로** | 26-1 | Designed a traffic signal controller using Vivado and Verilog. | [🔗](https://github.com/minhosong-mse/Digital_Logic) |
+| Course Name | Term | Project Title | Scope / Result | Link |
+| :--- | :---: | :--- | :--- | :---: |
+| **반도체집적공정** | 26-1 | **NMOS Contest & PMOS Process Optimization** | Individual Project · NMOS Contest 1st Place | [🔗](https://github.com/minhosong-mse/Semiconductor_Process_mid) |
+| **반도체집적공정** | 26-1 | **Automotive Semiconductor-Oriented NMOS Optimization** | Team Project · 공정 조건에 따른 NMOS 특성 최적화 | [🔗](https://github.com/minhosong-mse/Semiconductor_Process) |
+| **반도체공정과화학분석** | 26-1 | **SE–X-ray Hybrid Metrology를 활용한 ALD 기반 High-k 박막의 미세 밀도 및 계면 거칠기 정량화** | Literature-Based Metrology Project | [🔗](https://github.com/minhosong-mse/2026-SE-Xray-Hybrid-Metrology) |
+| **디지털논리회로** | 26-1 | **Traffic Signal Controller Design using Vivado and Verilog** | Digital Logic Design Project | [🔗](https://github.com/minhosong-mse/Digital_Logic) |
+
+> [🔗] 아이콘을 클릭하면 각 프로젝트의 상세 저장소로 이동합니다.
+
 ---
-> **참고:** [🔗] 아이콘을 클릭하면 각 프로젝트의 상세 저장소로 이동합니다.
 
 ## Technical Training: 2026 Short Courses
 
@@ -37,8 +48,7 @@
 반도체 공정·소자 시뮬레이션, 가상 공정 실습 및 AI 가속기 기반  
 LLM 애플리케이션 구현 역량을 확장하고 있습니다.
 
-각 강좌별 저장소에는 일차별 학습 내용, 실습 코드, 결과 이미지,
-오류 해결 과정 및 최종 과제를 기록합니다.
+각 저장소에는 일차별 실습 코드, 공정 조건, 결과 이미지, 정량 데이터 및 해석 과정을 기록합니다.
 
 | Course | Period | Status | Main Topics | Repository |
 | :--- | :---: | :---: | :--- | :---: |
@@ -49,22 +59,26 @@ LLM 애플리케이션 구현 역량을 확장하고 있습니다.
 
 ### Documentation Structure
 
-각 저장소는 다음 항목을 중심으로 기록합니다.
-
-- **Theory Notes:** 당일 학습한 핵심 이론 및 주요 개념
-- **Practice Workflow:** 실습 순서, 사용 도구 및 설정 조건
-- **Source Files:** TCAD 코드, Python 코드, Verilog 또는 설정 파일
-- **Results:** 구조 이미지, 그래프, 파형 및 실행 결과
+- **Practice Workflow:** 실습 순서, 사용 도구 및 공정 조건
+- **Source Files:** TCAD Command, Python, Verilog 및 설정 파일
+- **Results:** 공정 구조, 그래프, 파형 및 정량 결과
 - **Troubleshooting:** 오류 원인과 해결 과정
-- **Reflection:** 배운 점, 한계 및 다음 학습 목표
+- **Interpretation:** 변수에 따른 결과 변화와 공정적 의미
+- **Reflection:** 실습의 한계와 후속 학습 방향
 
 > 강좌 진행 상황과 실습 결과는 각 저장소에 순차적으로 업데이트합니다.
 
-## Academic Presentation: 2026 Summer Annual Conference of ISE
+---
+
+## Conference Presentation
+
+### 2026년 반도체공학회 하계종합학술대회
 
 2026년 반도체공학회 하계종합학술대회 특별세션에서  
-ALD 기반 High-k 초박막의 밀도와 계면 거칠기를 정량화하기 위한  
-**SE-X-ray Hybrid Metrology** 접근을 발표하였습니다.
+**SE–X-ray Hybrid Metrology를 활용한 ALD 기반 High-k 박막의 미세 밀도 및 계면 거칠기 정량화**를 주제로 공동 발표하였습니다.
+
+수업 프로젝트에서 시작한 계측 방법론을 외부 피드백을 통해 보완하고,  
+3D 패턴 대응, 측정 영역 차이 및 양산 적용 가능성까지 검토한 내용을 발표했습니다.
 
 <p align="center">
   <img src="./발표사진.png"
@@ -76,18 +90,27 @@ ALD 기반 High-k 초박막의 밀도와 계면 거칠기를 정량화하기 위
   <sub>2026 반도체공학회 하계종합학술대회 특별세션 발표</sub>
 </p>
 
-* **Conference:** 2026년 반도체공학회 하계종합학술대회
-* **Session:** 특별세션 — 숭실대학교 차세대반도체학과 1
-* **Date:** 2026.07.15
-* **Topic:** SE-X-ray Hybrid Metrology를 활용한 ALD 기반 High-k 박막의 미세 밀도 및 계면 거칠기 정량화
-* **Role:** 발표 진행 및 SE 단독 계측의 한계와 하이브리드 계측 적용 논리 분석
+- **Conference:** 2026년 반도체공학회 하계종합학술대회
+- **Session:** 특별세션 — 숭실대학교 차세대반도체학과 1
+- **Date:** 2026.07.15
+- **Topic:** SE–X-ray Hybrid Metrology를 활용한 ALD 기반 High-k 박막의 미세 밀도 및 계면 거칠기 정량화
+- **Role:** 공동 발표 및 SE 계측 원리·한계, 하이브리드 계측 적용 논리 설명
 
-### Key Technical Insights
+### Conference Feedback
 
-* **SE 단독 분석의 한계:** 역모델링 과정에서 박막 두께, 광학상수 n·k, 계면 거칠기 사이에 강한 파라미터 상관성이 발생하여 서로 다른 물리적 구조가 유사한 광학 신호를 생성할 수 있음을 분석하였습니다.
-* **Feed-forward Hybrid Metrology:** X-ray 계측(XRD/XRR)으로 확보한 구조적·물리적 정보를 SE 모델의 고정값 또는 제약조건으로 반영하여 파라미터 모호성을 줄이는 방법을 제안하였습니다.
-* **물리적 타당성 검토:** 단순히 MSE가 가장 낮은 모델이 실제 구조와 가장 가까운 해를 의미하지 않을 수 있음을 문헌 사례를 통해 비교하였습니다.
-* **High-k 박막 적용 가능성:** 서로 다른 계측법의 독립적인 정보를 결합하여 초박막의 밀도와 계면 거칠기를 비파괴 방식으로 정량화할 수 있는 가능성을 검토하였습니다.
+발표 과정에서 **3D 패턴 대응과 측정 영역 차이를 고려하여 양산 가능성 검토를 보완한 점이 좋았다**는 피드백을 받았습니다.
+
+동시에 현재 분석이 High-k 박막과 계면 특성에 집중되어 있다는 점에서 다음 질문을 받았습니다.
+
+> 계면 자체뿐 아니라 계면 아래의 기판 또는 인접층과의 상호작용으로 나타나는 다른 결과도 검토했는가?
+
+이 질문을 통해 계면을 독립적인 경계로만 해석하는 데 한계가 있음을 확인했습니다.  
+향후에는 High-k 박막, 계면층 및 하부 기판이 연결된 구조에서 다음 영향을 추가로 검토할 계획입니다.
+
+- 하부 기판과 계면층의 물성이 SE 광학 신호에 미치는 영향
+- 층간 밀도 및 조성 변화가 X-ray 신호에 미치는 영향
+- 하부 구조를 고려할 때 발생하는 모델 파라미터 간 상관관계
+- 계면 단독 모델과 다층 상호작용 모델의 해석 결과 차이
 
 <p align="center">
   <img src="./발표순서.png"
@@ -96,28 +119,29 @@ ALD 기반 High-k 초박막의 밀도와 계면 거칠기를 정량화하기 위
 </p>
 
 <p align="center">
-  <sub>Official program entry — Presentation No. 7</sub>
+  <sub>Official Program Entry — Presentation No. 7</sub>
 </p>
 
-* **Presentation Material:** [🔗 발표 자료(PDF)](./반도체공학회_발표자료.pdf)
+- **Related Project:** [🔗 SE–X-ray Hybrid Metrology Repository](https://github.com/minhosong-mse/2026-SE-Xray-Hybrid-Metrology)
+- **Presentation Material:** [🔗 발표 자료 PDF](./반도체공학회_발표자료.pdf)
 
-> **Insight:** 단일 계측 데이터의 낮은 fitting error만으로는 도출된 해의 물리적 타당성을 보장할 수 없으며, 서로 다른 계측법이 제공하는 독립적인 정보를 결합해야 초박막 분석에서 발생하는 파라미터 모호성을 효과적으로 줄일 수 있음을 배웠습니다.
+> **Reflection:** 학회 질의응답을 통해 계측 결과를 계면 자체에 한정하지 않고, 박막·계면층·기판 사이의 상호작용까지 포함하는 모델로 확장해야 한다는 후속 연구 방향을 구체화했습니다.
 
-## Extracurricular Activities: '황토' Band Club
-4년간의 밴드 동아리 활동을 통해 팀워크와 현장 리더십을 체득했습니다.
+---
 
-* **Affiliation:** 숭실대학교 공과대학 밴드 소모임 '황토' (2022.03 ~ 현재)
-* **Role:** 임원 및 공연 팀장 (1년간 재임)
-* **Key Achievements:**
-    * **공연 총괄 및 기획:** 정기공연(5회), 대학 축제(1회), 새내기 배움터(1회) 등 총 7회의 무대 기획 및 운영 총괄.
-    * **현장 리더십:** 무대 세팅(음향/악기 배치), 스케줄 관리, 돌발 상황 해결을 등 프로젝트 운영 및 위기 관리 능력 함양.
-    * **협업의 가치:** 다양한 전공생과 조율하며 목표를 달성하는 과정을 통해, 엔지니어링 프로젝트에 필수적인 커뮤니케이션 및 팀워크 역량 강화.
+## Extracurricular Activities: 황토 Band Club
 
-자세한 활동 기록은 아래 링크에서 확인하실 수 있습니다.
+4년간의 밴드 동아리 활동을 통해 팀워크와 현장 리더십을 경험했습니다.
 
-**Instagram:** 
-  <a href="https://www.instagram.com/hwang_to?igsh=aXdieGViYmh3N3lk">
-    <img src="https://img.shields.io/badge/hwang_to-E4405F?style=flat&logo=instagram&logoColor=white">
-  </a>
+- **Affiliation:** 숭실대학교 공과대학 밴드 소모임 황토 (2022.03–현재)
+- **Role:** 임원 및 공연 팀장
+- **Key Activities:**
+  - **공연 기획 및 운영:** 정기공연 5회, 대학 축제 1회, 새내기 배움터 1회 등 총 7회의 무대 준비 및 운영
+  - **현장 관리:** 음향·악기 배치, 공연 일정 관리 및 돌발 상황 대응
+  - **팀 협업:** 다양한 전공의 구성원들과 역할을 조율하고 공동 목표를 달성
 
-> **Insight:** 밴드 팀장으로서 공연을 준비했던 경험은 기술적 난제 앞에서 팀원들과 협업하여 최선의 결과물을 도출하는 저만의 강력한 자산이 되었습니다.
+**Instagram:**  <a href="https://www.instagram.com/hwang_to?igsh=aXdieGViYmh3N3lk">
+  <img src="https://img.shields.io/badge/hwang_to-E4405F?style=flat&logo=instagram&logoColor=white">
+</a>
+
+> **Reflection:** 공연 팀장 경험을 통해 역할 분담, 일정 조율 및 현장 문제 해결과 같은 프로젝트 운영 역량을 키웠습니다.
