@@ -748,8 +748,7 @@ button {
 }
 
 .training-project-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 900px);
+  grid-auto-rows: 1fr;
 }
 
 .training-project-card {
@@ -758,6 +757,66 @@ button {
 
 .training-project-card .project-image img {
   object-fit: contain;
+}
+
+.training-project-card[aria-disabled="true"]:hover {
+  border-color: var(--line);
+  border-top-color: var(--cyan);
+  box-shadow: none;
+  transform: none;
+}
+
+.training-placeholder {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding: clamp(22px, 4vw, 38px);
+  color: var(--white);
+  background: var(--navy);
+  text-align: center;
+}
+
+.training-placeholder::before {
+  width: min(92px, 34%);
+  height: 3px;
+  background: var(--cyan);
+  content: "";
+}
+
+.training-placeholder-title {
+  max-width: 100%;
+  font-size: clamp(1.45rem, 3.2vw, 2.25rem);
+  letter-spacing: 0.06em;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.training-placeholder-subtitle {
+  max-width: 100%;
+  color: var(--cyan);
+  font-size: clamp(0.68rem, 1.25vw, 0.82rem);
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.training-action {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  margin-top: auto;
+  font-size: 0.7rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+}
+
+.training-action-disabled {
+  color: var(--muted);
+  border-bottom: 2px solid var(--line);
+  cursor: default;
 }
 
 .contact-section {
