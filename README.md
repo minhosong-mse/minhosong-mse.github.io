@@ -14,8 +14,8 @@
 
 ### Certifications
 
-- **데이터분석준전문가(ADsP)** | 한국데이터산업진흥원 | 2026.03.06
-- **Adobe Certified Professional (ACP)** | Adobe | 2022.06.14
+- **데이터분석준전문가(ADsP)** | 한국데이터산업진흥원 | 2026.03.06 |  [View Credential](./adsp_certificate_public.png)
+- **Adobe Certified Professional (ACP)** | Adobe | 2022.06.14 |  [View Credential](./adobe_acp_certificate_public.png)
 
 ---
 
