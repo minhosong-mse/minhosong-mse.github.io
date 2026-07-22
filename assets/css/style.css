@@ -747,6 +747,19 @@ button {
   font-size: 0.9rem;
 }
 
+.training-project-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 900px);
+}
+
+.training-project-card {
+  border-top-color: var(--cyan);
+}
+
+.training-project-card .project-image img {
+  object-fit: contain;
+}
+
 .contact-section {
   background: var(--soft);
   border-top: 1px solid var(--line);
@@ -1043,6 +1056,55 @@ button {
   background: var(--white);
   border-top: 1px solid var(--line);
   font-size: 0.82rem;
+}
+
+.training-banner,
+.certificate-preview {
+  margin: 0 0 36px;
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+
+.training-banner img,
+.certificate-preview img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: var(--soft);
+}
+
+.training-banner figcaption,
+.certificate-preview figcaption {
+  padding: 16px 20px;
+  color: var(--muted);
+  background: var(--white);
+  border-top: 1px solid var(--line);
+  font-size: 0.82rem;
+}
+
+.training-result-gallery .image-card img {
+  object-fit: contain;
+  object-position: center;
+}
+
+.certificate-preview {
+  max-width: 720px;
+}
+
+.certificate-preview a {
+  display: block;
+}
+
+.certificate-preview img {
+  max-height: 860px;
+}
+
+.certificate-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 24px 0 38px;
 }
 
 .conference-program img {

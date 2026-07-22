@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>반도체 공정 with TCAD | Minho Song</title>
+  <meta name="description" content="Sentaurus S-Process를 활용한 3일 15시간 반도체 공정 TCAD 단기강좌 실습 기록">
+  <meta name="theme-color" content="#07182f">
+  <link rel="icon" href="../assets/images/profile/profile.png">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="기술교육 상세 탐색">
+      <a class="brand" href="../index.html#training" aria-label="Technical Training 섹션으로 이동"><span class="brand-text">MINHO SONG</span></a>
+      <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+        <span class="menu-label">MENU</span><span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
+      <ul class="nav-links" id="primary-nav">
+        <li><a href="#overview">OVERVIEW</a></li>
+        <li><a href="#day-1">DAY 1</a></li>
+        <li><a href="#day-2">DAY 2</a></li>
+        <li><a href="#day-3">DAY 3</a></li>
+        <li><a href="#completion">COMPLETION</a></li>
+        <li><a href="#resources">RESOURCES</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="detail-main" id="main-content">
+    <section class="detail-hero" aria-labelledby="training-detail-title">
+      <div class="page-width">
+        <p class="detail-breadcrumb">TECHNICAL TRAINING · SENTARUS S-PROCESS</p>
+        <h1 id="training-detail-title">반도체 공정 with TCAD</h1>
+        <p class="detail-subtitle">From process commands to structure and profile interpretation</p>
+        <div class="detail-intro-grid">
+          <p class="detail-lead">Sentaurus S-Process에서 공정 구조를 생성하고, Workbench Parameter Split으로 조건을 분할한 뒤, Sentaurus Visual에서 구조와 도핑 Profile을 비교한 3일간의 반도체 공정 시뮬레이션 단기강좌입니다.</p>
+          <dl class="detail-meta">
+            <div><dt>PERIOD</dt><dd>2026.07.20–2026.07.22</dd></div>
+            <div><dt>DURATION</dt><dd>15 Hours</dd></div>
+            <div><dt>STATUS</dt><dd>Completed</dd></div>
+            <div><dt>ORGANIZER</dt><dd>숭실대학교 차세대반도체 혁신융합대학사업단</dd></div>
+            <div><dt>TOOLS</dt><dd>Sentaurus Workbench · S-Process · Sentaurus Visual</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="overview" aria-labelledby="overview-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">01 / OVERVIEW</p><h2 id="overview-title">A three-day semiconductor process workflow.</h2></div>
+        <div class="detail-copy">
+          <figure class="training-banner reveal">
+            <img src="../assets/images/training/tcad-process/course-banner.png" alt="2026 차세대반도체학과 하계 단기강좌 반도체 공정 with TCAD 안내 이미지">
+            <figcaption>2026 차세대반도체학과 하계 단기강좌 · 반도체 공정 with TCAD</figcaption>
+          </figure>
+          <ul class="contribution-list">
+            <li>웨이퍼 실물 제작이 아닌 S-Process 기반 공정 시뮬레이션 실습</li>
+            <li>Command File 수정과 Workbench Parameter Split</li>
+            <li>공정 조건에 따른 구조와 도핑 분포 비교</li>
+            <li>Sentaurus Visual 기반 결과 분석</li>
+            <li>총 3일, 15시간 이수</li>
+          </ul>
+          <div class="fact-grid">
+            <article><span>PROCESS FLOW</span><strong>Mesh → Pattern → Etch → Oxidation → Implant → Anneal</strong></article>
+            <article><span>ANALYSIS</span><strong>Structure · Cutline Profile · Extracted Values</strong></article>
+            <article><span>FINAL TOPIC</span><strong>HfO₂ / TiN High-k Gate Stack</strong></article>
+            <article><span>EVIDENCE</span><strong>README · CMD Files · Result Images · Certificate</strong></article>
+          </div>
+          <div class="detail-callout"><strong>Scope:</strong> 본 페이지의 결과는 Sentaurus TCAD 공정 시뮬레이션 결과이며, 실제 웨이퍼 측정이나 전기적 소자 성능 검증 결과가 아닙니다.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="day-1" aria-labelledby="day-1-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">02 / DAY 1</p><h2 id="day-1-title">Structure definition and basic process control.</h2></div>
+        <div class="detail-copy">
+          <div class="detail-grid">
+            <article class="analysis-card"><span>PRACTICE</span><h3>Structure and process splits</h3><p>Mesh Optimization, Positive / Negative Pattern, Isotropic / Anisotropic Etch, Etch Depth Split을 Command File과 Workbench Parameter로 비교했습니다.</p></article>
+            <article class="analysis-card"><span>OXIDATION</span><h3>Thickness extraction</h3><p>산화 온도, 시간, H₂O/O₂ 조건을 분할하고 산화막 두께를 추출해 그래프로 비교했습니다.</p></article>
+          </div>
+          <ul class="contribution-list">
+            <li>Mesh 밀도는 관심 영역의 공간 해상도와 전체 계산 비용 사이의 균형을 결정합니다.</li>
+            <li>Etch Type에 따라 수직 측벽과 측면 식각 형상이 달라집니다.</li>
+            <li>온도와 시간이 증가할수록 산화막이 두꺼워졌고, 동일 조건에서 Wet Oxidation이 Dry Oxidation보다 빠른 성장을 보였습니다.</li>
+          </ul>
+          <div class="image-gallery training-result-gallery">
+            <article class="image-card contain reveal"><img src="../assets/images/training/tcad-process/results/day1-etch-type-comparison.png" alt="Isotropic Etch와 Anisotropic Etch 구조 형상 비교"><h3>Etch type comparison</h3><p>동일한 Mask와 식각 두께에서 방향성에 따른 측벽 형상 차이를 비교했습니다.</p></article>
+            <article class="image-card contain reveal"><img src="../assets/images/training/tcad-process/results/day1-oxidation-thickness-graph.png" alt="온도 시간 산화가스에 따른 산화막 두께 그래프"><h3>Oxidation thickness graph</h3><p>온도·시간·산화 가스 조건별 산화막 두께 추출 결과입니다.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="day-2" aria-labelledby="day-2-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">03 / DAY 2</p><h2 id="day-2-title">Oxidation, implantation and thermal redistribution.</h2></div>
+        <div class="detail-copy">
+          <div class="detail-grid">
+            <article class="analysis-card"><span>PROCESS</span><h3>LOCOS and implantation</h3><p>LOCOS Wet / Dry Oxidation, LDD Dose / Energy, Halo Dose / Energy / Tilt, Source / Drain Implantation 조건을 분할했습니다.</p></article>
+            <article class="analysis-card"><span>PROFILE</span><h3>Anneal and cutlines</h3><p>Anneal Time Split과 수직·수평 Cutline Profile을 사용해 도핑 농도와 확산 범위를 비교했습니다.</p></article>
+          </div>
+          <ul class="contribution-list">
+            <li>Dose는 도핑 농도 수준에, Energy는 Projected Range와 주입 깊이에 주로 영향을 주었습니다.</li>
+            <li>Anneal은 활성화와 주입 손상 회복뿐 아니라 도펀트 확산 범위와 접합 깊이를 변화시켰습니다.</li>
+            <li>LOCOS에서 Wet Oxidation의 빠른 성장과 Nitride 경계의 Bird’s Beak 형상을 확인했습니다.</li>
+          </ul>
+          <div class="image-gallery training-result-gallery">
+            <article class="image-card contain reveal"><img src="../assets/images/training/tcad-process/results/day2-locos-wet-oxidation.png" alt="LOCOS Wet Oxidation 구조와 Bird's Beak 형상"><h3>LOCOS wet oxidation</h3><p>Wet Oxidation 조건에서 성장한 Field Oxide와 Bird’s Beak 구조입니다.</p></article>
+            <article class="image-card contain reveal"><img src="../assets/images/training/tcad-process/results/day2-ldd-energy-dose-profile.png" alt="LDD Dose와 Energy 조건별 도핑 Cutline Profile"><h3>LDD doping profile</h3><p>Dose와 Energy 변화에 따른 농도 수준과 주입 깊이 차이를 비교했습니다.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="day-3" aria-labelledby="day-3-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">04 / DAY 3</p><h2 id="day-3-title">Spacer formation, PMOS conversion and High-k gate stack.</h2></div>
+        <div class="detail-copy">
+          <div class="detail-grid">
+            <article class="analysis-card"><span>SPACER &amp; PMOS</span><h3>Directional processing</h3><p>Gate Spacer Deposition / Etch Type Split과 NMOS-to-PMOS-Oriented Dopant Conversion, P-type LDD Dose / Energy Split을 수행했습니다.</p></article>
+            <article class="analysis-card"><span>HIGH-K</span><h3>Gate stack and EOT</h3><p>SiO₂ Interfacial Layer 위에 HfO₂와 TiN을 형성하고 각 층의 두께로 Equivalent Oxide Thickness를 추출했습니다.</p></article>
+          </div>
+          <div class="fact-grid">
+            <article><span>t_IL</span><strong>0.0016 μm</strong></article>
+            <article><span>t_HK</span><strong>0.0020 μm</strong></article>
+            <article><span>EOT</span><strong>0.0019 μm</strong></article>
+            <article><span>STACK</span><strong>SiO₂ Interfacial Layer · HfO₂ · TiN</strong></article>
+          </div>
+          <ul class="contribution-list">
+            <li>Spacer 형상은 증착과 식각 방향성의 조합에 따라 달라졌습니다.</li>
+            <li>PMOS 방향 전환에서는 Well, Halo, LDD, Source / Drain Dopant를 함께 변경했습니다.</li>
+            <li>High-k Gate Stack은 물리적 두께와 작은 EOT를 함께 확보하기 위한 구조입니다.</li>
+            <li>Interfacial Layer도 전체 EOT에 포함되므로 계면 산화막 제어가 중요합니다.</li>
+          </ul>
+          <div class="image-gallery training-result-gallery">
+            <article class="image-card contain reveal"><img src="../assets/images/training/tcad-process/results/day3-gate-spacer-comparison.png" alt="Isotropic Deposition과 Anisotropic Etch 조건의 Gate Spacer 구조"><h3>Gate spacer formation</h3><p>Isotropic Deposition과 Anisotropic Etch 조합에서 형성된 Nitride Spacer입니다.</p></article>
+            <article class="image-card contain reveal"><img src="../assets/images/training/tcad-process/results/day3-high-k-structure.png" alt="HfO₂와 TiN을 포함한 High-k Gate Stack 전체 구조"><h3>HfO₂ / TiN gate stack</h3><p>Interfacial Layer, HfO₂ High-k Dielectric과 TiN Metal Gate를 포함한 전체 구조입니다.</p></article>
+            <article class="image-card contain reveal"><img src="../assets/images/training/tcad-process/results/day3-high-k-interface-zoom.png" alt="HfO₂와 SiO₂ Interfacial Layer 계면 확대 구조"><h3>High-k interface zoom</h3><p>HfO₂와 얇은 SiO₂ Interfacial Layer의 경계를 확대해 확인했습니다.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="completion" aria-labelledby="completion-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">05 / COMPLETION</p><h2 id="completion-title">Official course completion.</h2></div>
+        <div class="detail-copy">
+          <figure class="certificate-preview reveal">
+            <a href="../assets/documents/tcad-process-certificate-public.pdf" target="_blank" rel="noopener noreferrer" aria-label="반도체 공정 with TCAD 공개용 이수증 PDF 열기">
+              <img src="../assets/images/training/tcad-process/certificate-public.png" alt="반도체 공정 with TCAD 15시간 이수증 공개용 이미지">
+            </a>
+            <figcaption>반도체 공정 with TCAD · 2026.07.20–07.22 · 15 Hours</figcaption>
+          </figure>
+          <div class="certificate-actions">
+            <a class="button button-primary" href="../assets/documents/tcad-process-certificate-public.pdf" target="_blank" rel="noopener noreferrer">VIEW CERTIFICATE PDF <span aria-hidden="true">↗</span></a>
+          </div>
+          <h3>Key takeaways</h3>
+          <ul class="contribution-list">
+            <li>S-Process Command와 공정 구조 변화 연결</li>
+            <li>Workbench Parameter Split을 이용한 조건 비교</li>
+            <li>Sentaurus Visual 구조 및 Cutline Profile 분석</li>
+            <li>Etch, Oxidation, Implantation과 Annealing 변수 해석</li>
+            <li>NMOS / PMOS 공정 Dopant 변환</li>
+            <li>HfO₂ / TiN Gate Stack과 EOT 계산</li>
+            <li>시뮬레이션 결과와 실제 측정 결과의 범위 구분</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" id="resources" aria-labelledby="resources-title">
+      <div class="page-width">
+        <div class="detail-section-heading"><p class="section-index">06 / RESOURCES</p><h2 id="resources-title">Practice files and documentation.</h2></div>
+        <div class="detail-copy">
+          <div class="resource-grid">
+            <article class="resource-card"><h3>Full GitHub Repository</h3><p>3일간의 README, CMD, 결과 이미지와 데이터</p><a class="text-link" href="https://github.com/minhosong-mse/2026-TCAD-Process-Short-Course" target="_blank" rel="noopener noreferrer">VIEW REPOSITORY ↗</a></article>
+            <article class="resource-card"><h3>Complete README</h3><p>Day별 조건, 결과 및 해석을 정리한 전체 문서</p><a class="text-link" href="https://github.com/minhosong-mse/2026-TCAD-Process-Short-Course/blob/main/README.md" target="_blank" rel="noopener noreferrer">VIEW README ↗</a></article>
+            <article class="resource-card"><h3>Day 1 Command Files</h3><p>Mesh, Pattern, Etch, Oxidation 실습 CMD</p><a class="text-link" href="https://github.com/minhosong-mse/2026-TCAD-Process-Short-Course/tree/main/code/day-01" target="_blank" rel="noopener noreferrer">VIEW DAY 1 FILES ↗</a></article>
+            <article class="resource-card"><h3>Day 2 Command Files</h3><p>LOCOS, Implantation, Anneal 실습 CMD</p><a class="text-link" href="https://github.com/minhosong-mse/2026-TCAD-Process-Short-Course/tree/main/code/day-02" target="_blank" rel="noopener noreferrer">VIEW DAY 2 FILES ↗</a></article>
+            <article class="resource-card"><h3>Day 3 Command Files</h3><p>Gate Spacer, PMOS Conversion, High-k 실습 CMD</p><a class="text-link" href="https://github.com/minhosong-mse/2026-TCAD-Process-Short-Course/tree/main/code/day-03" target="_blank" rel="noopener noreferrer">VIEW DAY 3 FILES ↗</a></article>
+            <article class="resource-card"><h3>Certificate PDF</h3><p>개인정보를 비공개 처리한 15시간 과정 이수증</p><a class="text-link" href="../assets/documents/tcad-process-certificate-public.pdf" target="_blank" rel="noopener noreferrer">VIEW CERTIFICATE ↗</a></article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="page-width"><p>© <span id="current-year">2026</span> MINHO SONG</p><a href="../index.html#training">BACK TO TECHNICAL TRAINING ↑</a></div></footer>
+</body>
+</html>
