@@ -54,7 +54,7 @@ LLM 애플리케이션 구현 역량을 확장하고 있습니다.
 | Course | Period | Status | Main Topics | Repository |
 | :--- | :---: | :---: | :--- | :---: |
 | **반도체 공정 with TCAD** | 2026.07.20–07.22 | ✅ Completed | S-Process, Etch/Oxidation, Implant/Anneal, Gate Spacer, PMOS Conversion, High-k Gate Stack | [Repo 🔗](https://github.com/minhosong-mse/2026-TCAD-Process-Short-Course) · [Certificate 📄](https://github.com/minhosong-mse/2026-TCAD-Process-Short-Course/blob/main/certificate/2026_TCAD_Process_Short_Course_Certificate.pdf) |
-| **반도체 소자 with TCAD** | 2026.07.24–07.29 | 🟡 In Progress | SCE, Vt/SS/DIBL, LDD Energy, S/D Dose/Energy, Halo Implant, Cutline, Transfer Curve | [🔗](https://github.com/minhosong-mse/2026-TCAD-Device-Short-Course) |
+| **반도체 소자 with TCAD** | 2026.07.24–07.29 | ✅ Completed | Device Physics, SCE, Implant Analysis, Length-Aware nMOS Optimization, Vth/SS/DIBL, NAND Flash | [Repo 🔗](https://github.com/minhosong-mse/2026-TCAD-Device-Short-Course) · [Certificate 📄](https://github.com/minhosong-mse/2026-TCAD-Device-Short-Course/blob/main/certificate/device_tcad_certificate_public.pdf) |
 | **GPU·NPU 기반 LLM Agent 및 RAG 실습** | 2026.07.30–08.07 | ⚪ Scheduled | GPU/NPU Architecture, Prompt Engineering, Tool Calling, Agentic AI, RAG, Furiosa RNGD | [🔗](https://github.com/minhosong-mse/2026-LLM-Agent-RAG-Short-Course) |
 | **VR을 활용한 반도체 공정 실습** | 2026.08.13–08.14 | ⚪ Scheduled | Etch, PECVD, PVD, Track, Exposure, Process Recipe, Failure Analysis | [🔗](https://github.com/minhosong-mse/2026-VR-Semiconductor-Process-Practice) |
 
