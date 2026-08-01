@@ -57,7 +57,7 @@ LLM 애플리케이션 구현 역량을 확장하고 있습니다.
 | :--- | :---: | :---: | :--- | :---: |
 | **반도체 공정 with TCAD** | 2026.07.20–07.22 | ✅ Completed | S-Process, Etch/Oxidation, Implant/Anneal, Gate Spacer, PMOS Conversion, High-k Gate Stack | [🔗](https://github.com/minhosong-mse/2026-TCAD-Process-Short-Course) |
 | **반도체 소자 with TCAD** | 2026.07.24–07.29 | ✅ Completed | Device Physics, SCE, Implant Analysis, Length-Aware nMOS Optimization, Vth/SS/DIBL, NAND Flash | [🔗](https://github.com/minhosong-mse/2026-TCAD-Device-Short-Course)  |
-| **GPU·NPU 기반 LLM Agent 및 RAG 실습** | 2026.07.30–08.07 | ⚪ Scheduled | GPU/NPU Architecture, Prompt Engineering, Tool Calling, Agentic AI, RAG, Furiosa RNGD | [🔗](https://github.com/minhosong-mse/2026-LLM-Agent-RAG-Short-Course) |
+| **GPU·NPU 기반 LLM Agent 및 RAG 실습** | 2026.07.30–08.07 | 🟡 Follow-up Pending | Furiosa RNGD, OpenAI-compatible API, Tool Calling, Agent Loop, MCP, RAG | [🔗](https://github.com/minhosong-mse/2026-LLM-Agent-RAG-Short-Course) |
 | **VR을 활용한 반도체 공정 실습** | 2026.08.13–08.14 | ⚪ Scheduled | Etch, PECVD, PVD, Track, Exposure, Process Recipe, Failure Analysis | [🔗](https://github.com/minhosong-mse/2026-VR-Semiconductor-Process-Practice) |
 
 > [🔗] 아이콘을 클릭하면 각 프로젝트의 상세 저장소로 이동합니다.
