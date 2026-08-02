@@ -286,6 +286,43 @@ button {
   margin-top: 30px;
 }
 
+.intro-facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: -18px;
+  margin-bottom: 64px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.intro-facts > div {
+  min-width: 0;
+  padding: 17px 20px;
+  border-left: 1px solid var(--line);
+}
+
+.intro-facts > div:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.intro-facts span {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--cyan-dark);
+  font-size: 0.62rem;
+  font-weight: 850;
+  letter-spacing: 0.11em;
+}
+
+.intro-facts strong {
+  display: block;
+  color: var(--navy);
+  font-size: 0.84rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
 .button {
   display: inline-flex;
   min-height: 46px;
@@ -493,11 +530,44 @@ button {
 }
 
 .project-image {
+  position: relative;
   display: block;
   overflow: hidden;
   aspect-ratio: 16 / 9;
   background: var(--soft);
   border-bottom: 1px solid var(--line);
+}
+
+.project-status-overlay {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  display: inline-flex;
+  min-height: 25px;
+  align-items: center;
+  padding: 4px 9px 4px 10px;
+  color: var(--white);
+  background: var(--navy);
+  border-left: 3px solid var(--cyan);
+  font-size: 0.64rem;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+}
+
+.project-status-overlay.status-presented {
+  color: var(--navy);
+  background: var(--white);
+  box-shadow: 0 0 0 1px rgba(7, 24, 47, 0.14);
+}
+
+.project-status-overlay.status-complete,
+.project-status-overlay.status-progress,
+.project-status-overlay.status-scheduled {
+  color: var(--white);
+  background: var(--navy-soft);
+  border-left-color: var(--cyan);
 }
 
 .project-image img {
@@ -648,6 +718,47 @@ button {
 
 .text-link:hover {
   color: var(--cyan-dark);
+}
+
+.project-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: auto;
+}
+
+.project-action {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border: 1px solid var(--navy);
+  border-radius: 3px;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.project-action-primary {
+  color: var(--white);
+  background: var(--navy);
+}
+
+.project-action-primary:hover {
+  background: var(--navy-soft);
+}
+
+.project-action-secondary {
+  color: var(--navy);
+  background: var(--white);
+}
+
+.project-action-secondary:hover {
+  color: var(--cyan-dark);
+  border-color: var(--cyan-dark);
+  background: var(--soft-cyan);
 }
 
 .timeline {
@@ -844,6 +955,95 @@ button {
   color: var(--muted);
   border-bottom: 2px solid var(--line);
   cursor: default;
+}
+
+.training-list {
+  border-top: 1px solid var(--line);
+}
+
+.training-row {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.22fr) minmax(0, 1fr) auto;
+  gap: 28px;
+  align-items: center;
+  padding: 26px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.training-date {
+  color: var(--navy);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.training-main {
+  min-width: 0;
+}
+
+.training-title-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+}
+
+.training-title-row h3 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 1.12rem;
+  line-height: 1.35;
+}
+
+.training-main p {
+  margin: 7px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  word-break: keep-all;
+}
+
+.training-status {
+  display: inline-flex;
+  min-height: 24px;
+  align-items: center;
+  padding: 3px 8px;
+  color: #035664;
+  background: var(--soft-cyan);
+  border: 1px solid #8bcfd8;
+  border-radius: 2px;
+  font-size: 0.61rem;
+  font-weight: 850;
+  line-height: 1.25;
+}
+
+.training-followup,
+.training-scheduled {
+  color: var(--white);
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+.training-repo {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 14px;
+  color: var(--navy);
+  background: var(--white);
+  border: 1px solid var(--navy);
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 850;
+  white-space: nowrap;
+}
+
+.training-repo:hover {
+  color: var(--cyan-dark);
+  border-color: var(--cyan-dark);
+  background: var(--soft-cyan);
 }
 
 .contact-section {
@@ -1920,6 +2120,19 @@ button {
     max-width: 220px;
   }
 
+  .intro-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .intro-facts > div:nth-child(odd) {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .intro-facts > div:nth-child(n + 3) {
+    border-top: 1px solid var(--line);
+  }
+
   .section-heading,
   .contact-grid {
     grid-template-columns: 1fr;
@@ -2048,6 +2261,16 @@ button {
     grid-template-columns: 1fr;
   }
 
+  .training-row {
+    grid-template-columns: 130px minmax(0, 1fr);
+    gap: 16px 24px;
+  }
+
+  .training-repo {
+    grid-column: 2;
+    width: fit-content;
+  }
+
   .project-grid {
     grid-template-columns: 1fr;
   }
@@ -2134,6 +2357,24 @@ button {
     width: min(170px, 48vw);
   }
 
+  .intro-facts {
+    grid-template-columns: 1fr;
+    margin-top: -12px;
+    margin-bottom: 48px;
+  }
+
+  .intro-facts > div,
+  .intro-facts > div:first-child,
+  .intro-facts > div:nth-child(odd) {
+    padding: 13px 0;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .intro-facts > div:first-child {
+    border-top: 0;
+  }
+
   .intro-copy {
     text-align: center;
   }
@@ -2191,6 +2432,18 @@ button {
     flex-direction: column;
   }
 
+  .training-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding-block: 22px;
+  }
+
+  .training-repo {
+    grid-column: auto;
+    width: fit-content;
+    margin-top: 6px;
+  }
+
   .site-footer .page-width {
     align-items: flex-start;
     flex-direction: column;
@@ -2228,5 +2481,16 @@ button {
   .project-next .page-width {
     align-items: flex-start;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .project-status-overlay {
+    top: 9px;
+    left: 9px;
   }
 }
