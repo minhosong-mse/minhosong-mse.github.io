@@ -2828,3 +2828,45 @@ This append-only override is designed to:
 - keep Featured thumbnail/title horizontal on mobile;
 - keep Additional project cards horizontal on mobile;
 - override the existing max-width: 430px one-column rule.
+
+/* Project context labels and Additional card alignment */
+
+.additional-project-card {
+  align-items: center;
+}
+
+.additional-project-thumbnail {
+  align-self: center;
+  justify-self: center;
+}
+
+.additional-project-source {
+  margin: 9px 0 0;
+  color: var(--cyan-dark);
+  font-size: 0.61rem;
+  font-weight: 900;
+  line-height: 1.45;
+  letter-spacing: 0.075em;
+  word-break: keep-all;
+}
+
+.additional-project-source + h3 {
+  margin-top: 5px;
+}
+
+@media (max-width: 640px) {
+  .additional-project-card {
+    align-items: center;
+  }
+
+  .additional-project-thumbnail {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .additional-project-source {
+    margin-top: 7px;
+    font-size: 0.58rem;
+    letter-spacing: 0.055em;
+  }
+}
