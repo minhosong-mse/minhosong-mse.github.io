@@ -716,7 +716,9 @@ button {
   grid-template-columns: minmax(0, 1fr) 35%;
   gap: 20px;
   align-items: center;
-  min-height: 235px;
+  height: 290px;
+  min-height: 290px;
+  overflow: hidden;
   padding: 28px 27px 25px;
   color: var(--white);
   background:
@@ -2677,6 +2679,7 @@ button {
 
   .featured-project-hero {
     grid-template-columns: 1fr;
+    height: auto;
     min-height: 0;
     padding: 24px 22px 26px;
   }
