@@ -2816,19 +2816,6 @@ button {
   }
 }
 
-Apply to: assets/css/style.css
-
-1. Open assets/css/style.css in the GitHub web editor.
-2. Go to the final line.
-3. Paste the complete contents of project-card-responsive-overrides.css.
-4. Commit the change.
-
-This append-only override is designed to:
-- enlarge Featured thumbnails on desktop;
-- keep Featured thumbnail/title horizontal on mobile;
-- keep Additional project cards horizontal on mobile;
-- override the existing max-width: 430px one-column rule.
-
 /* Project context labels and Additional card alignment */
 
 .additional-project-card {
@@ -2868,5 +2855,61 @@ This append-only override is designed to:
     margin-top: 7px;
     font-size: 0.58rem;
     letter-spacing: 0.055em;
+  }
+}
+
+/* Technical Training category labels */
+
+.training-category {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 8px;
+  font-size: 0.68rem;
+  font-weight: 850;
+  line-height: 1.4;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.training-category::before {
+  width: 18px;
+  height: 2px;
+  flex: 0 0 auto;
+  background: currentColor;
+  content: "";
+}
+
+/* 공정 TCAD: 기존 포트폴리오 Cyan */
+.training-category-process {
+  color: var(--cyan-dark);
+}
+
+/* 소자 TCAD: Cyan보다 차분한 Blue */
+.training-category-device {
+  color: #376b96;
+}
+
+/* AI·LLM: 과하지 않은 Violet */
+.training-category-ai {
+  color: #6757a6;
+}
+
+/* 분류 라벨 추가로 생기는 간격을 정리 */
+.training-category + h3 {
+  margin-top: 0;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .training-category {
+    gap: 7px;
+    margin-bottom: 7px;
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+  }
+
+  .training-category::before {
+    width: 14px;
   }
 }
