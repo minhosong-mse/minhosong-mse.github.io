@@ -2815,3 +2815,16 @@ button {
     width: min(180px, 100%);
   }
 }
+
+Apply to: assets/css/style.css
+
+1. Open assets/css/style.css in the GitHub web editor.
+2. Go to the final line.
+3. Paste the complete contents of project-card-responsive-overrides.css.
+4. Commit the change.
+
+This append-only override is designed to:
+- enlarge Featured thumbnails on desktop;
+- keep Featured thumbnail/title horizontal on mobile;
+- keep Additional project cards horizontal on mobile;
+- override the existing max-width: 430px one-column rule.
