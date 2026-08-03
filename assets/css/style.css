@@ -278,6 +278,27 @@ button {
   word-break: keep-all;
 }
 
+.intro-qualifications {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  color: var(--navy);
+}
+
+.intro-qualification-label {
+  color: var(--cyan-dark);
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.15em;
+  white-space: nowrap;
+}
+
+.intro-qualifications strong {
+  color: var(--navy);
+  font-weight: 800;
+}
+
 .intro-actions,
 .external-actions {
   display: flex;
@@ -844,6 +865,77 @@ button {
   color: var(--muted);
   border-bottom: 2px solid var(--line);
   cursor: default;
+}
+
+.training-list-compact {
+  width: 100%;
+  border-top: 1px solid var(--line);
+}
+
+.training-row-compact {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 48px);
+  align-items: start;
+  padding: clamp(38px, 5vw, 46px) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.training-date-compact {
+  padding-top: 5px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.training-content-compact {
+  min-width: 0;
+}
+
+.training-content-compact h3 {
+  margin: 0;
+  color: var(--navy);
+  font-size: clamp(1.5rem, 2.5vw, 1.85rem);
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+  word-break: keep-all;
+}
+
+.training-content-compact p {
+  max-width: 860px;
+  margin: 10px 0 24px;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.5vw, 1.14rem);
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+  word-break: keep-all;
+}
+
+.training-github {
+  display: inline-flex;
+  width: fit-content;
+  min-width: 160px;
+  min-height: 60px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 20px;
+  color: var(--navy);
+  background: transparent;
+  border: 1px solid var(--navy);
+  border-radius: 3px;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  transition: color 160ms ease, background-color 160ms ease;
+}
+
+.training-github:hover {
+  color: var(--white);
+  background: var(--navy);
 }
 
 .contact-section {
@@ -1949,6 +2041,11 @@ button {
     border-top: 0;
   }
 
+  .training-row-compact {
+    grid-template-columns: 140px minmax(0, 1fr);
+    gap: 24px;
+  }
+
   .detail-intro-grid {
     grid-template-columns: 1fr;
   }
@@ -2059,6 +2156,16 @@ button {
 
   .credential-row {
     grid-template-columns: 1fr;
+  }
+
+  .training-row-compact {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding-block: 32px;
+  }
+
+  .training-date-compact {
+    padding-top: 0;
   }
 
   .timeline-item {
