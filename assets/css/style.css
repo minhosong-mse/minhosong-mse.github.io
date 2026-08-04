@@ -3026,3 +3026,236 @@ button {
 }
 
 /* === portfolio refresh 2026-08-04: end === */
+
+/* === image-free project layout 2026-08-04: begin === */
+
+.featured-project-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.featured-project-card {
+  display: flex;
+  min-width: 0;
+  height: 100%;
+  flex-direction: column;
+}
+
+.featured-project-hero {
+  display: flex;
+  grid-template-columns: none;
+  height: auto;
+  min-height: 168px;
+  align-items: flex-end;
+  padding: 27px 28px 25px;
+}
+
+.featured-project-heading {
+  width: 100%;
+}
+
+.featured-project-heading h3 {
+  font-size: clamp(1.55rem, 2.05vw, 2.45rem);
+  line-height: 1.06;
+  letter-spacing: -0.045em;
+  white-space: nowrap;
+}
+
+.featured-project-kicker {
+  margin-bottom: 10px;
+}
+
+.featured-project-content {
+  padding: 24px 25px 27px;
+}
+
+.featured-project-title {
+  font-size: clamp(1.18rem, 1.55vw, 1.42rem);
+  line-height: 1.33;
+}
+
+.featured-project-problem {
+  margin-top: 12px;
+  font-size: 0.84rem;
+}
+
+.featured-project-info {
+  padding: 13px 14px;
+}
+
+.featured-project-info strong {
+  font-size: 0.78rem;
+  line-height: 1.58;
+}
+
+.featured-project-tech {
+  margin-top: 14px;
+  font-size: 0.71rem;
+}
+
+.featured-project-actions {
+  padding-top: 20px;
+}
+
+.additional-projects {
+  margin-top: 48px;
+}
+
+.additional-project-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.additional-project-card {
+  display: flex;
+  min-width: 0;
+  min-height: 245px;
+  flex-direction: column;
+  gap: 0;
+  padding: 21px 21px 19px;
+}
+
+.additional-project-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.additional-project-content {
+  display: block;
+  min-width: 0;
+}
+
+.additional-project-source,
+.additional-project-content .additional-project-source {
+  margin: 12px 0 0;
+  color: var(--cyan-dark);
+  font-size: 0.6rem;
+  font-weight: 900;
+  line-height: 1.45;
+  letter-spacing: 0.075em;
+  word-break: keep-all;
+}
+
+.additional-project-content h3 {
+  margin: 6px 0 0;
+  font-size: 1.08rem;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+.additional-project-description,
+.additional-project-content .additional-project-description {
+  margin: 9px 0 0;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 400;
+  line-height: 1.62;
+}
+
+.additional-project-result,
+.additional-project-content .additional-project-result {
+  margin: 10px 0 0;
+  color: var(--navy);
+  font-size: 0.72rem;
+  font-weight: 780;
+  line-height: 1.56;
+}
+
+.additional-project-actions {
+  gap: 14px;
+  margin-top: auto;
+  padding-top: 15px;
+}
+
+.contact-links-grid .contact-link strong {
+  font-size: clamp(1.08rem, 1.35vw, 1.55rem);
+}
+
+@media (max-width: 1100px) {
+  .featured-project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-project-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .featured-project-hero {
+    min-height: 145px;
+    align-items: flex-end;
+  }
+
+  .featured-project-heading h3 {
+    font-size: clamp(1.65rem, 4vw, 2.35rem);
+  }
+
+  .additional-project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .additional-project-card {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .featured-project-hero {
+    min-height: 132px;
+    padding: 22px 20px 20px;
+  }
+
+  .featured-project-heading h3 {
+    font-size: clamp(1.34rem, 6.2vw, 1.8rem);
+  }
+
+  .featured-project-content {
+    padding: 21px 19px 23px;
+  }
+
+  .featured-project-title {
+    font-size: 1.22rem;
+  }
+
+  .featured-project-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .additional-projects {
+    margin-top: 38px;
+  }
+
+  .additional-project-card {
+    padding: 19px 18px 17px;
+  }
+
+  .additional-project-source,
+  .additional-project-content .additional-project-source {
+    font-size: 0.57rem;
+    letter-spacing: 0.055em;
+  }
+
+  .contact-links-grid .contact-link strong {
+    font-size: 1.08rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .featured-project-heading h3 {
+    font-size: 1.25rem;
+    letter-spacing: -0.04em;
+  }
+
+  .featured-project-kicker {
+    font-size: 0.57rem;
+  }
+
+  .featured-period {
+    font-size: 0.65rem;
+  }
+}
+
+/* === image-free project layout 2026-08-04: end === */

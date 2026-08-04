@@ -21,7 +21,7 @@
   <meta name="twitter:image" content="https://minhosong-mse.github.io/assets/images/social/portfolio-og-minimal.png">
   <meta name="theme-color" content="#07182f">
   <link rel="icon" href="assets/images/profile/profile.png">
-  <link rel="stylesheet" href="assets/css/style.css?v=20260804-1">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260804-2">
   <script src="assets/js/main.js" defer></script>
 </head>
 <body id="top">
@@ -81,27 +81,34 @@
           <p>프로젝트 요약은 포트폴리오 안에서 확인하고, 상세 기술 문서와 원본 파일은 각 GitHub 저장소에서 이어서 볼 수 있습니다.</p>
         </div>
 
-        <p class="project-group-label reveal">SELECTED PROJECTS</p>
+                <p class="project-group-label reveal">SELECTED PROJECTS</p>
         <div class="featured-project-grid">
           <article class="featured-project-card reveal">
             <div class="featured-project-hero">
               <div class="featured-project-heading">
-                <span class="featured-project-kicker">COURSEWORK · INDIVIDUAL · TCAD</span>
-                <h3>반도체<br>집적공정</h3>
+                <span class="featured-project-kicker">RESEARCH PROGRAM · CMP · TCAD</span>
+                <h3>CHIPS MASTER PROGRAM</h3>
               </div>
-              <a class="featured-project-thumbnail" href="projects/semiconductor-process.html" aria-label="NMOS 최적화 및 PMOS 공정 변환 요약 페이지로 이동">
-                <img src="assets/images/projects/semiconductor-process/thumbnail.png" alt="반도체 집적공정 단계별 소자 구조 변화">
-              </a>
             </div>
             <div class="featured-project-content">
-              <div class="featured-project-meta"><span class="featured-status">완료</span><span class="featured-period">2026-1</span></div>
-              <h3 class="featured-project-title"><a href="projects/semiconductor-process.html">NMOS 최적화 및 PMOS 공정 변환</a></h3>
-              <p class="featured-project-problem">SimpleMOS 기준 공정에서 성능 trade-off를 비교하고, PMOS 극성 변환 후 5개 공정 변수를 재최적화했습니다.</p>
-              <div class="featured-project-info featured-project-result"><span>핵심 결과</span><strong>교과목 내 공동 1위 · Ion/Ioff 6.186 × 10¹¹ · SS 82.953 mV/dec</strong></div>
-              <p class="featured-project-tech">Sentaurus Workbench · Sprocess · Sdevice · Svisual</p>
+              <div class="featured-project-meta">
+                <span class="featured-status featured-status-progress">연구 진행 중</span>
+                <span class="featured-period">2026.04–2027.01</span>
+              </div>
+              <h3 class="featured-project-title">
+                <a href="projects/dram-bcat.html">20 nm급 BCAT DRAM MEB–Cov–GIDL 강건 설계</a>
+              </h3>
+              <p class="featured-project-problem">
+                MEB 공정 편차가 Cov와 drain-side 전계를 거쳐 GIDL 및 refresh 부담에 미치는 영향을 단계적으로 검증하는 장기 TCAD 연구입니다.
+              </p>
+              <div class="featured-project-info featured-project-result">
+                <span>현재 검증 결과</span>
+                <strong>Run 0 완료 · simplified 2D BCAT geometry/contact/doping/mesh 검증 · SDE–SDevice 연결 및 기본 Id–Vg turn-on 확인</strong>
+              </div>
+              <p class="featured-project-tech">Sentaurus TCAD · BCAT · MEB/Cov · BTBT/GIDL · Process Variation</p>
               <div class="featured-project-actions">
-                <button class="featured-action featured-action-primary" type="button" data-project-summary="nmos">요약 보기</button>
-                <a class="featured-action" href="https://github.com/minhosong-mse/Semiconductor_Process_mid" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                <button class="featured-action featured-action-primary" type="button" data-project-summary="bcat">현재 단계</button>
+                <a class="featured-action" href="https://github.com/minhosong-mse/CMP" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
               </div>
             </div>
           </article>
@@ -110,18 +117,25 @@
             <div class="featured-project-hero">
               <div class="featured-project-heading">
                 <span class="featured-project-kicker">COURSEWORK · TEAM · TCAD</span>
-                <h3>반도체<br>집적공정</h3>
+                <h3>반도체집적공정</h3>
               </div>
-              <a class="featured-project-thumbnail" href="projects/automotive-nmos.html" aria-label="423 K 고온 조건 NMOS 공정 최적화 요약 페이지로 이동">
-                <img src="assets/images/projects/automotive-nmos/thumbnail.png" alt="Baseline, Halo, LDD, P-well 보정 후 NMOS 도핑 프로파일 비교">
-              </a>
             </div>
             <div class="featured-project-content">
-              <div class="featured-project-meta"><span class="featured-status">완료</span><span class="featured-period">2026-1</span></div>
-              <h3 class="featured-project-title"><a href="projects/automotive-nmos.html">423 K 고온 조건 NMOS 공정 최적화</a></h3>
-              <p class="featured-project-problem">고온·단채널 조건에서 증가한 누설과 SS 열화를 분석하고, Halo–LDD–P-well 순서로 전계와 공핍층을 조정했습니다.</p>
-              <div class="featured-project-info featured-project-result"><span>핵심 결과</span><strong>Ioff 약 7 orders 감소 · Ion/Ioff 1.39 × 10⁸ · SS 80.4% 개선</strong></div>
-              <p class="featured-project-tech">Sentaurus TCAD · Parameter Sweep · Device Analysis</p>
+              <div class="featured-project-meta">
+                <span class="featured-status">완료</span>
+                <span class="featured-period">2026-1</span>
+              </div>
+              <h3 class="featured-project-title">
+                <a href="projects/automotive-nmos.html">423 K 고온·단채널 NMOS 공정 최적화</a>
+              </h3>
+              <p class="featured-project-problem">
+                고온과 채널 길이 감소로 증가한 누설전류와 SS 열화를 분석하고, Halo–LDD–P-well 순서로 공정 조건을 단계적으로 조정했습니다.
+              </p>
+              <div class="featured-project-info featured-project-result">
+                <span>핵심 결과</span>
+                <strong>Ioff 약 7 orders 감소 · Ion/Ioff 23 → 1.39 × 10⁸ · SS 1015.2 → 198.6 mV/dec</strong>
+              </div>
+              <p class="featured-project-tech">Sentaurus TCAD · Parameter Sweep · High-Temperature Analysis</p>
               <div class="featured-project-actions">
                 <button class="featured-action featured-action-primary" type="button" data-project-summary="automotive">요약 보기</button>
                 <a class="featured-action" href="https://github.com/minhosong-mse/Semiconductor_Process" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
@@ -133,17 +147,24 @@
             <div class="featured-project-hero">
               <div class="featured-project-heading">
                 <span class="featured-project-kicker">COMPETITION · TEAM · DATA ANALYSIS</span>
-                <h3>SSU Datathon<br>2025</h3>
+                <h3>SSU 데이터톤 2025</h3>
               </div>
-              <a class="featured-project-thumbnail" href="projects/datathon.html" aria-label="SSU Datathon 2025 요약 페이지로 이동">
-                <img src="assets/images/projects/datathon/thumbnail.png" alt="숭실대학교 중앙도서관 SSU 데이터톤 2025 대표 이미지">
-              </a>
             </div>
             <div class="featured-project-content">
-              <div class="featured-project-meta"><span class="featured-status">완료</span><span class="featured-period">2025.12–2026.01</span></div>
-              <h3 class="featured-project-title"><a href="projects/datathon.html">62,199건 논문 기반 반도체 연구 동향 분석</a></h3>
-              <p class="featured-project-problem">광범위한 키워드 분류의 false positive를 확인하고, 포토리소그래피와 첨단 패키징 중심으로 분석 범위를 재설계했습니다.</p>
-              <div class="featured-project-info featured-project-result"><span>핵심 결과</span><strong>논문 제목·키워드·초록을 통합한 Python 분류 파이프라인으로 62,199건 중 반도체 관련 17,413건과 공정 관련 4,000건 이상을 단계적으로 선별</strong></div>
+              <div class="featured-project-meta">
+                <span class="featured-status">완료</span>
+                <span class="featured-period">2025.12–2026.01</span>
+              </div>
+              <h3 class="featured-project-title">
+                <a href="projects/datathon.html">62,199건 논문 기반 반도체 연구 동향 분석</a>
+              </h3>
+              <p class="featured-project-problem">
+                범용 키워드의 false positive를 검수하고, 포토리소그래피와 첨단 패키징 중심으로 분석 범위를 재설계했습니다.
+              </p>
+              <div class="featured-project-info featured-project-result">
+                <span>핵심 결과</span>
+                <strong>제목·키워드·초록 통합 Python 분류 파이프라인 구축 · 반도체 관련 17,413건과 공정 관련 4,000건 이상 단계적 선별</strong>
+              </div>
               <p class="featured-project-tech">Python · pandas · Jupyter · Regular Expressions</p>
               <div class="featured-project-actions">
                 <button class="featured-action featured-action-primary" type="button" data-project-summary="datathon">요약 보기</button>
@@ -157,49 +178,59 @@
           <p class="project-group-label reveal">MORE PROJECTS</p>
           <div class="additional-project-grid">
             <article class="additional-project-card reveal">
-              <a class="additional-project-thumbnail" href="projects/hybrid-metrology.html">
-                <img src="assets/images/projects/hybrid-metrology/thumbnail.png" alt="SE–X-ray Hybrid Metrology 발표자료 표지">
-              </a>
-              <div class="additional-project-content">
+              <div class="additional-project-top">
                 <span class="featured-status">완료</span>
+                <span class="featured-period">2026-1</span>
+              </div>
+              <div class="additional-project-content">
+                <p class="additional-project-source">COURSEWORK · 반도체집적공정</p>
+                <h3><a href="projects/semiconductor-process.html">NMOS 최적화 및 PMOS 공정 변환</a></h3>
+                <p class="additional-project-description">
+                  SimpleMOS 기준 NMOS 성능 탐색 후 N-well·Boron implant·음전압 sweep을 적용해 PMOS 공정으로 변환하고 5개 공정 변수를 최적화했습니다.
+                </p>
+                <p class="additional-project-result">교과목 내 NMOS 공동 1위 · PMOS Ion/Ioff 6.561 × 10¹¹</p>
+              </div>
+              <div class="additional-project-actions">
+                <button type="button" data-project-summary="nmos">요약 보기</button>
+                <a href="https://github.com/minhosong-mse/Semiconductor_Process_mid" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="additional-project-card reveal">
+              <div class="additional-project-top">
+                <span class="featured-status">완료</span>
+                <span class="featured-period">2026-1</span>
+              </div>
+              <div class="additional-project-content">
+                <p class="additional-project-source">COURSEWORK · 반도체공정과화학분석</p>
                 <h3><a href="projects/hybrid-metrology.html">SE–X-ray Hybrid Metrology</a></h3>
-                <p>문헌 기반 계측 전략 · 수업 프로젝트에서 학회 발표로 확장</p>
-                <div class="additional-project-actions">
-                  <button type="button" data-project-summary="hybrid">요약 보기</button>
-                  <a href="https://github.com/minhosong-mse/2026-SE-Xray-Hybrid-Metrology" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-                </div>
+                <p class="additional-project-description">
+                  ALD High-k 초박막의 밀도·계면 거칠기 정량화를 위해 SE와 X-ray 계측의 상보적 제약을 문헌 기반으로 설계했습니다.
+                </p>
+                <p class="additional-project-result">수업 프로젝트 → CPC 1차 심사 → 반도체공학회 특별세션 공동 발표</p>
+              </div>
+              <div class="additional-project-actions">
+                <button type="button" data-project-summary="hybrid">요약 보기</button>
+                <a href="https://github.com/minhosong-mse/2026-SE-Xray-Hybrid-Metrology" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
               </div>
             </article>
 
             <article class="additional-project-card reveal">
-              <a class="additional-project-thumbnail" href="projects/dram-bcat.html">
-                <img src="assets/images/projects/dram-bcat/thumbnail.png" alt="20nm급 BCAT DRAM GIDL 누설 전류 저감 최적화 설계">
-              </a>
-              <div class="additional-project-content">
-                <span class="featured-status featured-status-progress">연구 진행 중</span>
-                <p class="additional-project-source">RESEARCH PROGRAM · CMP</p>
-                <h3><a href="projects/dram-bcat.html">AI 메모리용 20 nm급 BCAT 강건 설계</a></h3>
-                <p>현재 완료: baseline 구조 구축 · 다음 단계: DC metric 및 GIDL 검증</p>
-                <div class="additional-project-actions">
-                  <button type="button" data-project-summary="bcat">현재 단계</button>
-                  <a href="https://github.com/minhosong-mse/CMP" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-                </div>
-              </div>
-            </article>
-
-            <article class="additional-project-card reveal">
-              <a class="additional-project-thumbnail" href="projects/digital-logic.html">
-                <img src="assets/images/projects/digital-logic/thumbnail.png" alt="보행자 요청과 LED 대기 신호를 검증한 Vivado 시뮬레이션 파형">
-              </a>
-              <div class="additional-project-content">
+              <div class="additional-project-top">
                 <span class="featured-status">완료</span>
+                <span class="featured-period">2026-1</span>
+              </div>
+              <div class="additional-project-content">
                 <p class="additional-project-source">COURSEWORK · 디지털논리회로</p>
                 <h3><a href="projects/digital-logic.html">Vivado 기반 교통 신호 제어기 개선</a></h3>
-                <p>기존 5-state FSM을 유지하며 보행자 입력과 대기 LED 추가</p>
-                <div class="additional-project-actions">
-                  <button type="button" data-project-summary="logic">요약 보기</button>
-                  <a href="https://github.com/minhosong-mse/Digital_Logic" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-                </div>
+                <p class="additional-project-description">
+                  기존 5-state FSM을 유지하면서 보행자 요청 입력과 요청 처리 중 대기 LED 피드백을 추가했습니다.
+                </p>
+                <p class="additional-project-result">Verilog RTL·testbench 수정 · 상태 전환 및 LED 유지 waveform 검증</p>
+              </div>
+              <div class="additional-project-actions">
+                <button type="button" data-project-summary="logic">요약 보기</button>
+                <a href="https://github.com/minhosong-mse/Digital_Logic" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
               </div>
             </article>
           </div>
