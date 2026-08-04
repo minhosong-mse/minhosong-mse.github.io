@@ -3259,3 +3259,119 @@ button {
 }
 
 /* === image-free project layout 2026-08-04: end === */
+
+/* === project layout hotfix 2026-08-04: begin === */
+
+/* Selected-project title overflow fix */
+.featured-project-heading {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.featured-project-heading h3 {
+  width: 100%;
+  max-width: 100%;
+  font-size: clamp(1.42rem, 1.7vw, 1.95rem);
+  line-height: 1.08;
+  letter-spacing: -0.055em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+/* MORE PROJECTS alignment reset */
+.additional-project-card {
+  width: 100%;
+  align-items: stretch;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.additional-project-top,
+.additional-project-content,
+.additional-project-actions {
+  width: 100%;
+  align-self: stretch;
+}
+
+.additional-project-top {
+  justify-content: space-between;
+}
+
+.additional-project-content,
+.additional-project-content h3,
+.additional-project-content p,
+.additional-project-actions {
+  text-align: left;
+}
+
+.additional-project-actions {
+  justify-content: flex-start;
+}
+
+/* Full desktop */
+@media (min-width: 1101px) {
+  .additional-project-card {
+    min-height: 272px;
+  }
+
+  .additional-project-actions {
+    margin-top: auto;
+  }
+}
+
+/* Half-width PC / tablet */
+@media (max-width: 1100px) {
+  .featured-project-heading {
+    overflow: visible;
+  }
+
+  .featured-project-heading h3 {
+    font-size: clamp(1.55rem, 3.7vw, 2.15rem);
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    text-wrap: balance;
+  }
+
+  .additional-project-card {
+    min-height: 0;
+    padding: 22px 24px 20px;
+  }
+
+  .additional-project-top {
+    justify-content: flex-start;
+    gap: 14px;
+  }
+
+  .additional-project-source,
+  .additional-project-content .additional-project-source {
+    margin-top: 14px;
+  }
+
+  .additional-project-actions {
+    margin-top: 14px;
+    padding-top: 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .featured-project-heading h3 {
+    font-size: clamp(1.28rem, 6vw, 1.72rem);
+  }
+
+  .additional-project-card {
+    padding: 19px 18px 17px;
+  }
+
+  .additional-project-top {
+    gap: 10px;
+  }
+
+  .additional-project-actions {
+    gap: 16px;
+  }
+}
+
+/* === project layout hotfix 2026-08-04: end === */
