@@ -6,7 +6,7 @@
 - **Major:** 신소재공학
 - **Double Major:** 차세대반도체공학
 
-반도체 공정·소자·계측 분야를 중심으로 TCAD 시뮬레이션, 데이터 분석 및 공정 프로젝트 경험을 쌓고 있습니다.
+반도체 공정·소자·계측 분야를 중심으로 TCAD 시뮬레이션, Ai, 데이터 분석 및 공정 프로젝트 경험을 쌓고 있습니다.
 
 ---
 
@@ -26,7 +26,7 @@
 | **Chips Master Program (CMP)** | 2026.04–2027.01 | **GIDL Leakage Reduction in 20 nm BCAT DRAM** | AI 메모리용 20 nm급 BCAT MEB–Cov–GIDL 강건 설계 | [🔗](https://github.com/minhosong-mse/CMP) |
 | **2026 차세대반도체 경진대회** | 2026.07–Present | **Dual-Metal 3-Layer VCAT–1T1C DRAM TCAD Research** | DWMG 3-Layer VCAT DRAM 설계 팀 경진대회 프로젝트 | [🔗](https://github.com/jujushmaterial/VCAT-1T1C-DRAM-TCAD-Research) |
 | **제16회 숭실 캡스톤디자인 경진대회** | 2026.07–Present | **Air Purifier with Zeolite-Based Filter Replacement Alert** | Round 1 Passed · Activated Carbon–Zeolite 4A Layered Filter and Real-Time VOC Saturation Monitoring | Private |
-| **SSU Datathon 2025** | 2025.12–2026.01 | **A Data-Driven Trend Analysis of 60,000+ Research Papers** | 대규모 논문 데이터 전처리 및 연구 동향 분석 | [🔗](https://github.com/minhosong-mse/Datathon) |
+| **SSU 데이터톤 2025** | 2025.12–2026.01 | **A Data-Driven Trend Analysis of 60,000+ Research Papers** | 대규모 논문 데이터 전처리 및 연구 동향 분석 | [🔗](https://github.com/minhosong-mse/Datathon) |
 | **AX (AI eXperience) 인터랙티브 콘텐츠 공모전** | 2026.07–2027.08 | **AI Interactive Tutor for Logic-to-Layout Learning** | 논리표에서 반도체 Layout으로 이어지는 설계 과정을 시각화하는 AI 학습 콘텐츠 개발 | [🔗](https://github.com/minhosong-mse/AX) |
 
 > [🔗] 아이콘을 클릭하면 각 프로젝트의 상세 저장소로 이동합니다.
