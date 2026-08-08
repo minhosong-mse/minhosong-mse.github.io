@@ -3375,3 +3375,20 @@ button {
 }
 
 /* === project layout hotfix 2026-08-04: end === */
+
+/* === conference media hotfix 2026-08-09: begin === */
+.conference-photo-compact {
+  width: min(100%, 720px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.conference-photo-compact img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+@media (max-width: 700px) {
+  .conference-photo-compact { width: 100%; }
+}
+/* === conference media hotfix 2026-08-09: end === */
