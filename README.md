@@ -28,6 +28,7 @@
 | **제16회 숭실 캡스톤디자인 경진대회** | 2026.07–Present | **Air Purifier with Zeolite-Based Filter Replacement Alert** | Round 1 Passed · Activated Carbon–Zeolite 4A Layered Filter and Real-Time VOC Saturation Monitoring | Private |
 | **SSU 데이터톤 2025** | 2025.12–2026.01 | **A Data-Driven Trend Analysis of 60,000+ Research Papers** | 대규모 논문 데이터 전처리 및 연구 동향 분석 | [🔗](https://github.com/minhosong-mse/Datathon) |
 | **AX (AI eXperience) 인터랙티브 콘텐츠 공모전** | 2026.07–2027.08 | **AI Interactive Tutor for Logic-to-Layout Learning** | 논리표에서 반도체 Layout으로 이어지는 설계 과정을 시각화하는 AI 학습 콘텐츠 개발 | [🔗](https://github.com/minhosong-mse/AX) |
+| **숭실 AI 업무혁신챌린지** | 2026.08–Present | **LISSURARY — 도서관 근로학생 자동 시간표 생성기** | 근로학생 희망 스케줄과 운영 제약을 반영한 전체·데스크 근로표 자동 생성 및 관리자 검토·엑셀 출력 | [🔗](https://github.com/dddyoung2/ssu-2026-library-auto-scheduler) |
 
 > [🔗] 아이콘을 클릭하면 각 프로젝트의 상세 저장소로 이동합니다.
 
