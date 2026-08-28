@@ -23,7 +23,7 @@
 
 | Program / Competition | Period | Project Title | Main Focus | Link |
 | :--- | :---: | :--- | :--- | :---: |
-| **Chips Master Program (CMP)** | 2026.04–2027.01 | **GIDL Leakage Reduction in 20 nm BCAT DRAM** | AI 메모리용 20 nm급 BCAT MEB–Cov–GIDL 강건 설계 | [🔗](https://github.com/minhosong-mse/CMP) |
+| **Chips Master Program (CMP)** | 2026.04–2027.01 | **MEB-Induced GIDL Suppression and 1T1C Retention in 20 nm-Class BCAT DRAM** | MEB 변화에 따른 Cgd·drain-side field·GIDL 저감과 온도 의존적 1T1C retention 전달 특성 검증 | [🔗](https://github.com/minhosong-mse/CMP) |
 | **2026 차세대반도체 경진대회** | 2026.07–Present | **Dual-Metal 3-Layer VCAT–1T1C DRAM TCAD Research** | DWMG 3-Layer VCAT DRAM 설계 팀 경진대회 프로젝트 | [🔗](https://github.com/jujushmaterial/VCAT-1T1C-DRAM-TCAD-Research) |
 | **제16회 숭실 캡스톤디자인 경진대회** | 2026.07–Present | **Air Purifier with Zeolite-Based Filter Replacement Alert** | Round 1 Passed · Activated Carbon–Zeolite 4A Layered Filter and Real-Time VOC Saturation Monitoring | Private |
 | **SSU 데이터톤 2025** | 2025.12–2026.01 | **A Data-Driven Trend Analysis of 60,000+ Research Papers** | 대규모 논문 데이터 전처리 및 연구 동향 분석 | [🔗](https://github.com/minhosong-mse/Datathon) |
