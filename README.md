@@ -14,6 +14,7 @@
 
 | Certification | Organization | Date | Link |
 | :--- | :--- | :---: | :---: |
+| **TOEIC Speaking — Intermediate High (IH), 140** | ETS / YBM | 2026.08.26 | — |
 | **데이터분석준전문가(ADsP)** | 한국데이터산업진흥원 | 2026.03.06 | [🔗](./adsp_certificate_public.png) |
 | **Adobe Certified Professional (ACP)** | Adobe | 2022.06.14 | [🔗](./adobe_acp_certificate_public.png) |
 
