@@ -12,8 +12,8 @@
 
 ## Awards
 
-- **숭실 AI 경진대회 - 업무혁신 챌린지** · 우수상 (NHN클라우드장려상) · **LISSURARY — 도서관 근로학생 자동 시간표 생성기** · 2026.08–2026.09
-- **제16회 숭실 캡스톤디자인 경진대회** · 장려상 · **Air Purifier with Zeolite-Based Filter Replacement Alert** · 2026.07–2026.09
+- **숭실 AI 경진대회 · 우수상 (NHN클라우드장려상)** · LISSURARY — 도서관 근로학생 자동 시간표 생성기 · 2026.08–2026.09
+- **제16회 숭실 캡스톤디자인 경진대회 · 장려상** · Air Purifier with Zeolite-Based Filter Replacement Alert · 2026.07–2026.09
 
 ---
 
