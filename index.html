@@ -21,7 +21,7 @@
   <meta name="twitter:image" content="https://minhosong-mse.github.io/assets/images/social/portfolio-og-minimal.png">
   <meta name="theme-color" content="#07182f">
   <link rel="icon" href="assets/images/profile/profile.png">
-  <link rel="stylesheet" href="assets/css/style.css?v=20260808-1">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261002-1">
   <script src="assets/js/main.js" defer></script>
 </head>
 <body id="top">
@@ -38,6 +38,7 @@
       </button>
       <ul class="nav-links" id="primary-nav">
         <li><a href="#about">ABOUT</a></li>
+        <li><a href="#awards">AWARDS</a></li>
         <li><a href="#projects">PROJECTS</a></li>
         <li><a href="#experience">EXPERIENCE</a></li>
         <li><a href="#training">TECHNICAL TRAINING</a></li>
@@ -73,20 +74,72 @@
       </div>
     </section>
 
+    <section class="section section-soft" id="awards" aria-labelledby="awards-title">
+      <div class="page-width">
+        <div class="section-heading reveal">
+          <p class="section-index">02 / AWARDS</p>
+          <h2 id="awards-title">Awards &amp; Recognition</h2>
+          <p>반도체 소자 연구, TCAD 연구 자동화 및 문제 해결형 프로젝트를 통해 얻은 주요 수상 결과입니다.</p>
+        </div>
+
+        <div class="award-list">
+          <article class="award-row reveal">
+            <div class="award-main">
+              <p class="award-competition">2026 차세대반도체 경진대회</p>
+              <h3>최우수상</h3>
+            </div>
+            <div class="award-project">
+              <p>TCAID : TCAD AI Manager — 자연어 기반 Sentaurus TCAD 연구 자동화 시스템</p>
+            </div>
+          </article>
+
+          <article class="award-row reveal">
+            <div class="award-main">
+              <p class="award-competition">2026 차세대반도체 경진대회</p>
+              <h3>장려상 · 인기상</h3>
+            </div>
+            <div class="award-project">
+              <p>TCAD 기반 Three-Layer Metal Gate(TLMG) VCAT 구조 성능 검증 및 게이트 분할 형상 공정 강건성 분석</p>
+            </div>
+          </article>
+
+          <article class="award-row reveal">
+            <div class="award-main">
+              <p class="award-competition">숭실 AI 경진대회</p>
+              <h3>우수상 <span>(NHN클라우드장려상)</span></h3>
+            </div>
+            <div class="award-project">
+              <p>LISSURARY — 도서관 근로학생 자동 시간표 생성기</p>
+            </div>
+          </article>
+
+          <article class="award-row reveal">
+            <div class="award-main">
+              <p class="award-competition">제16회 숭실 캡스톤디자인 경진대회</p>
+              <h3>장려상</h3>
+            </div>
+            <div class="award-project">
+              <p>Air Purifier with Zeolite-Based Filter Replacement Alert</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section section-projects" id="projects" aria-labelledby="projects-title">
       <div class="page-width">
         <div class="section-heading reveal">
-          <p class="section-index">02 / PROJECTS</p>
+          <p class="section-index">03 / PROJECTS</p>
           <h2 id="projects-title">주요 프로젝트</h2>
-          <p>프로젝트 요약은 포트폴리오 안에서 확인하고, 상세 기술 문서와 원본 파일은 각 GitHub 저장소에서 이어서 볼 수 있습니다.</p>
+          <p>장기 반도체 소자 연구, TCAD 연구 자동화, 실제 운영 문제를 해결하는 소프트웨어 프로젝트를 중심으로 정리했습니다.</p>
         </div>
 
-                        <p class="project-group-label reveal">SELECTED PROJECTS</p>
+        <p class="project-group-label reveal">SELECTED PROJECTS</p>
         <div class="featured-project-grid">
           <article class="featured-project-card reveal">
             <div class="featured-project-hero">
               <div class="featured-project-heading">
-                <span class="featured-project-kicker">RESEARCH PROGRAM · CMP · TCAD</span>
+                <span class="featured-project-kicker">RESEARCH PROGRAM · DRAM · TCAD</span>
                 <h3>CHIPS MASTER PROGRAM</h3>
               </div>
             </div>
@@ -96,19 +149,18 @@
                 <span class="featured-period">2026.04–2027.01</span>
               </div>
               <h3 class="featured-project-title">
-                <a href="projects/dram-bcat.html">20 nm급 BCAT DRAM MEB–Cov–GIDL 강건 설계</a>
+                <a href="https://github.com/minhosong-mse/CMP" target="_blank" rel="noopener noreferrer">20 nm급 BCAT DRAM의 GIDL–Retention 전달 특성 및 MEB 설계 범위 연구</a>
               </h3>
               <p class="featured-project-problem">
-                MEB 공정 편차가 Cov와 drain-side 전계를 거쳐 GIDL 및 refresh 부담에 미치는 영향을 단계적으로 검증하는 장기 TCAD 연구입니다.
+                MEB 깊이에 따른 gate–drain coupling과 drain-side 전계, GIDL 변화를 정량화하고 transistor-level leakage 감소가 실제 1T1C retention으로 전달되는지를 검증합니다.
               </p>
               <div class="featured-project-info featured-project-result">
-                <span>현재 검증 결과</span>
-                <strong>Run 0 완료 · simplified 2D BCAT geometry/contact/doping/mesh 검증 · SDE–SDevice 연결 및 기본 Id–Vg turn-on 확인</strong>
+                <span>현재 연구 단계</span>
+                <strong>Run 0–6.5 완료 · 300/340/380 K GIDL 검증 · P2=48 nm retention handoff candidate 선정 · Run 7 1T1C Write→Hold→Read 검증 진행</strong>
               </div>
-              <p class="featured-project-tech">Sentaurus TCAD · BCAT · MEB/Cov · BTBT/GIDL · Process Variation</p>
+              <p class="featured-project-tech">Sentaurus TCAD · BCAT · GIDL · BTBT · 1T1C Retention · Temperature Analysis</p>
               <div class="featured-project-actions">
-                <button class="featured-action featured-action-primary" type="button" data-project-summary="bcat">현재 단계</button>
-                <a class="featured-action" href="https://github.com/minhosong-mse/CMP" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                <a class="featured-action featured-action-primary" href="https://github.com/minhosong-mse/CMP" target="_blank" rel="noopener noreferrer">VIEW ON GITHUB <span aria-hidden="true">↗</span></a>
               </div>
             </div>
           </article>
@@ -116,29 +168,28 @@
           <article class="featured-project-card reveal">
             <div class="featured-project-hero">
               <div class="featured-project-heading">
-                <span class="featured-project-kicker">COURSEWORK · TEAM · TCAD</span>
-                <h3>반도체집적공정</h3>
+                <span class="featured-project-kicker">COMPETITION · TCAD AUTOMATION · AI</span>
+                <h3>2026 차세대반도체 경진대회</h3>
               </div>
             </div>
             <div class="featured-project-content">
               <div class="featured-project-meta">
-                <span class="featured-status">완료</span>
-                <span class="featured-period">2026-1</span>
+                <span class="featured-status">최우수상</span>
+                <span class="featured-period">2026.07–2026.10</span>
               </div>
               <h3 class="featured-project-title">
-                <a href="projects/automotive-nmos.html">423 K 고온·단채널 NMOS 공정 최적화</a>
+                <a href="https://github.com/jujushmaterial/TCAD-AI-Manager" target="_blank" rel="noopener noreferrer">TCAID : TCAD AI Manager</a>
               </h3>
               <p class="featured-project-problem">
-                고온과 채널 길이 감소로 증가한 누설전류와 SS 열화를 분석하고, Halo–LDD–P-well 순서로 공정 조건을 단계적으로 조정했습니다.
+                Sentaurus TCAD 연구 과정의 반복 작업을 줄이기 위해 원격 실행, Workbench 프로젝트 분석, 격리 작업공간, 승인 기반 실행 기록을 결합한 Human-in-the-loop 연구 지원 시스템을 개발했습니다.
               </p>
               <div class="featured-project-info featured-project-result">
                 <span>핵심 결과</span>
-                <strong>Ioff 약 7 orders 감소 · Ion/Ioff 23 → 1.39 × 10⁸ · SS 1015.2 → 198.6 mV/dec</strong>
+                <strong>2026 차세대반도체 경진대회 최우수상 · CLI v0.3.0 · Project Inspector · Isolated Workspace · Approval Gate 구현</strong>
               </div>
-              <p class="featured-project-tech">Sentaurus TCAD · Parameter Sweep · High-Temperature Analysis</p>
+              <p class="featured-project-tech">Python · SSH/SFTP · Sentaurus TCAD · Human-in-the-loop · Research Automation</p>
               <div class="featured-project-actions">
-                <button class="featured-action featured-action-primary" type="button" data-project-summary="automotive">요약 보기</button>
-                <a class="featured-action" href="https://github.com/minhosong-mse/Semiconductor_Process" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                <a class="featured-action featured-action-primary" href="https://github.com/jujushmaterial/TCAD-AI-Manager" target="_blank" rel="noopener noreferrer">VIEW ON GITHUB <span aria-hidden="true">↗</span></a>
               </div>
             </div>
           </article>
@@ -146,94 +197,31 @@
           <article class="featured-project-card reveal">
             <div class="featured-project-hero">
               <div class="featured-project-heading">
-                <span class="featured-project-kicker">COMPETITION · TEAM · DATA ANALYSIS</span>
-                <h3>SSU 데이터톤 2025</h3>
+                <span class="featured-project-kicker">COMPETITION · TEAM LEAD · WEB SYSTEM</span>
+                <h3>숭실 AI 경진대회</h3>
               </div>
             </div>
             <div class="featured-project-content">
               <div class="featured-project-meta">
-                <span class="featured-status">완료</span>
-                <span class="featured-period">2025.12–2026.01</span>
+                <span class="featured-status">우수상 · NHN클라우드장려상</span>
+                <span class="featured-period">2026.08–2026.10</span>
               </div>
               <h3 class="featured-project-title">
-                <a href="projects/datathon.html">62,199건 논문 기반 반도체 연구 동향 분석</a>
+                <a href="https://github.com/dddyoung2/ssu-2026-library-auto-scheduler" target="_blank" rel="noopener noreferrer">LISSURARY — 도서관 근로학생 자동 시간표 생성기</a>
               </h3>
               <p class="featured-project-problem">
-                범용 키워드의 false positive를 검수하고, 포토리소그래피와 첨단 패키징 중심으로 분석 범위를 재설계했습니다.
+                근로학생의 희망 시간과 근로 유형, 인원 및 운영 제약을 반영해 전체 근로표와 데스크 시간표를 자동 생성하고 관리자 검토와 Excel 출력까지 연결하는 웹 시스템을 개발했습니다.
               </p>
               <div class="featured-project-info featured-project-result">
                 <span>핵심 결과</span>
-                <strong>제목·키워드·초록 통합 Python 분류 파이프라인 구축 · 반도체 관련 17,413건과 공정 관련 4,000건 이상 단계적 선별</strong>
+                <strong>숭실 AI 경진대회 우수상 (NHN클라우드장려상) · 학생 입력/관리자 검토 · 자동 시간표 생성 · 데스크 배정 · Excel 4-sheet 출력</strong>
               </div>
-              <p class="featured-project-tech">Python · pandas · Jupyter · Regular Expressions</p>
+              <p class="featured-project-tech">FastAPI · SQLAlchemy · PostgreSQL · Jinja2 · JavaScript · openpyxl · Scheduling Heuristic</p>
               <div class="featured-project-actions">
-                <button class="featured-action featured-action-primary" type="button" data-project-summary="datathon">요약 보기</button>
-                <a class="featured-action" href="https://github.com/minhosong-mse/Datathon" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                <a class="featured-action featured-action-primary" href="https://github.com/dddyoung2/ssu-2026-library-auto-scheduler" target="_blank" rel="noopener noreferrer">VIEW ON GITHUB <span aria-hidden="true">↗</span></a>
               </div>
             </div>
           </article>
-        </div>
-
-        <div class="additional-projects">
-          <p class="project-group-label reveal">MORE PROJECTS</p>
-          <div class="additional-project-grid">
-            <article class="additional-project-card reveal">
-              <div class="additional-project-top">
-                <span class="featured-status">완료</span>
-                <span class="featured-period">2026-1</span>
-              </div>
-              <div class="additional-project-content">
-                <p class="additional-project-source">COURSEWORK · 반도체집적공정</p>
-                <h3><a href="projects/semiconductor-process.html">NMOS 최적화 및 PMOS 공정 변환</a></h3>
-                <p class="additional-project-description">
-                  SimpleMOS 기준 NMOS 성능 탐색 후 N-well·Boron implant·음전압 sweep을 적용해 PMOS 공정으로 변환하고 5개 공정 변수를 최적화했습니다.
-                </p>
-                <p class="additional-project-result">교과목 내 NMOS 공동 1위 · PMOS Ion/Ioff 6.561 × 10¹¹</p>
-              </div>
-              <div class="additional-project-actions">
-                <button type="button" data-project-summary="nmos">요약 보기</button>
-                <a href="https://github.com/minhosong-mse/Semiconductor_Process_mid" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-
-            <article class="additional-project-card reveal">
-              <div class="additional-project-top">
-                <span class="featured-status">완료</span>
-                <span class="featured-period">2026-1</span>
-              </div>
-              <div class="additional-project-content">
-                <p class="additional-project-source">COURSEWORK · 반도체공정과화학분석</p>
-                <h3><a href="projects/hybrid-metrology.html">SE–X-ray Hybrid Metrology</a></h3>
-                <p class="additional-project-description">
-                  ALD High-k 초박막의 밀도·계면 거칠기 정량화를 위해 SE와 X-ray 계측의 상보적 제약을 문헌 기반으로 설계했습니다.
-                </p>
-                <p class="additional-project-result">수업 프로젝트 → CPC 1차 심사 → 반도체공학회 특별세션 공동 발표</p>
-              </div>
-              <div class="additional-project-actions">
-                <button type="button" data-project-summary="hybrid">요약 보기</button>
-                <a href="https://github.com/minhosong-mse/2026-SE-Xray-Hybrid-Metrology" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-
-            <article class="additional-project-card reveal">
-              <div class="additional-project-top">
-                <span class="featured-status">완료</span>
-                <span class="featured-period">2026-1</span>
-              </div>
-              <div class="additional-project-content">
-                <p class="additional-project-source">COURSEWORK · 디지털논리회로</p>
-                <h3><a href="projects/digital-logic.html">Vivado 기반 교통 신호 제어기 개선</a></h3>
-                <p class="additional-project-description">
-                  기존 5-state FSM을 유지하면서 보행자 요청 입력과 요청 처리 중 대기 LED 피드백을 추가했습니다.
-                </p>
-                <p class="additional-project-result">Verilog RTL·testbench 수정 · 상태 전환 및 LED 유지 waveform 검증</p>
-              </div>
-              <div class="additional-project-actions">
-                <button type="button" data-project-summary="logic">요약 보기</button>
-                <a href="https://github.com/minhosong-mse/Digital_Logic" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-          </div>
         </div>
       </div>
     </section>
@@ -241,7 +229,7 @@
     <section class="section section-soft" id="experience" aria-labelledby="experience-title">
       <div class="page-width">
         <div class="section-heading reveal">
-          <p class="section-index">03 / EXPERIENCE</p>
+          <p class="section-index">04 / EXPERIENCE</p>
           <h2 id="experience-title">Presentation and<br>team coordination.</h2>
         </div>
         <div class="timeline">
@@ -301,7 +289,7 @@
     <section class="section section-white" id="training" aria-labelledby="training-title">
       <div class="page-width">
         <div class="section-heading reveal">
-          <p class="section-index">04 / TECHNICAL TRAINING</p>
+          <p class="section-index">05 / TECHNICAL TRAINING</p>
           <h2 id="training-title">단기강좌 기록</h2>
           <p>반도체 공정·소자 시뮬레이션과 AI 기반 애플리케이션 실습을 통해 공정 구조 구현, 소자 물리 분석 및 LLM 시스템 개발 역량을 확장하고 있습니다.</p>
         </div>
@@ -342,7 +330,7 @@
     <section class="section contact-section" id="contact" aria-labelledby="contact-title">
       <div class="page-width contact-grid">
         <div class="reveal">
-          <p class="section-index">05 / CONTACT</p>
+          <p class="section-index">06 / CONTACT</p>
           <h2 id="contact-title">Open to engineering<br>conversations.</h2>
           <p>반도체 공정, 소자 시뮬레이션, 데이터 분석 프로젝트에 관한 대화를 환영합니다.</p>
         </div>

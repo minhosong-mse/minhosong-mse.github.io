@@ -3427,3 +3427,88 @@ button {
   .furiosa-wordmark img { padding: 18px; }
 }
 /* === FuriosaAI + LLM portfolio update 2026-08-08: end === */
+
+
+/* === awards section 2026-10-02: begin === */
+
+#awards .section-heading {
+  margin-bottom: clamp(28px, 4vw, 46px);
+}
+
+.award-list {
+  border-top: 1px solid var(--line);
+}
+
+.award-row {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.75fr) minmax(0, 1.25fr);
+  gap: clamp(28px, 4vw, 52px);
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.award-main,
+.award-project {
+  min-width: 0;
+}
+
+.award-competition {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 850;
+  line-height: 1.5;
+  letter-spacing: 0.075em;
+}
+
+.award-main h3 {
+  margin: 0;
+  color: var(--navy);
+  font-size: clamp(1.18rem, 1.7vw, 1.45rem);
+  line-height: 1.35;
+}
+
+.award-main h3 span {
+  color: var(--muted);
+  font-size: 0.86em;
+  font-weight: 650;
+}
+
+.award-project {
+  display: flex;
+  align-items: center;
+}
+
+.award-project p {
+  margin: 0;
+  font-weight: 720;
+  line-height: 1.65;
+}
+
+@media (max-width: 820px) {
+  .award-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 21px 0;
+  }
+
+  .award-project {
+    display: block;
+  }
+}
+
+@media (max-width: 640px) {
+  .award-competition {
+    font-size: 0.65rem;
+  }
+
+  .award-main h3 {
+    font-size: 1.14rem;
+  }
+
+  .award-project p {
+    font-size: 0.9rem;
+  }
+}
+
+/* === awards section 2026-10-02: end === */
