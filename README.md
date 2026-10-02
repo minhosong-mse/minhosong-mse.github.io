@@ -15,7 +15,7 @@
 ## Awards
 
 - **2026 차세대반도체 경진대회 · 최우수상** · TCAID : TCAD AI Manager — 자연어 기반 Sentaurus TCAD 연구 자동화 시스템
-- **2026 차세대반도체 경진대회 · 장려상** · TCAD 기반 Three-Layer Metal Gate VCAT구조 성능 검증 및 게이트 분할 형상 공정 강건성 분석
+- **2026 차세대반도체 경진대회 · 장려상** · TCAD 기반 Three-Layer Metal Gate VCAT 구조 성능 검증 및 게이트 분할 형상 공정 강건성 분석
 - **숭실 AI 경진대회 · 우수상 (NHN클라우드장려상)** · LISSURARY — 도서관 근로학생 자동 시간표 생성기
 - **제16회 숭실 캡스톤디자인 경진대회 · 장려상** · Air Purifier with Zeolite-Based Filter Replacement Alert
 
