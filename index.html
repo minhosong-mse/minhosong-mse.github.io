@@ -79,6 +79,7 @@
   .art{height:186px;border-bottom:1px solid #e5eaf0;overflow:hidden;background:#f1f5f9;display:flex;align-items:center;justify-content:center;position:relative}
   .art::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(to bottom,transparent 80%,rgba(10,25,45,.02))}
   .art svg{width:100%;height:100%;display:block}
+  .art img{width:100%;height:100%;object-fit:contain;display:block;background:#fafbfd}
   .project-body{padding:24px 26px 22px;display:flex;flex-direction:column;flex:1}
   .project-nature{font-size:10px;font-weight:800;color:var(--accent);letter-spacing:.13em;margin-bottom:9px}
   .project-body h3{font-size:20px;margin:0 0 12px;font-weight:800;color:#152941;line-height:1.35;letter-spacing:-.035em}
@@ -355,57 +356,28 @@
       <article class="project-card" data-category="tcad">
         <a class="project-cover-link" href="https://github.com/minhosong-mse/CMP" target="_blank" rel="noopener noreferrer" aria-label="CMP BCAT DRAM 연구 GitHub 저장소"></a>
         <div class="art" aria-hidden="true">
-          <svg viewBox="0 0 560 220" role="presentation" xmlns="http://www.w3.org/2000/svg">
-            <defs><linearGradient id="a1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e6eff8"/><stop offset="1" stop-color="#cbdced"/></linearGradient><linearGradient id="a2" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#4675a5"/><stop offset="1" stop-color="#0d284a"/></linearGradient></defs>
-            <rect width="560" height="220" fill="url(#a1)"/>
-            <g opacity=".25" stroke="#7598b7" stroke-width="1"><path d="M40 42H520M40 72H520M40 102H520M40 132H520M40 162H520M40 192H520"/><path d="M70 20V210M130 20V210M190 20V210M250 20V210M310 20V210M370 20V210M430 20V210M490 20V210"/></g>
-            <path d="M148 52H412V185H148z" fill="#b2cadc" stroke="#6088a7" stroke-width="2"/>
-            <path d="M155 83h250v102H155z" fill="#d5e5ef"/>
-            <path d="M246 42h68v137h-68z" fill="url(#a2)" stroke="#153b60" stroke-width="2"/>
-            <path d="M237 43h86v15h-86z" fill="#50bac4"/>
-            <path d="M236 92h88v24h-88z" fill="#b9e5ed" opacity=".67"/>
-            <path d="M185 185v-62h56M375 185v-62h-56" fill="none" stroke="#e1a553" stroke-width="21"/>
-            <path d="M280 16V40" stroke="#23496e" stroke-width="3"/><g fill="#23496e"><circle cx="280" cy="16" r="5"/></g>
-            <path d="M324 104c18-18 38-18 58-1M324 120c21-9 35-4 48 6M324 84c27-21 47-18 69-3" fill="none" stroke="#e38264" stroke-width="2.5" opacity=".85"/>
-            <text x="31" y="32" fill="#24456a" font-size="14" font-weight="700" letter-spacing="2">BCAT / DRAM</text><text x="31" y="206" fill="#456989" font-size="10" letter-spacing="1">DEVICE SIMULATION · CONCEPTUAL ILLUSTRATION</text>
-          </svg>
+          <img src="assets/images/projects/portfolio-cmp-cover.webp" alt="BCAT DRAM 연구 이미지" loading="lazy" decoding="async">
         </div>
         <div class="project-body"><div class="project-nature">RESEARCH · DRAM · TCAD</div><h3>CMP — BCAT DRAM Research</h3><p class="project-desc">20 nm급 BCAT DRAM에서 MEB 깊이 변화가 GIDL과 1T1C Retention에 미치는 영향 및 온도 의존적 유효 설계 범위를 분석합니다.</p><div class="project-meta"><p><b>Period</b> 2026.04 – 2027.01</p><p><b>Tools</b> Sentaurus TCAD · Python</p></div><a class="project-link" href="https://github.com/minhosong-mse/CMP" target="_blank" rel="noopener noreferrer">VIEW ON GITHUB <span aria-hidden="true">↗</span></a></div>
       </article>
       <article class="project-card" data-category="automation ai">
         <a class="project-cover-link" href="https://github.com/jujushmaterial/TCAD-AI-Manager" target="_blank" rel="noopener noreferrer" aria-label="TCAID GitHub 저장소"></a>
         <div class="art" aria-hidden="true">
-          <svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="b1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dfe9f5"/><stop offset="1" stop-color="#c6d7ea"/></linearGradient></defs><rect width="560" height="220" fill="url(#b1)"/>
-            <text x="30" y="30" fill="#24456a" font-size="14" font-weight="700" letter-spacing="2">TCAID / RESEARCH AUTOMATION</text>
-            <g fill="#fff" stroke="#6482a4" stroke-width="1.8"><rect x="64" y="72" width="126" height="92" rx="8"/><rect x="218" y="72" width="126" height="92" rx="8"/><rect x="372" y="72" width="126" height="92" rx="8"/></g>
-            <g stroke="#3a638f" stroke-width="3" fill="none"><path d="M190 116h27M345 116h26"/></g><g fill="#3a638f"><path d="m214 111 8 5-8 5zM368 111l8 5-8 5z"/></g>
-            <g fill="#316495"><rect x="83" y="93" width="82" height="7" rx="3" opacity=".32"/><rect x="83" y="107" width="64" height="7" rx="3" opacity=".32"/><rect x="83" y="121" width="74" height="7" rx="3" opacity=".32"/></g>
-            <g stroke="#3d75a6" stroke-width="3" fill="none"><rect x="262" y="93" width="40" height="30" rx="3"/><path d="M245 134h71M258 143h45"/></g><g fill="#2e7497"><circle cx="437" cy="118" r="20" opacity=".22"/><path d="m430 118 5 5 10-13" fill="none" stroke="#2e7497" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g>
-            <text x="127" y="156" fill="#56748f" font-size="9" text-anchor="middle" font-weight="700">REQUEST</text><text x="281" y="156" fill="#56748f" font-size="9" text-anchor="middle" font-weight="700">EXECUTE</text><text x="435" y="156" fill="#56748f" font-size="9" text-anchor="middle" font-weight="700">VERIFY</text>
-            <text x="31" y="205" fill="#456989" font-size="10" letter-spacing="1">HUMAN-IN-THE-LOOP TCAD WORKFLOW</text></svg>
+          <img src="assets/images/projects/portfolio-tcaid-cover.webp" alt="TCAID Manager 로고" loading="lazy" decoding="async">
         </div>
         <div class="project-body"><div class="project-nature">COMPETITION · RESEARCH AUTOMATION</div><h3>TCAID — TCAD AI Manager</h3><p class="project-desc">자연어 기반 Sentaurus TCAD 연구 흐름을 분석하고, 승인형 격리 실행·결과 회수·검증을 지원하는 자동화 시스템입니다.</p><div class="project-meta"><p><b>Award</b> 차세대반도체 경진대회 최우수상</p><p><b>Tools</b> Python · SSH/SFTP · Sentaurus</p></div><a class="project-link" href="https://github.com/jujushmaterial/TCAD-AI-Manager" target="_blank" rel="noopener noreferrer">VIEW ON GITHUB <span aria-hidden="true">↗</span></a></div>
       </article>
       <article class="project-card" data-category="ai automation">
         <a class="project-cover-link" href="https://github.com/dddyoung2/ssu-2026-library-auto-scheduler" target="_blank" rel="noopener noreferrer" aria-label="LISSURARY GitHub 저장소"></a>
         <div class="art" aria-hidden="true">
-          <svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg"><rect width="560" height="220" fill="#dceaf3"/><text x="30" y="30" fill="#24456a" font-size="14" font-weight="700" letter-spacing="2">LISSURARY / SCHEDULING</text>
-          <rect x="80" y="49" width="400" height="132" rx="8" fill="#fff" stroke="#aec5d9" stroke-width="2"/><rect x="80" y="49" width="400" height="25" rx="8" fill="#2b527a"/><rect x="80" y="66" width="400" height="12" fill="#2b527a"/>
-          <g font-size="9" fill="#fff" font-weight="700"><text x="101" y="65">MON</text><text x="176" y="65">TUE</text><text x="251" y="65">WED</text><text x="326" y="65">THU</text><text x="401" y="65">FRI</text></g>
-          <g stroke="#d4e0ec" stroke-width="1"><path d="M155 78v94M230 78v94M305 78v94M380 78v94M80 109h400M80 140h400"/></g>
-          <g fill="#86b4d5"><rect x="91" y="86" width="56" height="16" rx="3"/><rect x="165" y="114" width="57" height="17" rx="3"/><rect x="318" y="86" width="56" height="17" rx="3"/><rect x="389" y="144" width="81" height="18" rx="3"/></g>
-          <g fill="#4483af"><rect x="240" y="85" width="56" height="18" rx="3"/><rect x="91" y="144" width="56" height="18" rx="3"/><rect x="389" y="114" width="70" height="16" rx="3"/></g>
-          <text x="30" y="205" fill="#456989" font-size="10" letter-spacing="1">OPTIMIZATION · ADMIN REVIEW · EXCEL EXPORT</text></svg>
+          <img src="assets/images/projects/portfolio-lissurary-cover.webp" alt="숭실대학교 도서관 로고" loading="lazy" decoding="async">
         </div>
         <div class="project-body"><div class="project-nature">AI COMPETITION · WEB APPLICATION</div><h3>LISSURARY — Auto Scheduler</h3><p class="project-desc">근로학생의 희망 시간과 운영 조건을 반영해 시간표를 자동 편성하고, 관리자 검토부터 Excel 출력까지 연결하는 웹 시스템입니다.</p><div class="project-meta"><p><b>Award</b> 숭실 AI 경진대회 우수상</p><p><b>Tools</b> FastAPI · PostgreSQL · JavaScript</p></div><a class="project-link" href="https://github.com/dddyoung2/ssu-2026-library-auto-scheduler" target="_blank" rel="noopener noreferrer">VIEW ON GITHUB <span aria-hidden="true">↗</span></a></div>
       </article>
       <article class="project-card" data-category="tcad">
         <a class="project-cover-link" href="https://github.com/jujushmaterial/VCAT-1T1C-DRAM-TCAD-Research" target="_blank" rel="noopener noreferrer" aria-label="TLMG VCAT GitHub 저장소"></a>
         <div class="art" aria-hidden="true">
-          <svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg"><rect width="560" height="220" fill="#e7eff6"/><text x="30" y="30" fill="#24456a" font-size="14" font-weight="700" letter-spacing="2">THREE-LAYER METAL GATE VCAT</text>
-          <g transform="translate(174,53)"><rect x="-18" y="-3" width="52" height="132" rx="10" fill="#6a96b8"/><rect x="-13" y="4" width="42" height="20" rx="5" fill="#f1bc65"/><rect x="-13" y="27" width="42" height="57" fill="#60c4d2"/><rect x="-13" y="88" width="42" height="20" rx="3" fill="#e98c83"/><rect x="-13" y="111" width="42" height="11" rx="5" fill="#e6b76b"/></g>
-          <g transform="translate(348,53)"><rect x="-18" y="-3" width="52" height="132" rx="10" fill="#577fa2"/><rect x="-13" y="4" width="42" height="17" rx="5" fill="#f1bc65"/><rect x="-13" y="25" width="42" height="24" fill="#54b8ce"/><rect x="-13" y="53" width="42" height="30" fill="#224d79"/><rect x="-13" y="87" width="42" height="21" fill="#54b8ce"/><rect x="-13" y="112" width="42" height="10" rx="5" fill="#e6b76b"/></g>
-          <path d="M236 116h56" stroke="#4276a3" stroke-width="3"/><path d="m286 109 12 7-12 7z" fill="#4276a3"/><text x="181" y="201" text-anchor="middle" fill="#5f7895" font-size="11" font-weight="700">SMG</text><text x="355" y="201" text-anchor="middle" fill="#5f7895" font-size="11" font-weight="700">TLMG</text></svg>
+          <img src="assets/images/projects/portfolio-vcat-cover.webp" alt="TLMG VCAT 구조 비교 이미지" loading="lazy" decoding="async">
         </div>
         <div class="project-body"><div class="project-nature">CO-RESEARCH · TCAD · DRAM</div><h3>Three-Layer Metal-Gate VCAT</h3><p class="project-desc">Low–High–Low TLMG VCAT을 설계·검증하고, 게이트 분할 형상의 공정 변동에 대한 성능 허용 범위를 분석한 공동 연구입니다.</p><div class="project-meta"><p><b>Period</b> 2026.07 – 2026.10</p><p><b>Tools</b> Sentaurus · SDE · SDevice · Python</p></div><div class="project-actions">
             <a class="project-link" href="https://github.com/jujushmaterial/VCAT-1T1C-DRAM-TCAD-Research" target="_blank" rel="noopener noreferrer">GITHUB REPOSITORY <span aria-hidden="true">↗</span></a>
