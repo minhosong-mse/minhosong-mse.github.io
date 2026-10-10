@@ -1,379 +1,485 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Minho Song | Materials &amp; Semiconductor Engineering</title>
-  <meta name="description" content="송민호의 반도체 공정, 소자 시뮬레이션, 데이터 분석 프로젝트와 엔지니어링 경험을 소개합니다.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://minhosong-mse.github.io/">
-  <meta property="og:title" content="Minho Song | Semiconductor Engineering Portfolio">
-  <meta property="og:description" content="반도체 공정과 소자 특성을 TCAD와 데이터로 분석하는 송민호의 포트폴리오">
-  <meta property="og:image" content="https://minhosong-mse.github.io/assets/images/social/portfolio-og-clean-1200x630-v2.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:alt" content="송민호 반도체공학 포트폴리오 링크 썸네일">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101e38">
+<meta name="description" content="Minho Song — Materials Science & Engineering · Semiconductor Devices · TCAD · Research Automation">
+<title>Minho Song | Semiconductor Engineering Portfolio</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap');
+  :root{--navy:#101f3b;--navy-deep:#0a152b;--navy-light:#223d61;--ink:#1d2b40;--muted:#637184;--line:#dce3ec;--bg:#fff;--paper:#f8fafd;--accent:#476e9b;--max:1080px}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;min-width:320px;color:var(--ink);background:#fff;font-family:'PT Sans','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  a:focus-visible,button:focus-visible{outline:3px solid #90b9ea;outline-offset:4px}
+  button{font:inherit;cursor:pointer}
+  .screen-reader-only{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .masthead{position:relative;overflow:hidden;background:linear-gradient(138deg,#0b172d 0%,#142846 57%,#1b3656 100%);color:#fff;isolation:isolate;transition:padding .2s ease}
+  .masthead::before{content:'';position:absolute;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(circle at 22% 20%,rgba(142,174,207,.14),transparent 32%),radial-gradient(circle at 92% 70%,rgba(110,165,222,.11),transparent 29%),repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,255,255,.008) 3px 4px);opacity:.85}
+  .masthead::after{content:'';position:absolute;inset:-80px;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.55' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.16'/%3E%3C/svg%3E");background-size:160px 160px;opacity:.22;pointer-events:none;z-index:-1}
+  .hero-inner{max-width:1120px;margin:0 auto;padding:40px 20px 36px;display:flex;flex-direction:column;align-items:center;text-align:center}
+  .hero-portrait{width:112px;height:112px;border-radius:50%;padding:4px;border:2px solid rgba(255,255,255,.88);background:rgba(255,255,255,.07);box-shadow:0 12px 26px rgba(4,10,24,.3);margin-bottom:14px;transition:width .23s,height .23s,margin .23s}
+  .hero-portrait img{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover;background:#fff;object-position:50% 45%}
+  .eyebrow{font-size:10px;font-weight:800;letter-spacing:.24em;color:#b2c7e0;margin:0 0 8px}
+  h1,h2,h3,p{margin-top:0}
+  .hero-name{font-size:clamp(42px,5.8vw,64px);line-height:1.07;font-weight:800;letter-spacing:-.052em;margin:1px 0 8px}
+  .hero-subtitle{color:#dfebf8;font-size:clamp(14px,1.6vw,18px);font-weight:500;letter-spacing:.005em;margin:0}
+  .hero-ko{font-size:13px;color:#afc4dd;margin:7px 0 0}
+  .nav-tabs{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:30px;width:100%}
+  .nav-tabs button{min-width:142px;padding:13px 15px;border:1px solid rgba(255,255,255,.64);background:rgba(255,255,255,.025);color:#fff;border-radius:3px;font-weight:800;font-size:12px;letter-spacing:.08em;transition:background .18s,border-color .18s,color .18s,transform .18s}
+  .nav-tabs button:hover{background:rgba(255,255,255,.16);border-color:#fff;transform:translateY(-1px)}
+  .nav-tabs button[aria-selected=true]{color:#122442;background:#fff;border-color:#fff;box-shadow:0 7px 18px rgba(3,8,20,.12)}
+  body:not(.show-home) .hero-inner{padding:40px 20px 35px}
+  body:not(.show-home) .hero-portrait,body:not(.show-home) .hero-ko,body:not(.show-home) .hero-subtitle,body:not(.show-home) .eyebrow{display:none}
+  body:not(.show-home) .hero-name{font-size:clamp(36px,4.5vw,54px);margin:2px 0 0;letter-spacing:-.035em}
+  body:not(.show-home) .nav-tabs{margin-top:24px}
+  .page{display:none;animation:fade-in .26s ease both}
+  .page.active{display:block}
+  @keyframes fade-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+  .wrap{max-width:var(--max);padding:0 24px;margin:0 auto}
+  .content{min-height:450px;padding:62px 0 82px}
+  .home-content{padding:62px 0 76px}
+  .section-title{text-align:center;font-weight:800;font-size:clamp(32px,4vw,44px);letter-spacing:-.044em;margin:0;color:var(--navy)}
+  .section-lead{max-width:620px;margin:14px auto 0;text-align:center;color:var(--muted);font-size:15px;line-height:1.9;word-break:keep-all}
+  .section-tag{text-align:center;color:var(--accent);letter-spacing:.23em;font-weight:800;font-size:10px;margin:0 0 10px}
+  .hairline{height:1px;background:var(--line);max-width:900px;margin:40px auto 28px}
+  /* About */
+  .about-intro{text-align:center;max-width:800px;margin:29px auto 0;line-height:1.85}
+  .school-name{font-weight:800;font-size:18px;color:var(--navy);margin:0 0 8px}
+  .school-lines{font-size:15px;color:#405069;margin:4px 0}
+  .internship{margin:22px auto 0;display:inline-flex;gap:9px;align-items:center;justify-content:center;padding:9px 16px;border:1px solid #d6e0ec;background:#f8fbff;border-radius:100px;font-size:12px;color:#344865;font-weight:700;line-height:1.5}
+  .internship b{display:inline-block;background:#dce9fa;border-radius:100px;padding:3px 8px;color:#17375b;font-size:10px;letter-spacing:.06em}
+  .about-explainer{max-width:710px;margin:22px auto 0;text-align:center;color:#5b687a;line-height:1.85;font-size:14px;word-break:keep-all}
+  .subheading{text-align:center;font-weight:800;color:#596f88;font-size:12px;letter-spacing:.18em;margin:0 0 17px}
+  .interests-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:850px;margin:0 auto}
+  .interest{border:1px solid #d9e2eb;border-left:3px solid #44668b;border-radius:6px;background:#fcfdff;padding:13px 12px;font-size:13px;font-weight:750;text-align:center;color:#263b56}
+  .foot-identity{display:flex;justify-content:center;gap:20px;align-items:center;margin:37px 0 0}
+  .identity-tile{height:52px;min-width:94px;border:1px solid #e2e8ee;border-radius:5px;display:flex;align-items:center;justify-content:center;color:#748498;font-weight:800;letter-spacing:.1em;font-size:11px}
+  .identity-tile span{font-size:9px;font-weight:600;letter-spacing:0;display:block;margin-top:3px;color:#8795a7}
+  .identity-tile div{text-align:center}
+  /* Awards */
+  .awards{max-width:960px;margin:42px auto 0;border-top:1px solid var(--line)}
+  .award{display:grid;grid-template-columns:56px minmax(0,1fr) 190px;gap:20px;align-items:center;border-bottom:1px solid var(--line);padding:24px 10px}
+  .award-index{color:#b5c2d0;font-weight:800;font-size:13px}
+  .award h3{font-size:16px;color:var(--navy);margin:0 0 7px;letter-spacing:-.02em}
+  .award p{font-size:12px;margin:0;color:#748193;line-height:1.55}
+  .award-label{justify-self:end;padding:7px 12px;background:#edf3fb;border:1px solid #d4e1f0;border-radius:4px;color:#244a76;font-weight:800;font-size:12px;white-space:nowrap}
+  .note{margin:22px 0 0;text-align:center;color:#94a1b0;font-size:11px}
+  /* Projects */
+  .project-filter{display:flex;justify-content:center;align-items:center;gap:8px;margin:37px 0 30px;flex-wrap:wrap}
+  .project-filter button{font-size:12px;border:1px solid #c7d1de;padding:11px 18px;border-radius:3px;background:#fff;min-width:112px;color:#41536b;font-weight:800;transition:.15s}
+  .project-filter button:hover{border-color:var(--navy-light);color:var(--navy)}
+  .project-filter button[aria-pressed=true]{background:var(--navy);color:white;border-color:var(--navy)}
+  .project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:23px}
+  .project-card{min-width:0;background:#fff;border:1px solid #e2e7ed;border-radius:9px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 8px 26px rgba(16,34,61,.065);transition:transform .18s,box-shadow .18s,border-color .18s}
+  .project-card:hover{transform:translateY(-3px);box-shadow:0 14px 36px rgba(16,34,61,.105);border-color:#cbd8e6}
+  .project-card[hidden]{display:none}
+  .art{height:186px;border-bottom:1px solid #e5eaf0;overflow:hidden;background:#f1f5f9;display:flex;align-items:center;justify-content:center;position:relative}
+  .art::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(to bottom,transparent 80%,rgba(10,25,45,.02))}
+  .art svg{width:100%;height:100%;display:block}
+  .project-body{padding:24px 26px 22px;display:flex;flex-direction:column;flex:1}
+  .project-nature{font-size:10px;font-weight:800;color:var(--accent);letter-spacing:.13em;margin-bottom:9px}
+  .project-body h3{font-size:20px;margin:0 0 12px;font-weight:800;color:#152941;line-height:1.35;letter-spacing:-.035em}
+  .project-desc{color:#647386;font-size:13px;line-height:1.75;margin:0 0 20px;word-break:keep-all;flex:1}
+  .project-meta{display:grid;grid-template-columns:1fr;border-top:1px solid #e5eaf0;padding-top:13px;gap:7px;margin-bottom:19px}
+  .project-meta p{margin:0;font-size:11px;color:#607084;line-height:1.55}
+  .project-meta b{display:inline-block;min-width:54px;font-weight:800;color:#2e4056}
+  .project-link{display:inline-flex;align-self:flex-start;align-items:center;gap:9px;font-size:12px;font-weight:800;color:#1a4a7e;letter-spacing:.03em}
+  .project-link:hover{text-decoration:underline;text-underline-offset:4px}
+  .project-card.no-match{display:none}
+  .project-card.hidden{display:none}
+  .empty-projects{display:none;text-align:center;color:var(--muted);padding:70px 10px}
+  /* Experience */
+  .experience-list{max-width:940px;margin:40px auto 0;display:flex;flex-direction:column;gap:13px}
+  .experience-item{display:grid;grid-template-columns:144px minmax(0,1fr) auto;align-items:center;gap:27px;padding:25px 28px;border:1px solid #e1e7ef;border-radius:7px;background:#fff;box-shadow:0 5px 20px rgba(16,34,61,.035)}
+  .experience-item .date{align-self:start;color:#8391a3;font-size:12px;font-weight:800;letter-spacing:.04em;padding-top:5px}
+  .experience-item h3{font-size:17px;margin:0 0 7px;font-weight:800;line-height:1.45;color:#182d46;letter-spacing:-.025em}
+  .experience-item p{font-size:12px;line-height:1.8;color:#6d7a8c;margin:0;word-break:keep-all}
+  .experience-item a{padding:10px 12px;font-size:11px;border:1px solid #d5deea;color:#375477;border-radius:4px;white-space:nowrap;font-weight:800}
+  .experience-item a:hover{background:#eff5fb}
+  /* Contact */
+  .contact-list{max-width:710px;margin:48px auto 0;border-top:1px solid var(--line)}
+  .contact-item{display:grid;grid-template-columns:130px minmax(0,1fr) auto;align-items:center;gap:14px;padding:24px 10px;border-bottom:1px solid var(--line);font-size:15px}
+  .contact-item span{font-size:11px;font-weight:800;letter-spacing:.12em;color:#728198}
+  .contact-item a{color:#243f61;font-weight:700;overflow-wrap:anywhere}
+  .contact-item a:hover{text-decoration:underline;text-underline-offset:4px}
+  .contact-item .arrow{font-size:20px;color:#93a6bd;font-weight:400}
+  .contact-outro{max-width:600px;margin:34px auto 0;text-align:center;color:#718197;font-size:13px;line-height:1.8}
+  .site-footer{border-top:1px solid rgba(255,255,255,.09);background:var(--navy-deep);color:#b7c6d9;padding:15px 20px;text-align:center;font-size:11px;letter-spacing:.01em;min-height:46px}
+  @media (max-width:800px){.nav-tabs button{min-width:120px}.content{padding:48px 0 63px}.project-grid{gap:14px}.project-body{padding:20px 19px}.project-body h3{font-size:18px}.experience-item{grid-template-columns:90px 1fr;gap:12px}.experience-item a{grid-column:2;justify-self:start}}
+  @media (max-width:610px){.hero-inner{padding:34px 14px 24px}.hero-portrait{width:100px;height:100px}.hero-name{font-size:44px}.hero-subtitle{max-width:340px;font-size:13px}.nav-tabs{gap:6px;margin-top:25px;display:flex;flex-wrap:wrap;justify-content:center}.nav-tabs button{min-width:0;flex:0 0 calc((100% - 12px) / 3);padding:11px 3px;font-size:10px;letter-spacing:.025em}body:not(.show-home) .hero-inner{padding:30px 14px 24px}body:not(.show-home) .hero-name{font-size:39px}body:not(.show-home) .nav-tabs{margin-top:23px}.wrap{padding:0 17px}.content,.home-content{padding:43px 0 54px}.section-title{font-size:34px}.section-lead{font-size:13px}.about-intro{margin-top:24px}.school-lines{font-size:13px}.internship{font-size:11px;max-width:100%;flex-wrap:wrap}.about-explainer{font-size:12px}.interests-grid{grid-template-columns:1fr;gap:8px}.interest{padding:11px 9px}.foot-identity{gap:8px}.identity-tile{min-width:0;width:28%;font-size:10px}.award{grid-template-columns:28px 1fr;gap:10px;padding:21px 2px}.award-label{justify-self:start;grid-column:2}.award h3{font-size:14px}.project-filter{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin:25px 0}.project-filter button{min-width:0;padding:10px 4px}.project-grid{grid-template-columns:1fr;gap:16px}.art{height:184px}.project-body h3{font-size:18px}.experience-list{margin-top:28px}.experience-item{grid-template-columns:1fr;gap:8px;padding:19px}.experience-item .date{padding:0}.experience-item a{grid-column:1}.contact-list{margin-top:28px}.contact-item{grid-template-columns:85px minmax(0,1fr) 16px;gap:7px;padding:19px 3px;font-size:12px}.contact-item span{font-size:10px}}
+  @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Minho Song | Semiconductor Engineering Portfolio">
-  <meta name="twitter:description" content="반도체 공정과 소자 특성을 TCAD와 데이터로 분석하는 송민호의 포트폴리오">
-  <meta name="twitter:image" content="https://minhosong-mse.github.io/assets/images/social/portfolio-og-clean-1200x630-v2.jpg">
-  <meta name="theme-color" content="#07182f">
-  <link rel="icon" href="assets/images/profile/profile.png">
-  <link rel="stylesheet" href="assets/css/style.css?v=20261002-1">
-  <script src="assets/js/main.js" defer></script>
+  /* Home v2: compact 30% navy / 70% white composition, no normal-view scrolling */
+  body.show-home{height:100vh;height:100dvh;display:flex;flex-direction:column;overflow:hidden}
+  body.show-home .masthead{height:30vh;height:30dvh;flex:0 0 30vh;flex-basis:30dvh}
+  body.show-home .hero-inner{height:100%;min-height:0;padding:10px 18px 11px;justify-content:center}
+  body.show-home .hero-portrait{width:clamp(54px,9vh,80px);height:clamp(54px,9vh,80px);margin:0 0 5px}
+  body.show-home .hero-name{font-size:clamp(30px,5.25vh,52px);line-height:1.02;margin:0 0 4px;letter-spacing:-.05em}
+  body.show-home .hero-subtitle{font-size:clamp(11px,1.8vh,16px);line-height:1.25;margin:0}
+  body.show-home .hero-ko{font-size:clamp(10px,1.45vh,12px);margin:4px 0 0;line-height:1.15}
+  body.show-home .nav-tabs{margin-top:clamp(8px,1.65vh,16px);gap:8px}
+  body.show-home .nav-tabs button{min-width:112px;padding:9px 12px;font-size:11px}
+  body.show-home main{flex:1;min-height:0;display:flex;flex-direction:column;background:#fff}
+  body.show-home .page.active{flex:1;min-height:0;display:flex;align-items:center;justify-content:center}
+  body.show-home .home-content{width:100%;padding:12px 20px 17px}
+  body.show-home .section-tag{font-size:10px;margin-bottom:6px}
+  body.show-home .section-title{font-size:clamp(27px,4.15vh,37px)}
+  body.show-home .about-intro{margin:clamp(9px,1.7vh,17px) auto 0;line-height:1.5}
+  body.show-home .school-name{font-size:clamp(15px,2.15vh,18px);margin:0 0 5px}
+  body.show-home .school-lines{font-size:clamp(12px,1.75vh,14px);line-height:1.4;margin:3px 0}
+  body.show-home .internship{margin:clamp(8px,1.6vh,15px) auto 0;padding:6px 12px;font-size:11px}
+  body.show-home .about-explainer{margin:clamp(8px,1.65vh,17px) auto 0;line-height:1.55;font-size:clamp(11px,1.7vh,13px)}
+  body.show-home .hairline{max-width:720px;margin:clamp(9px,2.25vh,22px) auto clamp(8px,1.55vh,15px)}
+  body.show-home .subheading{font-size:11px;margin:0 0 10px}
+  body.show-home .interests-grid{max-width:730px;gap:8px}
+  body.show-home .interest{font-size:clamp(11px,1.65vh,13px);padding:clamp(7px,1.25vh,11px) 9px}
+  body.show-home .site-footer{flex:0 0 auto;min-height:28px;padding:6px 14px;background:#fff;color:#8692a2;border-top:1px solid #edf0f4;font-size:10px}
+  @media (max-width:610px){
+    body.show-home .hero-inner{padding:6px 9px 7px}
+    body.show-home .hero-portrait{width:clamp(48px,8vh,67px);height:clamp(48px,8vh,67px);margin-bottom:5px}
+    body.show-home .hero-name{font-size:clamp(29px,4.8vh,40px);margin-bottom:2px}
+    body.show-home .hero-subtitle{font-size:clamp(10px,1.65vh,12px)}
+    body.show-home .hero-ko{font-size:10px;margin-top:3px}
+    body.show-home .nav-tabs{margin-top:clamp(7px,1.25vh,11px);gap:5px}
+    body.show-home .nav-tabs button{flex:0 0 calc((100% - 10px) / 3);min-width:0;padding:7px 2px;font-size:10px}
+    body.show-home .home-content{padding:7px 15px 10px}
+    body.show-home .about-intro{margin-top:9px}
+    body.show-home .school-name{font-size:16px;margin-bottom:3px}
+    body.show-home .school-lines{font-size:12px;margin:2px 0}
+    body.show-home .internship{font-size:10px;padding:5px 8px;gap:5px;margin-top:8px}
+    body.show-home .internship b{font-size:9px;padding:2px 6px}
+    body.show-home .about-explainer{font-size:11px;line-height:1.45;margin-top:9px}
+    body.show-home .hairline{margin:11px auto 10px}
+    body.show-home .subheading{font-size:10px;margin-bottom:8px}
+    body.show-home .interests-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+    body.show-home .interest{font-size:10px;line-height:1.3;padding:8px 5px}
+  }
+  @media (max-height:700px){
+    body.show-home .hero-inner{padding-top:4px;padding-bottom:4px}
+    body.show-home .hero-portrait{width:clamp(40px,8vh,54px);height:clamp(40px,8vh,54px);margin-bottom:3px}
+    body.show-home .hero-name{font-size:clamp(27px,4.7vh,37px);margin-bottom:2px}
+    body.show-home .hero-subtitle{font-size:11px}
+    body.show-home .hero-ko{font-size:10px;margin-top:2px}
+    body.show-home .nav-tabs{margin-top:7px;gap:5px}
+    body.show-home .nav-tabs button{padding:6px 9px;font-size:9px}
+    body.show-home .home-content{padding-top:4px;padding-bottom:6px}
+    body.show-home .section-tag{font-size:9px;margin-bottom:3px}
+    body.show-home .section-title{font-size:26px}
+    body.show-home .about-intro{margin-top:7px}
+    body.show-home .school-name{font-size:15px;margin-bottom:2px}
+    body.show-home .school-lines{font-size:12px;margin:1px 0}
+    body.show-home .internship{font-size:10px;padding:4px 8px;margin-top:6px}
+    body.show-home .about-explainer{font-size:11px;line-height:1.35;margin-top:7px}
+    body.show-home .hairline{margin:8px auto 8px}
+    body.show-home .subheading{font-size:10px;margin-bottom:6px}
+    body.show-home .interest{font-size:10px;padding:6px 5px}
+  }
+  /* Preserve scrolling when the available height is exceptionally short or zoom is very high. */
+  @media (max-height:480px){body.show-home{height:auto;min-height:100dvh;overflow:visible}body.show-home .masthead{height:auto;min-height:160px;flex-basis:auto}body.show-home main{min-height:350px}}
+
+  /* Home v3 · slightly taller navy header and more balanced type rhythm */
+  body.show-home .masthead{height:32.5vh;height:32.5dvh;flex:0 0 32.5vh;flex-basis:32.5dvh}
+  body.show-home .hero-name{margin-bottom:clamp(8px,1.05vh,12px)}
+  body.show-home .hero-subtitle{line-height:1.3}
+  body.show-home .hero-ko{margin-top:clamp(5px,.7vh,8px)}
+  body.show-home .home-content{padding-top:15px;padding-bottom:17px}
+  body.show-home .section-tag{margin-bottom:clamp(9px,1.2vh,13px)}
+  body.show-home .about-intro{margin:clamp(18px,2.7vh,27px) auto 0;line-height:1.65}
+  body.show-home .school-name{margin-bottom:clamp(8px,1.2vh,12px)}
+  body.show-home .school-lines{margin:clamp(4px,.6vh,7px) 0;line-height:1.55}
+  body.show-home .internship{margin-top:clamp(14px,2.1vh,21px);padding-block:7px}
+  body.show-home .about-explainer{margin-top:clamp(16px,2.45vh,24px);line-height:1.7}
+  body.show-home .hairline{margin:clamp(21px,3vh,30px) auto clamp(15px,2vh,20px)}
+  body.show-home .subheading{margin-bottom:clamp(12px,1.7vh,17px)}
+  body.show-home .interests-grid{gap:10px}
+  body.show-home .interest{padding-block:clamp(9px,1.5vh,13px);line-height:1.4}
+  @media (max-width:610px){
+    body.show-home .hero-name{margin-bottom:6px}
+    body.show-home .hero-ko{margin-top:4px}
+    body.show-home .home-content{padding:10px 15px 13px}
+    body.show-home .section-tag{margin-bottom:8px}
+    body.show-home .about-intro{margin-top:clamp(13px,2vh,18px);line-height:1.55}
+    body.show-home .school-name{margin-bottom:6px}
+    body.show-home .school-lines{margin:3px 0;line-height:1.45}
+    body.show-home .internship{margin-top:11px;padding:6px 8px}
+    body.show-home .about-explainer{margin-top:13px;line-height:1.52}
+    body.show-home .hairline{margin:16px auto 13px}
+    body.show-home .subheading{margin-bottom:10px}
+    body.show-home .interests-grid{gap:8px}
+    body.show-home .interest{padding:9px 5px;line-height:1.35}
+  }
+  @media (max-height:700px){
+    body.show-home .hero-name{margin-bottom:5px}
+    body.show-home .hero-ko{margin-top:3px}
+    body.show-home .home-content{padding-top:5px;padding-bottom:7px}
+    body.show-home .section-tag{margin-bottom:5px}
+    body.show-home .about-intro{margin-top:9px;line-height:1.45}
+    body.show-home .school-name{margin-bottom:4px}
+    body.show-home .school-lines{margin:2px 0;line-height:1.38}
+    body.show-home .internship{margin-top:8px;padding-block:4px}
+    body.show-home .about-explainer{margin-top:9px;line-height:1.4}
+    body.show-home .hairline{margin:10px auto 9px}
+    body.show-home .subheading{margin-bottom:7px}
+    body.show-home .interests-grid{gap:7px}
+    body.show-home .interest{padding-block:7px}
+  }
+  @media (max-height:480px){
+    body.show-home .masthead{height:auto;min-height:160px;flex-basis:auto}
+  }
+
+  /* Small phone safeguard: retain the single-screen layout without clipping. */
+  @media (max-width:350px) and (max-height:700px){
+    body.show-home .section-title{font-size:24px}
+    body.show-home .about-intro{margin-top:6px}
+    body.show-home .school-name{margin-bottom:2px}
+    body.show-home .internship{margin-top:5px}
+    body.show-home .about-explainer{margin-top:6px;line-height:1.3}
+    body.show-home .hairline{margin:7px auto 7px}
+    body.show-home .subheading{margin-bottom:5px}
+    body.show-home .interest{padding:5px 4px;font-size:9px}
+  }
+
+  /* v4 — Reference-inspired academic typography. Restrained type weights & spacing. */
+  body{font-weight:400;letter-spacing:-.008em}
+  .hero-name{font-family:'PT Sans','Noto Sans KR',sans-serif;font-weight:700;letter-spacing:-.026em}
+  body.show-home .hero-name{letter-spacing:-.023em}
+  body:not(.show-home) .hero-name{letter-spacing:-.02em}
+  .hero-subtitle,.hero-ko{font-weight:400;letter-spacing:0}
+  .nav-tabs button{font-weight:700;letter-spacing:.045em}
+  .nav-tabs button:hover{transform:none}
+  .section-title{font-family:'PT Sans','Noto Sans KR',sans-serif;font-weight:700;letter-spacing:-.025em}
+  .section-tag,.subheading,.project-nature{font-weight:600;letter-spacing:.13em}
+  .school-name{font-weight:700}
+  .school-lines,.about-explainer,.section-lead{font-weight:400;letter-spacing:-.013em}
+  .internship{font-weight:500}
+  .internship b{font-weight:600}
+  .interest{font-weight:500;letter-spacing:-.006em;transition:background .18s,border-color .18s}
+  .interest:hover,.interest:focus-visible{background:#eef3f9;border-color:#bacde2;border-left-color:#264b76}
+  .award-index,.award-label{font-weight:600}
+  .award h3{font-weight:600;letter-spacing:-.014em}
+  .award--linked{transition:background .16s}
+  .award--linked:hover,.award--linked:focus-visible{background:#f5f8fc}
+  .award--linked h3::after{content:' ↗';font-size:.9em;color:#6783a3;font-weight:400}
+  .project-filter button{font-weight:600}
+  .project-card{position:relative}
+  .project-cover-link{position:absolute;inset:0;z-index:1;cursor:pointer}
+  .project-card:has(.project-cover-link:focus-visible){outline:2px solid #729ac6;outline-offset:3px}
+  .project-body h3{font-weight:700;letter-spacing:-.02em}
+  .project-meta b,.project-link{font-weight:600}
+  .project-body .project-link{position:relative;z-index:2}
+  .project-actions{display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center}
+  .project-link-secondary{color:#526b88}
+  .experience-item{color:inherit}
+  .experience-item h3{font-weight:600;letter-spacing:-.016em}
+  .experience-item .date{font-weight:600}
+  .experience-more{padding:10px 12px;font-size:11px;border:1px solid #d5deea;color:#375477;border-radius:4px;white-space:nowrap;font-weight:600;display:inline-block}
+  .experience-item--linked{transition:border-color .16s,background .16s,box-shadow .16s}
+  .experience-item--linked:hover,.experience-item--linked:focus-visible{background:#f9fbfd;border-color:#bbccdd;box-shadow:0 9px 24px rgba(16,34,61,.06)}
+  .contact-item a{font-weight:500}
+  @media(max-width:610px){.project-actions{gap:12px}}
+
+
+  /* v5: Match the white About footer on every tab and prevent space below it. */
+  body:not(.show-home){min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
+  body:not(.show-home) main{flex:1 0 auto}
+  body:not(.show-home) .site-footer{flex:0 0 auto;min-height:28px;padding:6px 14px;background:#fff;color:#8692a2;border-top:1px solid #edf0f4;font-size:10px}
+
+</style>
 </head>
-<body id="top">
-  <a class="skip-link" href="#main-content">본문으로 바로가기</a>
-
-  <header class="site-header">
-    <nav class="nav-shell" aria-label="주요 탐색">
-      <a class="brand" href="/#top" aria-label="메인 포트폴리오로 이동">
-        <span class="brand-text">MINHO SONG</span>
-      </a>
-      <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
-        <span class="menu-label">MENU</span>
-        <span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span>
-      </button>
-      <ul class="nav-links" id="primary-nav">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#awards">AWARDS</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#experience">EXPERIENCE</a></li>
-        <li><a href="#training">TECHNICAL TRAINING</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
+<body class="show-home">
+<header class="masthead">
+  <div class="hero-inner">
+    <div class="hero-portrait" aria-hidden="true"><img src="data:image/jpeg;base64,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" alt=""></div>
+    <h1 class="hero-name" id="hero-name">Minho Song</h1>
+    <p class="hero-subtitle" id="hero-subtitle">Materials &amp; Semiconductor Engineering Portfolio</p>
+    <p class="hero-ko" id="hero-ko">송민호 · Soongsil University</p>
+    <nav class="nav-tabs" aria-label="주요 페이지" role="tablist">
+      <button type="button" role="tab" aria-controls="panel-home" aria-selected="true" data-tab="home">ABOUT</button>
+      <button type="button" role="tab" aria-controls="panel-awards" aria-selected="false" data-tab="awards">AWARDS</button>
+      <button type="button" role="tab" aria-controls="panel-projects" aria-selected="false" data-tab="projects">PROJECTS</button>
+      <button type="button" role="tab" aria-controls="panel-experience" aria-selected="false" data-tab="experience">EXPERIENCE</button>
+      <button type="button" role="tab" aria-controls="panel-contact" aria-selected="false" data-tab="contact">CONTACT</button>
     </nav>
-  </header>
-
-  <main id="main-content">
-    <section class="intro" id="about" aria-labelledby="intro-title">
-      <div class="page-width intro-grid">
-        <div class="profile-photo reveal">
-          <img src="assets/images/profile/profile.png" alt="Minho Song의 GitHub 프로필 이미지">
-        </div>
-        <div class="intro-copy reveal">
-          <h1 id="intro-title">MINHO SONG</h1>
-          <p class="korean-name" lang="ko">송민호</p>
-          <div class="academic-lines">
-            <p>Materials Science and Engineering</p>
-            <p>Double Major in Next-Generation Semiconductor Engineering</p>
-            <p>Soongsil University</p>
-          </div>
-          <p class="intro-description intro-identity">반도체 공정과 소자 특성을 TCAD와 데이터로 분석하고, 공정 조건과 전기적 특성의 관계를 검증합니다.</p>
-          <p class="intro-qualifications">
-            <span class="intro-qualification-label">QUALIFICATIONS</span>
-            <strong>TOEIC Speaking IH · ADsP · Adobe ACP</strong>
-          </p>
-          <div class="intro-actions" aria-label="주요 링크">
-            <a class="button button-primary" href="https://github.com/minhosong-mse" target="_blank" rel="noopener noreferrer">GITHUB <span aria-hidden="true">↗</span></a>
-            <a class="button button-outline" href="https://www.linkedin.com/in/minho-song-901042440/" target="_blank" rel="noopener noreferrer">LINKEDIN <span aria-hidden="true">↗</span></a>
-            <a class="button button-outline" href="#projects">VIEW PROJECTS</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="awards" aria-labelledby="awards-title">
-      <div class="page-width">
-        <div class="section-heading reveal">
-          <p class="section-index">02 / AWARDS</p>
-          <h2 id="awards-title">Awards &amp; Recognition</h2>
-          <p>반도체 소자 연구, TCAD 연구 자동화 및 문제 해결형 프로젝트를 통해 얻은 주요 수상 결과입니다.</p>
-        </div>
-
-        <div class="award-list">
-          <article class="award-row reveal">
-            <div class="award-main">
-              <p class="award-competition">2026 차세대반도체 경진대회</p>
-              <h3>최우수상</h3>
-            </div>
-            <div class="award-project">
-              <p>TCAID : TCAD AI Manager — 자연어 기반 Sentaurus TCAD 연구 자동화 시스템</p>
-            </div>
-          </article>
-
-          <article class="award-row reveal">
-            <div class="award-main">
-              <p class="award-competition">2026 차세대반도체 경진대회</p>
-              <h3>장려상 · 인기상</h3>
-            </div>
-            <div class="award-project">
-              <p>TCAD 기반 Three-Layer Metal Gate(TLMG) VCAT 구조 성능 검증 및 게이트 분할 형상 공정 강건성 분석</p>
-            </div>
-          </article>
-
-          <article class="award-row reveal">
-            <div class="award-main">
-              <p class="award-competition">숭실 AI 경진대회</p>
-              <h3>우수상 <span>(NHN클라우드장려상)</span></h3>
-            </div>
-            <div class="award-project">
-              <p>LISSURARY — 도서관 근로학생 자동 시간표 생성기</p>
-            </div>
-          </article>
-
-          <article class="award-row reveal">
-            <div class="award-main">
-              <p class="award-competition">제16회 숭실 캡스톤디자인 경진대회</p>
-              <h3>장려상</h3>
-            </div>
-            <div class="award-project">
-              <p>Air Purifier with Zeolite-Based Filter Replacement Alert</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-projects" id="projects" aria-labelledby="projects-title">
-      <div class="page-width">
-        <div class="section-heading reveal">
-          <p class="section-index">03 / PROJECTS</p>
-          <h2 id="projects-title">주요 프로젝트</h2>
-          <p>장기 반도체 소자 연구, TCAD 연구 자동화, 실제 운영 문제를 해결하는 소프트웨어 프로젝트를 중심으로 정리했습니다.</p>
-        </div>
-
-        <p class="project-group-label reveal">SELECTED PROJECTS</p>
-        <div class="featured-project-grid">
-          <article class="featured-project-card reveal">
-            <div class="featured-project-hero">
-              <div class="featured-project-heading">
-                <span class="featured-project-kicker">RESEARCH PROGRAM · DRAM · TCAD</span>
-                <h3>CHIPS MASTER PROGRAM</h3>
-              </div>
-            </div>
-            <div class="featured-project-content">
-              <div class="featured-project-meta">
-                <span class="featured-status featured-status-progress">연구 진행 중</span>
-                <span class="featured-period">2026.04–2027.01</span>
-              </div>
-              <h3 class="featured-project-title">
-                <a href="https://github.com/minhosong-mse/CMP" target="_blank" rel="noopener noreferrer">20 nm급 BCAT DRAM의 GIDL–Retention 전달 특성 및 MEB 설계 범위 연구</a>
-              </h3>
-              <p class="featured-project-problem">
-                MEB 깊이에 따른 gate–drain coupling과 drain-side 전계, GIDL 변화를 정량화하고 transistor-level leakage 감소가 실제 1T1C retention으로 전달되는지를 검증합니다.
-              </p>
-              <div class="featured-project-info featured-project-result">
-                <span>현재 연구 단계</span>
-                <strong>Run 0–6.5 완료 · 300/340/380 K GIDL 검증 · P2=48 nm retention handoff candidate 선정 · Run 7 1T1C Write→Hold→Read 검증 진행</strong>
-              </div>
-              <p class="featured-project-tech">Sentaurus TCAD · BCAT · GIDL · BTBT · 1T1C Retention · Temperature Analysis</p>
-              <div class="featured-project-actions">
-                <a class="featured-action featured-action-primary" href="https://github.com/minhosong-mse/CMP" target="_blank" rel="noopener noreferrer">VIEW ON GITHUB <span aria-hidden="true">↗</span></a>
-              </div>
-            </div>
-          </article>
-
-          <article class="featured-project-card reveal">
-            <div class="featured-project-hero">
-              <div class="featured-project-heading">
-                <span class="featured-project-kicker">COMPETITION · TCAD AUTOMATION · AI</span>
-                <h3>2026 차세대반도체 경진대회</h3>
-              </div>
-            </div>
-            <div class="featured-project-content">
-              <div class="featured-project-meta">
-                <span class="featured-status">최우수상</span>
-                <span class="featured-period">2026.07–2026.10</span>
-              </div>
-              <h3 class="featured-project-title">
-                <a href="https://github.com/jujushmaterial/TCAD-AI-Manager" target="_blank" rel="noopener noreferrer">TCAID : TCAD AI Manager</a>
-              </h3>
-              <p class="featured-project-problem">
-                Sentaurus TCAD 연구 과정의 반복 작업을 줄이기 위해 원격 실행, Workbench 프로젝트 분석, 격리 작업공간, 승인 기반 실행 기록을 결합한 Human-in-the-loop 연구 지원 시스템을 개발했습니다.
-              </p>
-              <div class="featured-project-info featured-project-result">
-                <span>핵심 결과</span>
-                <strong>2026 차세대반도체 경진대회 최우수상 · CLI v0.3.0 · Project Inspector · Isolated Workspace · Approval Gate 구현</strong>
-              </div>
-              <p class="featured-project-tech">Python · SSH/SFTP · Sentaurus TCAD · Human-in-the-loop · Research Automation</p>
-              <div class="featured-project-actions">
-                <a class="featured-action featured-action-primary" href="https://github.com/jujushmaterial/TCAD-AI-Manager" target="_blank" rel="noopener noreferrer">VIEW ON GITHUB <span aria-hidden="true">↗</span></a>
-              </div>
-            </div>
-          </article>
-
-          <article class="featured-project-card reveal">
-            <div class="featured-project-hero">
-              <div class="featured-project-heading">
-                <span class="featured-project-kicker">COMPETITION · TEAM LEAD · WEB SYSTEM</span>
-                <h3>숭실 AI 경진대회</h3>
-              </div>
-            </div>
-            <div class="featured-project-content">
-              <div class="featured-project-meta">
-                <span class="featured-status">우수상 · NHN클라우드장려상</span>
-                <span class="featured-period">2026.08–2026.10</span>
-              </div>
-              <h3 class="featured-project-title">
-                <a href="https://github.com/dddyoung2/ssu-2026-library-auto-scheduler" target="_blank" rel="noopener noreferrer">LISSURARY — 도서관 근로학생 자동 시간표 생성기</a>
-              </h3>
-              <p class="featured-project-problem">
-                근로학생의 희망 시간과 근로 유형, 인원 및 운영 제약을 반영해 전체 근로표와 데스크 시간표를 자동 생성하고 관리자 검토와 Excel 출력까지 연결하는 웹 시스템을 개발했습니다.
-              </p>
-              <div class="featured-project-info featured-project-result">
-                <span>핵심 결과</span>
-                <strong>숭실 AI 경진대회 우수상 (NHN클라우드장려상) · 학생 입력/관리자 검토 · 자동 시간표 생성 · 데스크 배정 · Excel 4-sheet 출력</strong>
-              </div>
-              <p class="featured-project-tech">FastAPI · SQLAlchemy · PostgreSQL · Jinja2 · JavaScript · openpyxl · Scheduling Heuristic</p>
-              <div class="featured-project-actions">
-                <a class="featured-action featured-action-primary" href="https://github.com/dddyoung2/ssu-2026-library-auto-scheduler" target="_blank" rel="noopener noreferrer">VIEW ON GITHUB <span aria-hidden="true">↗</span></a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="experience" aria-labelledby="experience-title">
-      <div class="page-width">
-        <div class="section-heading reveal">
-          <p class="section-index">04 / EXPERIENCE</p>
-          <h2 id="experience-title">Presentation and<br>team coordination.</h2>
-        </div>
-        <div class="timeline">
-
-          <article class="timeline-item reveal">
-            <div class="timeline-side">
-              <div class="timeline-date">2026.08.07</div>
-              <div class="timeline-media timeline-media-logo">
-                <a href="experiences/furiosaai.html">
-                  <img src="assets/images/experience/furiosaai/thumbnail.png" alt="FuriosaAI 로고">
-                </a>
-              </div>
-            </div>
-            <div class="timeline-body">
-              <p class="timeline-type">FURIOSAAI · LLM APPLICATION PROJECT</p>
-              <h3>FuriosaAI 사옥 최종 프로젝트 발표 및 기업탐방</h3>
-              <p>GPU·NPU 기반 LLM Agent 및 RAG 단기강좌에서 구현한 「대학 학칙 도우미」를 FuriosaAI 사옥에서 최종 팀 프로젝트로 발표하고, NPU 기반 AI 시스템의 산업 현장을 경험했습니다.</p>
-              <a class="text-link" href="experiences/furiosaai.html">VIEW FURIOSAAI EXPERIENCE <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-          <article class="timeline-item reveal">
-            <div class="timeline-side">
-              <div class="timeline-date">2026.07.15</div>
-              <div class="timeline-media">
-                <a href="experiences/ise-conference.html">
-                  <img src="assets/images/experience/ise-conference/thumbnail.png" alt="2026년도 반도체공학회 하계종합학술대회 공식 배너">
-                </a>
-              </div>
-            </div>
-            <div class="timeline-body">
-              <p class="timeline-type">2026 SUMMER ANNUAL CONFERENCE OF ISE</p>
-              <h3>반도체공학회 특별세션 공동 발표</h3>
-              <p>SE–X-ray Hybrid Metrology 프로젝트를 특별세션에서 공동 발표하고, 3D 패턴 대응과 양산 적용 가능성, 계면 및 하부 구조의 상호작용에 관한 현장 피드백을 바탕으로 후속 분석 방향을 구체화했습니다.</p>
-              <a class="text-link" href="experiences/ise-conference.html">VIEW CONFERENCE EXPERIENCE <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-          <article class="timeline-item reveal">
-            <div class="timeline-side">
-              <div class="timeline-date">2022.03 — PRESENT</div>
-              <div class="timeline-media">
-                <a href="https://www.instagram.com/hwang_to?igsh=aXdieGViYmh3N3lk" target="_blank" rel="noopener noreferrer">
-                  <img src="assets/images/experience/hwangto/thumbnail.png" alt="숭실대학교 공과대학 밴드 소모임 황토 로고">
-                </a>
-              </div>
-            </div>
-            <div class="timeline-body">
-              <p class="timeline-type">SOONGSIL ENGINEERING BAND CLUB “HWANGTO”</p>
-              <h3>밴드부 임원 및 공연 팀장</h3>
-              <p>1년간 임원 및 공연 팀장으로 재임하며 정기공연 5회, 대학 축제 1회, 새내기 배움터 1회 등 총 7개 무대의 세팅·일정·현장 운영을 총괄했습니다.</p>
-              <a class="text-link" href="https://www.instagram.com/hwang_to?igsh=aXdieGViYmh3N3lk" target="_blank" rel="noopener noreferrer">ACTIVITY RECORD <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-white" id="training" aria-labelledby="training-title">
-      <div class="page-width">
-        <div class="section-heading reveal">
-          <p class="section-index">05 / TECHNICAL TRAINING</p>
-          <h2 id="training-title">단기강좌 기록</h2>
-          <p>반도체 공정·소자 시뮬레이션과 AI 기반 애플리케이션 실습을 통해 공정 구조 구현, 소자 물리 분석 및 LLM 시스템 개발 역량을 확장하고 있습니다.</p>
-        </div>
-        <div class="training-list-compact">
-          <article class="training-row-compact reveal">
-            <div class="training-date-compact">2026.07.20–22</div>
-            <div class="training-content-compact">
-              <p class="training-category training-category-process">TCAD PROCESS</p>
-              <h3><a href="training/tcad-process.html">반도체 공정 with TCAD</a></h3>
-              <p>S-Process · Implant/Anneal · Gate Spacer · PMOS Conversion · High-k Gate Stack</p>
-              <div class="training-link-row"><a class="training-github" href="training/tcad-process.html">DETAILS <span aria-hidden="true">→</span></a><a class="training-github" href="https://github.com/minhosong-mse/2026-TCAD-Process-Short-Course" target="_blank" rel="noopener noreferrer">GITHUB <span aria-hidden="true">↗</span></a></div>
-            </div>
-          </article>
-
-          <article class="training-row-compact reveal">
-            <div class="training-date-compact">2026.07.24–29</div>
-            <div class="training-content-compact">
-              <p class="training-category training-category-device">TCAD DEVICE</p>
-              <h3><a href="training/tcad-device.html">반도체 소자 with TCAD</a></h3>
-              <p>SCE · Implant Split · Vth/SS/DIBL · Length-Aware Optimization · NAND Flash</p>
-              <div class="training-link-row"><a class="training-github" href="training/tcad-device.html">DETAILS <span aria-hidden="true">→</span></a><a class="training-github" href="https://github.com/minhosong-mse/2026-TCAD-Device-Short-Course" target="_blank" rel="noopener noreferrer">GITHUB <span aria-hidden="true">↗</span></a></div>
-            </div>
-          </article>
-
-          <article class="training-row-compact reveal">
-            <div class="training-date-compact">2026.07.30–08.07</div>
-            <div class="training-content-compact">
-              <p class="training-category training-category-ai">AI · LLM SYSTEMS</p>
-              <h3><a href="training/llm-agent-rag.html">GPU·NPU 기반 LLM Agent 및 RAG 실습</a></h3>
-              <p>FuriosaAI RNGD · Tool Calling · Agentic AI · MCP · RAG · Streamlit Application</p>
-              <div class="training-link-row"><a class="training-github" href="training/llm-agent-rag.html">DETAILS <span aria-hidden="true">→</span></a><a class="training-github" href="https://github.com/minhosong-mse/2026-LLM-Agent-RAG-Short-Course" target="_blank" rel="noopener noreferrer">GITHUB <span aria-hidden="true">↗</span></a></div>
-            </div>
-          </article>
-
-          <article class="training-row-compact reveal">
-            <div class="training-date-compact">2026.08.13–14</div>
-            <div class="training-content-compact">
-              <p class="training-category training-category-process">SEMICONDUCTOR PROCESS · VR</p>
-              <h3><a href="training/vr-semiconductor-process.html">VR을 활용한 반도체 공정 실습</a></h3>
-              <p>PVD · PECVD · Etch · Photolithography · Process Parameter · Wet vs Dry Etch PT/Q&amp;A</p>
-              <div class="training-link-row"><a class="training-github" href="training/vr-semiconductor-process.html">DETAILS <span aria-hidden="true">→</span></a><a class="training-github" href="https://github.com/minhosong-mse/2026-VR-Semiconductor-Process-Practice" target="_blank" rel="noopener noreferrer">GITHUB <span aria-hidden="true">↗</span></a></div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="page-width contact-grid">
-        <div class="reveal">
-          <p class="section-index">06 / CONTACT</p>
-          <h2 id="contact-title">Open to engineering<br>conversations.</h2>
-          <p>반도체 공정, 소자 시뮬레이션, 데이터 분석 프로젝트에 관한 대화를 환영합니다.</p>
-        </div>
-        <div class="contact-link-wrap contact-links-grid reveal">
-          <a class="contact-link" href="https://github.com/minhosong-mse" target="_blank" rel="noopener noreferrer">
-            <span>GITHUB</span><strong>github.com/minhosong-mse</strong><i aria-hidden="true">↗</i>
-          </a>
-          <a class="contact-link" href="https://www.linkedin.com/in/minho-song-901042440/" target="_blank" rel="noopener noreferrer">
-            <span>LINKEDIN</span><strong>linkedin.com/in/minho-song-901042440</strong><i aria-hidden="true">↗</i>
-          </a>
-          <a class="contact-link" href="mailto:minho031207@naver.com" aria-label="minho031207@naver.com으로 이메일 보내기">
-            <span>EMAIL</span><strong>minho031207@naver.com</strong><i aria-hidden="true">↗</i>
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <dialog class="project-summary-dialog" id="project-summary-dialog" aria-labelledby="project-summary-title">
-    <div class="project-summary-header">
-      <p>PROJECT SUMMARY</p>
-      <h2 id="project-summary-title"></h2>
-      <button class="project-summary-close" type="button" aria-label="프로젝트 요약 닫기">닫기</button>
+  </div>
+</header>
+<main id="main-content">
+<section class="page active" id="panel-home" role="tabpanel" aria-label="About" data-view="home">
+<div class="wrap home-content">
+<p class="section-tag">PROFILE &amp; BACKGROUND</p>
+<h2 class="section-title">About Me</h2>
+<div class="about-intro">
+<p class="school-name">Soongsil University</p>
+<p class="school-lines">B.S. Student in Materials Science and Engineering</p>
+<p class="school-lines">Double Major in Next-Generation Semiconductor Engineering</p>
+<div class="internship"><b>RESEARCH</b> Seoul National University · Undergraduate Research Intern</div>
+</div>
+<p class="about-explainer">반도체 소자의 전기적 특성을 TCAD와 데이터로 분석하고, 공정·소자 상호작용 및 연구 자동화를 탐구하고 있습니다. 현재 FPGA 기반 영상 전처리 분야로도 연구 경험을 확장하고 있습니다.</p>
+<div class="hairline"></div>
+<h3 class="subheading">RESEARCH INTERESTS</h3>
+<div class="interests-grid">
+<a aria-label="Semiconductor Devices &amp; DRAM · BCAT DRAM 연구 저장소 열기" class="interest" href="https://github.com/minhosong-mse/CMP" rel="noopener noreferrer" target="_blank">Semiconductor Devices &amp; DRAM</a>
+<a aria-label="Semiconductor Process Engineering · 반도체 공정 최적화 저장소 열기" class="interest" href="https://github.com/minhosong-mse/Semiconductor_Process_mid" rel="noopener noreferrer" target="_blank">Semiconductor Process Engineering</a>
+<a aria-label="TCAD-Based Device Analysis · VCAT TCAD 연구 저장소 열기" class="interest" href="https://github.com/jujushmaterial/VCAT-1T1C-DRAM-TCAD-Research" rel="noopener noreferrer" target="_blank">TCAD-Based Device Analysis</a>
+<a aria-label="Research Automation &amp; FPGA · TCAD 연구 자동화 저장소 열기" class="interest" href="https://github.com/jujushmaterial/TCAD-AI-Manager" rel="noopener noreferrer" target="_blank">Research Automation &amp; FPGA</a>
+</div>
+</div>
+</section>
+<section class="page" id="panel-awards" role="tabpanel" aria-label="Awards" data-view="awards" hidden>
+<div class="wrap content">
+<p class="section-tag">HONORS &amp; RECOGNITION</p>
+<h2 class="section-title">Awards</h2>
+<p class="section-lead">반도체 소자 연구, TCAD 자동화, AI 기반 소프트웨어 개발을 통해 얻은 주요 수상 결과입니다.</p>
+<div class="awards">
+<a aria-label="2026 차세대반도체 경진대회 · TCAID 프로젝트 GitHub 저장소 열기" class="award award--linked" href="https://github.com/jujushmaterial/TCAD-AI-Manager" rel="noopener noreferrer" target="_blank"><span class="award-index">01</span><div><h3>2026 차세대반도체 경진대회</h3><p>TCAID · TCAD AI Manager</p></div><div class="award-label">최우수상</div></a>
+<a aria-label="2026 차세대반도체 경진대회 · TLMG VCAT 프로젝트 GitHub 저장소 열기" class="award award--linked" href="https://github.com/jujushmaterial/VCAT-1T1C-DRAM-TCAD-Research" rel="noopener noreferrer" target="_blank"><span class="award-index">02</span><div><h3>2026 차세대반도체 경진대회</h3><p>TLMG VCAT Research</p></div><div class="award-label">장려상 · 인기상</div></a>
+<a aria-label="숭실 AI 경진대회 — 업무혁신 챌린지 · LISSURARY 프로젝트 GitHub 저장소 열기" class="award award--linked" href="https://github.com/dddyoung2/ssu-2026-library-auto-scheduler" rel="noopener noreferrer" target="_blank"><span class="award-index">03</span><div><h3>숭실 AI 경진대회 — 업무혁신 챌린지</h3><p>LISSURARY · Library Auto Scheduler</p></div><div class="award-label">우수상</div></a>
+<div class="award"><span class="award-index">04</span><div><h3>제16회 숭실 캡스톤디자인 경진대회</h3><p>Air Purifier with Zeolite-Based Filter Replacement Alert</p></div><div class="award-label">장려상</div></div>
+</div>
+<p class="note">수상 항목을 클릭하면 연결된 프로젝트 저장소로 이동합니다.</p>
+</div>
+</section>
+<section class="page" id="panel-projects" role="tabpanel" aria-label="Projects" data-view="projects" hidden>
+  <div class="wrap content">
+    <p class="section-tag">SELECTED WORK</p>
+    <h2 class="section-title">Projects</h2>
+    <div class="project-filter" role="group" aria-label="프로젝트 필터">
+      <button type="button" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" data-filter="tcad" aria-pressed="false">TCAD / Device</button>
+      <button type="button" data-filter="automation" aria-pressed="false">Automation</button>
+      <button type="button" data-filter="ai" aria-pressed="false">AI / Web</button>
     </div>
-    <div class="project-summary-content" id="project-summary-content"></div>
-  </dialog>
-
-  <footer class="site-footer">
-    <div class="page-width">
-      <p>© <span id="current-year">2026</span> MINHO SONG</p>
-      <a href="#top">BACK TO TOP <span aria-hidden="true">↑</span></a>
+    <div class="project-grid">
+      <article class="project-card" data-category="tcad">
+        <a class="project-cover-link" href="https://github.com/minhosong-mse/CMP" target="_blank" rel="noopener noreferrer" aria-label="CMP BCAT DRAM 연구 GitHub 저장소"></a>
+        <div class="art" aria-hidden="true">
+          <svg viewBox="0 0 560 220" role="presentation" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="a1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e6eff8"/><stop offset="1" stop-color="#cbdced"/></linearGradient><linearGradient id="a2" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#4675a5"/><stop offset="1" stop-color="#0d284a"/></linearGradient></defs>
+            <rect width="560" height="220" fill="url(#a1)"/>
+            <g opacity=".25" stroke="#7598b7" stroke-width="1"><path d="M40 42H520M40 72H520M40 102H520M40 132H520M40 162H520M40 192H520"/><path d="M70 20V210M130 20V210M190 20V210M250 20V210M310 20V210M370 20V210M430 20V210M490 20V210"/></g>
+            <path d="M148 52H412V185H148z" fill="#b2cadc" stroke="#6088a7" stroke-width="2"/>
+            <path d="M155 83h250v102H155z" fill="#d5e5ef"/>
+            <path d="M246 42h68v137h-68z" fill="url(#a2)" stroke="#153b60" stroke-width="2"/>
+            <path d="M237 43h86v15h-86z" fill="#50bac4"/>
+            <path d="M236 92h88v24h-88z" fill="#b9e5ed" opacity=".67"/>
+            <path d="M185 185v-62h56M375 185v-62h-56" fill="none" stroke="#e1a553" stroke-width="21"/>
+            <path d="M280 16V40" stroke="#23496e" stroke-width="3"/><g fill="#23496e"><circle cx="280" cy="16" r="5"/></g>
+            <path d="M324 104c18-18 38-18 58-1M324 120c21-9 35-4 48 6M324 84c27-21 47-18 69-3" fill="none" stroke="#e38264" stroke-width="2.5" opacity=".85"/>
+            <text x="31" y="32" fill="#24456a" font-size="14" font-weight="700" letter-spacing="2">BCAT / DRAM</text><text x="31" y="206" fill="#456989" font-size="10" letter-spacing="1">DEVICE SIMULATION · CONCEPTUAL ILLUSTRATION</text>
+          </svg>
+        </div>
+        <div class="project-body"><div class="project-nature">RESEARCH · DRAM · TCAD</div><h3>CMP — BCAT DRAM Research</h3><p class="project-desc">20 nm급 BCAT DRAM에서 MEB 깊이 변화가 GIDL과 1T1C Retention에 미치는 영향 및 온도 의존적 유효 설계 범위를 분석합니다.</p><div class="project-meta"><p><b>Period</b> 2026.04 – 2027.01</p><p><b>Tools</b> Sentaurus TCAD · Python</p></div><a class="project-link" href="https://github.com/minhosong-mse/CMP" target="_blank" rel="noopener noreferrer">VIEW ON GITHUB <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <article class="project-card" data-category="automation ai">
+        <a class="project-cover-link" href="https://github.com/jujushmaterial/TCAD-AI-Manager" target="_blank" rel="noopener noreferrer" aria-label="TCAID GitHub 저장소"></a>
+        <div class="art" aria-hidden="true">
+          <svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="b1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dfe9f5"/><stop offset="1" stop-color="#c6d7ea"/></linearGradient></defs><rect width="560" height="220" fill="url(#b1)"/>
+            <text x="30" y="30" fill="#24456a" font-size="14" font-weight="700" letter-spacing="2">TCAID / RESEARCH AUTOMATION</text>
+            <g fill="#fff" stroke="#6482a4" stroke-width="1.8"><rect x="64" y="72" width="126" height="92" rx="8"/><rect x="218" y="72" width="126" height="92" rx="8"/><rect x="372" y="72" width="126" height="92" rx="8"/></g>
+            <g stroke="#3a638f" stroke-width="3" fill="none"><path d="M190 116h27M345 116h26"/></g><g fill="#3a638f"><path d="m214 111 8 5-8 5zM368 111l8 5-8 5z"/></g>
+            <g fill="#316495"><rect x="83" y="93" width="82" height="7" rx="3" opacity=".32"/><rect x="83" y="107" width="64" height="7" rx="3" opacity=".32"/><rect x="83" y="121" width="74" height="7" rx="3" opacity=".32"/></g>
+            <g stroke="#3d75a6" stroke-width="3" fill="none"><rect x="262" y="93" width="40" height="30" rx="3"/><path d="M245 134h71M258 143h45"/></g><g fill="#2e7497"><circle cx="437" cy="118" r="20" opacity=".22"/><path d="m430 118 5 5 10-13" fill="none" stroke="#2e7497" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g>
+            <text x="127" y="156" fill="#56748f" font-size="9" text-anchor="middle" font-weight="700">REQUEST</text><text x="281" y="156" fill="#56748f" font-size="9" text-anchor="middle" font-weight="700">EXECUTE</text><text x="435" y="156" fill="#56748f" font-size="9" text-anchor="middle" font-weight="700">VERIFY</text>
+            <text x="31" y="205" fill="#456989" font-size="10" letter-spacing="1">HUMAN-IN-THE-LOOP TCAD WORKFLOW</text></svg>
+        </div>
+        <div class="project-body"><div class="project-nature">COMPETITION · RESEARCH AUTOMATION</div><h3>TCAID — TCAD AI Manager</h3><p class="project-desc">자연어 기반 Sentaurus TCAD 연구 흐름을 분석하고, 승인형 격리 실행·결과 회수·검증을 지원하는 자동화 시스템입니다.</p><div class="project-meta"><p><b>Award</b> 차세대반도체 경진대회 최우수상</p><p><b>Tools</b> Python · SSH/SFTP · Sentaurus</p></div><a class="project-link" href="https://github.com/jujushmaterial/TCAD-AI-Manager" target="_blank" rel="noopener noreferrer">VIEW ON GITHUB <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <article class="project-card" data-category="ai automation">
+        <a class="project-cover-link" href="https://github.com/dddyoung2/ssu-2026-library-auto-scheduler" target="_blank" rel="noopener noreferrer" aria-label="LISSURARY GitHub 저장소"></a>
+        <div class="art" aria-hidden="true">
+          <svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg"><rect width="560" height="220" fill="#dceaf3"/><text x="30" y="30" fill="#24456a" font-size="14" font-weight="700" letter-spacing="2">LISSURARY / SCHEDULING</text>
+          <rect x="80" y="49" width="400" height="132" rx="8" fill="#fff" stroke="#aec5d9" stroke-width="2"/><rect x="80" y="49" width="400" height="25" rx="8" fill="#2b527a"/><rect x="80" y="66" width="400" height="12" fill="#2b527a"/>
+          <g font-size="9" fill="#fff" font-weight="700"><text x="101" y="65">MON</text><text x="176" y="65">TUE</text><text x="251" y="65">WED</text><text x="326" y="65">THU</text><text x="401" y="65">FRI</text></g>
+          <g stroke="#d4e0ec" stroke-width="1"><path d="M155 78v94M230 78v94M305 78v94M380 78v94M80 109h400M80 140h400"/></g>
+          <g fill="#86b4d5"><rect x="91" y="86" width="56" height="16" rx="3"/><rect x="165" y="114" width="57" height="17" rx="3"/><rect x="318" y="86" width="56" height="17" rx="3"/><rect x="389" y="144" width="81" height="18" rx="3"/></g>
+          <g fill="#4483af"><rect x="240" y="85" width="56" height="18" rx="3"/><rect x="91" y="144" width="56" height="18" rx="3"/><rect x="389" y="114" width="70" height="16" rx="3"/></g>
+          <text x="30" y="205" fill="#456989" font-size="10" letter-spacing="1">OPTIMIZATION · ADMIN REVIEW · EXCEL EXPORT</text></svg>
+        </div>
+        <div class="project-body"><div class="project-nature">AI COMPETITION · WEB APPLICATION</div><h3>LISSURARY — Auto Scheduler</h3><p class="project-desc">근로학생의 희망 시간과 운영 조건을 반영해 시간표를 자동 편성하고, 관리자 검토부터 Excel 출력까지 연결하는 웹 시스템입니다.</p><div class="project-meta"><p><b>Award</b> 숭실 AI 경진대회 우수상</p><p><b>Tools</b> FastAPI · PostgreSQL · JavaScript</p></div><a class="project-link" href="https://github.com/dddyoung2/ssu-2026-library-auto-scheduler" target="_blank" rel="noopener noreferrer">VIEW ON GITHUB <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <article class="project-card" data-category="tcad">
+        <a class="project-cover-link" href="https://github.com/jujushmaterial/VCAT-1T1C-DRAM-TCAD-Research" target="_blank" rel="noopener noreferrer" aria-label="TLMG VCAT GitHub 저장소"></a>
+        <div class="art" aria-hidden="true">
+          <svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg"><rect width="560" height="220" fill="#e7eff6"/><text x="30" y="30" fill="#24456a" font-size="14" font-weight="700" letter-spacing="2">THREE-LAYER METAL GATE VCAT</text>
+          <g transform="translate(174,53)"><rect x="-18" y="-3" width="52" height="132" rx="10" fill="#6a96b8"/><rect x="-13" y="4" width="42" height="20" rx="5" fill="#f1bc65"/><rect x="-13" y="27" width="42" height="57" fill="#60c4d2"/><rect x="-13" y="88" width="42" height="20" rx="3" fill="#e98c83"/><rect x="-13" y="111" width="42" height="11" rx="5" fill="#e6b76b"/></g>
+          <g transform="translate(348,53)"><rect x="-18" y="-3" width="52" height="132" rx="10" fill="#577fa2"/><rect x="-13" y="4" width="42" height="17" rx="5" fill="#f1bc65"/><rect x="-13" y="25" width="42" height="24" fill="#54b8ce"/><rect x="-13" y="53" width="42" height="30" fill="#224d79"/><rect x="-13" y="87" width="42" height="21" fill="#54b8ce"/><rect x="-13" y="112" width="42" height="10" rx="5" fill="#e6b76b"/></g>
+          <path d="M236 116h56" stroke="#4276a3" stroke-width="3"/><path d="m286 109 12 7-12 7z" fill="#4276a3"/><text x="181" y="201" text-anchor="middle" fill="#5f7895" font-size="11" font-weight="700">SMG</text><text x="355" y="201" text-anchor="middle" fill="#5f7895" font-size="11" font-weight="700">TLMG</text></svg>
+        </div>
+        <div class="project-body"><div class="project-nature">CO-RESEARCH · TCAD · DRAM</div><h3>Three-Layer Metal-Gate VCAT</h3><p class="project-desc">Low–High–Low TLMG VCAT을 설계·검증하고, 게이트 분할 형상의 공정 변동에 대한 성능 허용 범위를 분석한 공동 연구입니다.</p><div class="project-meta"><p><b>Period</b> 2026.07 – 2026.10</p><p><b>Tools</b> Sentaurus · SDE · SDevice · Python</p></div><div class="project-actions">
+            <a class="project-link" href="https://github.com/jujushmaterial/VCAT-1T1C-DRAM-TCAD-Research" target="_blank" rel="noopener noreferrer">GITHUB REPOSITORY <span aria-hidden="true">↗</span></a>
+            <a class="project-link project-link-secondary" href="https://jujushmaterial.github.io/TLMG-VCAT-research-portfolio/" target="_blank" rel="noopener noreferrer">FULL RESEARCH PORTFOLIO <span aria-hidden="true">↗</span></a>
+          </div></div>
+      </article>
     </div>
-  </footer>
+  </div>
+</section>
+<section class="page" id="panel-experience" role="tabpanel" aria-label="Experience" data-view="experience" hidden>
+<div class="wrap content">
+<p class="section-tag">BEYOND PROJECTS</p>
+<h2 class="section-title">Experience</h2>
+<div class="experience-list">
+<a aria-label="반도체공학회 하계종합학술대회 특별세션 공동 발표 상세 기록 열기" class="experience-item experience-item--linked" href="https://github.com/minhosong-mse/2026-Semiconductor-Conference-Presentation" rel="noopener noreferrer" target="_blank"><div class="date">2026.07</div><div><h3>반도체공학회 하계종합학술대회 특별세션 공동 발표</h3><p>SE–X-ray Hybrid Metrology 연구 결과 발표 및 반도체 계측 적용 가능성 논의</p></div><span aria-hidden="true" class="experience-more">DETAILS ↗</span></a>
+<a aria-label="FuriosaAI 사옥 최종 프로젝트 발표 및 기업탐방 상세 기록 열기" class="experience-item experience-item--linked" href="https://github.com/minhosong-mse/2026-FuriosaAI-LLM-Application-Presentation" rel="noopener noreferrer" target="_blank"><div class="date">2026.08</div><div><h3>FuriosaAI 사옥 최종 프로젝트 발표 및 기업탐방</h3><p>RAG 기반 대학 학칙 도우미 개발 및 팀 프로젝트 최종 발표</p></div><span aria-hidden="true" class="experience-more">DETAILS ↗</span></a>
+<a aria-label="숭실대학교 공과대학 밴드 소모임 ‘황토’ 상세 기록 열기" class="experience-item experience-item--linked" href="https://www.instagram.com/hwang_to?igsh=aXdieGViYmh3N3lk" rel="noopener noreferrer" target="_blank"><div class="date">2022 – 현재</div><div><h3>숭실대학교 공과대학 밴드 소모임 ‘황토’</h3><p>임원 및 공연 팀장 · 정기 공연, 축제, 새내기 배움터 등 총 7회 무대 운영</p></div><span aria-hidden="true" class="experience-more">ACTIVITY ↗</span></a>
+</div>
+</div>
+</section>
+<section class="page" id="panel-contact" role="tabpanel" aria-label="Contact" data-view="contact" hidden>
+  <div class="wrap content">
+    <p class="section-tag">GET IN TOUCH</p>
+    <h2 class="section-title">Contact</h2>
+    <p class="section-lead">프로젝트나 연구 활동에 대해 궁금한 점이 있으시면 아래 연락처로 편하게 연락해 주세요.</p>
+    <div class="contact-list">
+      <div class="contact-item"><span>EMAIL</span><a href="mailto:minho031207@naver.com">minho031207@naver.com</a><span class="arrow">↗</span></div>
+      <div class="contact-item"><span>GITHUB</span><a href="https://github.com/minhosong-mse" target="_blank" rel="noopener noreferrer">github.com/minhosong-mse</a><span class="arrow">↗</span></div>
+      <div class="contact-item"><span>LINKEDIN</span><a href="https://www.linkedin.com/in/minho-song-901042440/" target="_blank" rel="noopener noreferrer">linkedin.com/in/minho-song-901042440</a><span class="arrow">↗</span></div>
+    </div>
+    <p class="contact-outro">Feel free to reach out to discuss research, engineering projects or potential collaboration.</p>
+  </div>
+</section>
+</main>
+<footer class="site-footer">© 2026 Minho Song</footer>
+<script>
+(function(){
+  const ids=['home','awards','projects','experience','contact'];
+  const names={home:'Minho Song',awards:'Awards',projects:'Projects',experience:'Experience',contact:'Contact'};
+  const buttons=Array.from(document.querySelectorAll('[data-tab]'));
+  const pages=Array.from(document.querySelectorAll('[data-view]'));
+  function show(id,writeHash){
+    if(!ids.includes(id))id='home';
+    document.body.classList.toggle('show-home',id==='home');
+    document.getElementById('hero-name').textContent=names[id];
+    buttons.forEach(btn=>{const active=btn.dataset.tab===id;btn.setAttribute('aria-selected',String(active));btn.tabIndex=active?0:-1;});
+    pages.forEach(page=>{const active=page.dataset.view===id;page.hidden=!active;page.classList.toggle('active',active);});
+    document.title=(id==='home'?'Minho Song':names[id]+' | Minho Song')+' — Portfolio';
+    if(writeHash)history.pushState(null,'',id==='home'?'#home':'#'+id);
+    window.scrollTo({top:0,behavior:'instant'});
+  }
+  buttons.forEach((btn,i)=>{
+    btn.addEventListener('click',()=>show(btn.dataset.tab,true));
+    btn.addEventListener('keydown',e=>{
+      let next;
+      if(e.key==='ArrowRight')next=(i+1)%ids.length;
+      else if(e.key==='ArrowLeft')next=(i-1+ids.length)%ids.length;
+      else if(e.key==='Home')next=0;
+      else if(e.key==='End')next=ids.length-1;
+      else return;
+      e.preventDefault();buttons[next].focus();show(ids[next],true);
+    });
+  });
+  window.addEventListener('popstate',()=>show(decodeURIComponent(location.hash.slice(1))||'home',false));
+  window.addEventListener('hashchange',()=>show(decodeURIComponent(location.hash.slice(1))||'home',false));
+  show(decodeURIComponent(location.hash.slice(1))||'home',false);
+  const filters=Array.from(document.querySelectorAll('[data-filter]'));
+  const cards=Array.from(document.querySelectorAll('.project-card'));
+  filters.forEach(btn=>btn.addEventListener('click',()=>{
+    const f=btn.dataset.filter;
+    filters.forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));
+    cards.forEach(card=>{card.hidden=!(f==='all'||card.dataset.category.split(' ').includes(f));});
+  }));
+})();
+</script>
 </body>
 </html>
