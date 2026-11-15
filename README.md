@@ -57,6 +57,7 @@ Sentaurus TCAD 연구의 코드 생성, 원격 실행, 결과 회수 과정을 �
 - [TLMG VCAT · TCAD 기반 소자 성능 및 공정 강건성 분석](https://github.com/jujushmaterial/VCAT-1T1C-DRAM-TCAD-Research)
 - [SE–X-ray Hybrid Metrology · High-k 박막 계측 연구](https://github.com/minhosong-mse/2026-SE-Xray-Hybrid-Metrology)
 - [Semiconductor Process Optimization · NMOS/PMOS 공정 최적화](https://github.com/minhosong-mse/Semiconductor_Process_mid)
+- [Semiconductor Device Fabrication & Characterization · MIS/MIM 소자 제작 및 전기적 특성 평가](https://github.com/minhosong-mse/minhosong-mse/blob/main/notes/semiconductor-device-fabrication.md)
 - [SSU Datathon · 연구 논문 데이터 분석](https://github.com/minhosong-mse/Datathon)
 - [Logic-to-Layout AI Tutor · 논리표에서 반도체 Layout까지 연결하는 AI 학습 콘텐츠](https://github.com/minhosong-mse/AX)
 - **Capstone Design** · 제올라이트 기반 필터 교체 알림 공기청정기 (비공개 프로젝트)
